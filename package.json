@@ -1,0 +1,14 @@
+{
+	"name": "kite-gemott",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./src/assets/css/input.tailwind.css -o ./src/assets/css/style.css --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	}
+}
