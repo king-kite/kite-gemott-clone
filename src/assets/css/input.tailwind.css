@@ -7,3 +7,406 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
+}
+
+header {
+	@apply flex flex-col-reverse w-full;
+}
+
+header .topbar {
+	@apply border-0 border-t border-gray-500 border-opacity-50 border-solid flex justify-center py-4;
+}
+
+header .topbar .topbar-icon {
+	@apply cursor-pointer duration-300 mx-3 text-lg text-gray-400 transform;
+}
+
+header .topbar .topbar-icon:hover {
+	@apply scale-105 text-gray-700;
+}
+
+.navbar {
+	@apply flex justify-center py-4;
+}
+
+.navbar .menu-container {
+	@apply hidden;
+}
+
+.navbar .logo {
+	@apply font-semibold outline-1 outline-gray-100 outline-dotted text-purple-800 text-3xl uppercase;
+}
+
+/* Common Start */
+
+.wrapper {
+	@apply container mx-auto px-4;
+}
+
+.container-title {
+	@apply font-bold my-2 text-xl text-center text-gray-900;
+}
+
+.container-subtitle {
+	@apply font-normal leading-6 my-4 text-center text-lg text-gray-900;
+}
+
+.container-description {
+	@apply text-sm text-gray-800 text-center;
+}
+
+/* Common Stop */
+
+/* Hero Section Start */
+
+.hero-container {
+	background: url('../images/banner-ch.jpg');
+	@apply bg-gray-100 py-16;
+}
+
+.hero-content {
+	@apply max-w-2xl;
+}
+
+.hero-title {
+	@apply my-3 text-3xl text-gray-100 tracking-wide;
+}
+
+.hero-tag-info {
+	@apply bg-orange-300 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-700;
+}
+
+.hero-description {
+	@apply my-1 font-medium text-sm text-gray-100;
+}
+
+.hero-services {
+	@apply flex items-center list-none my-8;
+}
+
+.hero-service {
+	@apply flex items-center px-3 border-0 border-r border-gray-100 border-solid;
+}
+
+.hero-service:first-child {
+	@apply pl-0;
+}
+
+.hero-service:last-child {
+	@apply border-0;
+}
+
+.hero-service-icon {
+	@apply bg-gray-100 flex h-8 items-center justify-center rounded-full text-gray-700 w-8;
+}
+
+.hero-service-title {
+	@apply text-xs ml-1 text-gray-100;
+}
+
+.hero-content .hero-cta {
+	@apply bg-green-800 duration-100 transition-all transform capitalize inline-block mt-3 px-10 py-4 text-center text-gray-100 text-sm no-underline rounded-sm;
+}
+
+.hero-content .hero-cta .arrow-icon {
+	@apply hidden duration-1000 transition-all transform ease-in-out text-sm;
+}
+
+.hero-content .hero-cta:hover .arrow-icon {
+	@apply inline ml-2;
+}
+
+/* Hero Section Stop */
+
+/* Pricing Section Start */
+
+.pricing-container {
+	@apply bg-gray-100 py-4;
+}
+
+.pricing-container .container-description {
+	@apply max-w-xs mx-auto;
+}
+
+.pricings {
+	@apply flex flex-col gap-6 list-none my-3 py-4 w-full;
+}
+
+.pricing {
+	@apply bg-white border border-gray-300 p-4 rounded;
+}
+
+.pricing-title {
+	@apply text-xl text-gray-700 font-bold mb-2 text-center uppercase;
+}
+
+.pricing-description {
+	@apply my-3 text-center text-sm text-gray-500;
+}
+
+.pricing-price {
+	@apply font-bold text-gray-700 text-xl text-center;
+}
+
+.pricing-price small {
+	@apply !text-gray-400 font-normal;
+}
+
+.pricing .hr-line {
+	@apply mb-2 mt-3 h-[0.5px] border-0 border-t border-gray-200 border-opacity-50 border-solid;
+}
+
+.pricing-list {
+	@apply list-none pt-2;
+}
+
+.pricing-list-item {
+	@apply flex items-center justify-center text-center text-sm text-gray-700 my-3;
+}
+
+.pricing-item-icon {
+	@apply text-xs text-gray-700 mr-2;
+}
+
+.pricing-footer {
+	@apply flex flex-col items-center;
+}
+
+.pricing-footer-title {
+	@apply font-bold text-lg my-2 text-center text-gray-700;
+}
+
+.pricing-footer-description {
+	@apply text-center text-sm my-2 text-gray-700;
+}
+
+.pricing-footer-cta {
+	@apply bg-gray-900 border-transparent border-2 border-solid cursor-pointer duration-500 my-4 px-6 py-4 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
+}
+
+.pricing-footer-cta:hover {
+	@apply text-gray-700 bg-transparent border-gray-700;
+}
+
+.pricing.purple .pricing-title {
+	@apply text-purple-700;
+}
+
+.pricing.purple .pricing-price {
+	@apply text-purple-700;
+}
+
+.pricing.purple .pricing-item-icon {
+	@apply text-purple-700;
+}
+
+.pricing.red .pricing-title {
+	@apply text-red-500;
+}
+
+.pricing.red .pricing-price {
+	@apply text-red-500;
+}
+
+.pricing.red .pricing-item-icon {
+	@apply text-red-500;
+}
+
+.pricing.dark-green .pricing-title {
+	@apply text-green-900;
+}
+
+.pricing.dark-green .pricing-price {
+	@apply text-green-900;
+}
+
+.pricing.dark-green .pricing-item-icon {
+	@apply text-green-900;
+}
+
+/* Pricing Section Stop */
+
+/* Get Started Start */
+
+.get-started-container {
+	@apply bg-purple-900 py-4 text-center text-gray-100;
+}
+
+.get-started-content {
+	@apply px-8 py-6;
+}
+
+.get-started-title {
+	@apply font-light text-center text-lg;
+}
+
+.get-started-cta {
+	@apply bg-transparent border-2 border-gray-100 border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
+}
+
+.get-started-cta:hover {
+	@apply text-red-500 border-red-500 bg-gray-100;
+}
+
+/* Get Started Stop */
+
+/* Features Section Start */
+
+.features-container {
+	@apply bg-gray-50 py-8;
+}
+
+.features {
+	@apply flex flex-col gap-3 list-none my-4 w-full;
+}
+
+.feature {
+	@apply bg-white border-gray-50 border border-solid duration-500 flex flex-col items-center p-5 rounded-sm transition transform w-full;
+}
+
+.feature:hover {
+	@apply scale-105;
+}
+
+.feature-image {
+	@apply flex h-16 items-center justify-center border-2 border-gray-700 border-solid rounded-full text-3xl text-gray-700 w-16;
+}
+
+.feature-title {
+	@apply font-bold my-2 text-center text-lg text-gray-800 uppercase;
+}
+
+.feature-description {
+	@apply font-normal my-1 text-sm text-center text-gray-600;
+}
+
+/* Features Section Stop */
+
+/* Become a Seller Start */
+
+.become-seller-container {
+	@apply bg-gray-100 py-8;
+}
+
+.become-seller-content {
+	@apply px-4;
+}
+
+.become-seller-image {
+	@apply h-[300px] mx-auto w-[350px];
+}
+
+.become-seller-image img {
+	@apply h-full w-full;
+}
+
+.become-seller-data .container-title,
+.become-seller-data .container-description {
+	@apply text-left;
+}
+
+.seller-benefits {
+	@apply list-none my-2;
+}
+
+.seller-benefit {
+	@apply flex items-center justify-start text-left text-sm text-gray-700 my-3;
+}
+
+.seller-benefit-icon {
+	@apply text-xs text-red-600 mr-2;
+}
+
+/* Become a Seller Stop */
+
+/* Credits Start */
+
+.credits-container {
+	@apply bg-gray-100 py-8;
+}
+
+.credits {
+	@apply flex flex-col gap-5 list-none w-full;
+}
+
+.credit {
+	@apply bg-gray-50 border-gray-200 border border-solid duration-500 flex flex-col items-center p-5 rounded-sm shadow-md transition transform w-full;
+}
+
+.credit:hover {
+	@apply -translate-y-4;
+}
+
+.credit-header {
+	@apply flex flex-col items-center;
+}
+
+.credit-header-title {
+	@apply font-bold mb-1 text-center text-2xl text-gray-900 uppercase;
+}
+
+.credit-underline {
+	@apply bg-red-500 h-[3px] my-2 w-1/4;
+}
+
+.credit-header-description {
+	@apply font-medium my-1 text-sm text-center text-gray-800;
+}
+
+.credit-header-description strong {
+	@apply font-semibold;
+}
+
+.credit-footer {
+	@apply flex flex-col items-center mt-2 pt-2;
+}
+
+.credit-footer p {
+	@apply font-medium my-1 text-gray-700 text-sm text-center;
+}
+
+.credit-footer .credit-price {
+	@apply font-black mt-2 text-center text-2xl text-gray-900 uppercase;
+}
+
+.credit-cta {
+	@apply bg-red-500 border-transparent border-2 border-solid cursor-pointer duration-500 my-4 px-6 py-4 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
+}
+
+.credit-cta:hover {
+	@apply text-red-600 bg-transparent border-red-500;
+}
+
+/* Credits Stop */
+
+/* Support Ticket Start */
+
+.support-ticket-container {
+	@apply bg-red-600 py-8;
+}
+
+.support-ticket-content {
+	@apply flex items-center py-5;
+}
+
+.support-image {
+	@apply border-2 border-gray-100 border-solid flex items-center justify-center h-16 rounded-full text-2xl text-gray-100 w-16;
+}
+
+.support-content {
+	@apply ml-5;
+}
+
+.support-content a {
+	@apply cursor-pointer duration-700 text-gray-100 text-lg uppercase transition-colors no-underline;
+}
+
+.support-content a:hover {
+	@apply text-blue-500;
+}
+
+/* Support Ticket Stop */

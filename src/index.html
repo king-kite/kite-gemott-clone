@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kite Gemott Clone | Home</title>
+		<link href="assets/css/all.min.css" rel="stylesheet" />
 		<link href="assets/css/style.css" rel="stylesheet" />
-		<script src="https://kit.fontawesome.com/766c0e5889.js" crossorigin="anonymous"></script>
+		<!-- <script src="https://kit.fontawesome.com/766c0e5889.js" crossorigin="anonymous"></script> -->
 	</head>
 	<body>
 		<header>
@@ -25,7 +26,7 @@
 
 			<!-- Navbar Start -->
 			<nav class="navbar">
-				<h1 class="logo">kite</h1>
+				<h1 class="logo">kite gemott</h1>
 				<div class="menu-container">
 					<div class="menu">
 						<form class="search-form" method="get">
@@ -46,7 +47,7 @@
 							<li class="menu-list-item"><a href="#">home</a></li>
 							<li class="menu-list-item"><a href="#">subscriptions</a></li>
 							<li class="menu-list-item"><a href="#">reseller</a></li>
-							<li class="menu-list-item"><a href="#">cahnnel list</a></li>
+							<li class="menu-list-item"><a href="#">channel list</a></li>
 							<li class="menu-list-item"><a href="#">tutorial</a></li>
 							<li class="menu-list-item"><a href="#">FAQ</a></li>
 							<li class="menu-list-item"><a href="#">affiliate program</a></li>
@@ -60,46 +61,57 @@
 		<main>
 			<!-- Hero Section Start -->
 			<section class="hero-container">
-				<div class="container hero-content">
-					<h1 class="hero-title">
-						Get Access to Your Favorite Sports and Events in High Definition
-					</h1>
-					<span class="hero-tag-info"> in 8K, 4K, FHD & HD! </span>
-					<p class="hero-description">
-						Excellent picture quality without any lag/buffering. Our service guarantees unmatched
-						performance & reliability.
-					</p>
-					<ul class="hero-services">
-						<li class="hero-service">
-							<span class="hero-service-icon">
-								<i class="fas fa-badge"></i>
-							</span>
-							<span>Cancel Any Time</span>
-						</li>
-						<li class="hero-service">
-							<span class="hero-service-icon">
-								<i class="fas fa-users"></i>
-							</span>
-							<span>Trusted by 12K users</span>
-						</li>
-						<li class="hero-service">
-							<span class="hero-service-icon">
-								<i class="fas fa-badge"></i>
-							</span>
-							<span>Speed Like No One Else</span>
-						</li>
-					</ul>
-					<a href="#" class="hero-cta">
-						<span>Get Trial Now!</span>
-						<span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
-					</a>
+				<div class="wrapper">
+					<div class="hero-content">
+						<h1 class="hero-title">
+							Get Access to Your Favorite Sports and Events in High Definition
+						</h1>
+						<span class="hero-tag-info"> in 8K, 4K, FHD & HD! </span>
+						<p class="hero-description">
+							Excellent picture quality without any lag/buffering. Our service guarantees unmatched
+							performance & reliability.
+						</p>
+						<ul class="hero-services">
+							<li class="hero-service">
+								<span class="hero-service-icon">
+									<i class="fas fa-users"></i>
+								</span>
+								<span class="hero-service-title"
+									>Cancel <br />
+									Any Time</span
+								>
+							</li>
+							<li class="hero-service">
+								<span class="hero-service-icon">
+									<i class="fas fa-users"></i>
+								</span>
+								<span class="hero-service-title"
+									>Trusted by <br />
+									12K users</span
+								>
+							</li>
+							<li class="hero-service">
+								<span class="hero-service-icon">
+									<i class="fas fa-users"></i>
+								</span>
+								<span class="hero-service-title"
+									>Speed Like <br />
+									No One Else</span
+								>
+							</li>
+						</ul>
+						<a href="#" class="hero-cta">
+							<span>Get Trial Now!</span>
+							<span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+						</a>
+					</div>
 				</div>
 			</section>
 			<!-- Hero Section Stop -->
 
 			<!-- Pricing Section Start -->
 			<section class="pricing-container">
-				<div class="container">
+				<div class="wrapper">
 					<h2 class="container-title">Ready to grab limited offer IPTV plans?</h2>
 					<h3 class="container-subtitle">
 						Exclusive Deal! Unlock an amazing discount on any subscription plan
@@ -109,14 +121,14 @@
 						backed by your award-winning 24/7 support
 					</p>
 					<ul class="pricings">
-						<li class="pricing">
+						<li class="pricing purple">
 							<h2 class="pricing-title">1 month</h2>
 							<p class="pricing-description">
 								With antifreeze technology, we make sure your weekend entertainment is 100%
 								interruption free
 							</p>
 							<h2 class="pricing-price">12 <small>&dollar;</small></h2>
-							<hr />
+							<div class="hr-line"></div>
 							<ul class="pricing-list">
 								<li class="pricing-list-item">
 									<span class="pricing-item-icon"><i class="fas fa-check"></i></span>
@@ -160,14 +172,14 @@
 								<a href="#" class="pricing-footer-cta"> order now </a>
 							</div>
 						</li>
-						<li class="pricing">
+						<li class="pricing red">
 							<h2 class="pricing-title">3 months</h2>
 							<p class="pricing-description">
 								With antifreeze technology, we make sure your weekend entertainment is 100%
 								interruption free
 							</p>
 							<h2 class="pricing-price">18 <small>&dollar;</small></h2>
-							<hr />
+							<div class="hr-line"></div>
 							<ul class="pricing-list">
 								<li class="pricing-list-item">
 									<span class="pricing-item-icon"><i class="fas fa-check"></i></span>
@@ -211,14 +223,14 @@
 								<a href="#" class="pricing-footer-cta"> order now </a>
 							</div>
 						</li>
-						<li class="pricing">
+						<li class="pricing dark-green">
 							<h2 class="pricing-title">6 months</h2>
 							<p class="pricing-description">
 								With antifreeze technology, we make sure your weekend entertainment is 100%
 								interruption free
 							</p>
 							<h2 class="pricing-price">29 <small>&dollar;</small></h2>
-							<hr />
+							<div class="hr-line"></div>
 							<ul class="pricing-list">
 								<li class="pricing-list-item">
 									<span class="pricing-item-icon"><i class="fas fa-check"></i></span>
@@ -262,14 +274,14 @@
 								<a href="#" class="pricing-footer-cta"> order now </a>
 							</div>
 						</li>
-						<li class="pricing">
+						<li class="pricing purple">
 							<h2 class="pricing-title">12 months</h2>
 							<p class="pricing-description">
 								With antifreeze technology, we make sure your weekend entertainment is 100%
 								interruption free
 							</p>
 							<h2 class="pricing-price">54 <small>&dollar;</small></h2>
-							<hr />
+							<div class="hr-line"></div>
 							<ul class="pricing-list">
 								<li class="pricing-list-item">
 									<span class="pricing-item-icon"><i class="fas fa-check"></i></span>
@@ -320,12 +332,12 @@
 
 			<!-- Get Started Start -->
 			<section class="get-started-container">
-				<div class="container get-started-content">
-					<h3 class="get-started-title">
+				<div class="wrapper get-started-content">
+					<h4 class="get-started-title">
 						Cancel at any time and pay only for the period you have used and get the rest refunded.
 						<br />
 						<strong>100% statisfaction guaranteed</strong>!
-					</h3>
+					</h4>
 					<a href="#" class="get-started-cta">Get Trial Now</a>
 				</div>
 			</section>
@@ -333,20 +345,20 @@
 
 			<!-- Features Section Start -->
 			<section class="features-container">
-				<div class="container">
+				<div class="wrapper">
 					<h2 class="container-title">Why Choose Us?</h2>
 					<p class="container-description">Outstanding Performance meets Complete Stability</p>
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">unlimited entertainment</h5>
 							<p class="feature-description">Over 10k Premium Live Channels & Over 20K VOD.</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">no buffering</h5>
 							<p class="feature-description">
@@ -355,7 +367,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">customer support 24/7</h5>
 							<p class="feature-description">
@@ -365,7 +377,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">almost on any device</h5>
 							<p class="feature-description">
@@ -375,7 +387,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">easy to setup</h5>
 							<p class="feature-description">
@@ -385,7 +397,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-badge"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<h5 class="feature-title">satisfaction guaranteed</h5>
 							<p class="feature-description">
@@ -399,7 +411,7 @@
 
 			<!-- Become a Seller Start -->
 			<section class="become-seller-container">
-				<div class="become-seller-content container">
+				<div class="wrapper become-seller-content">
 					<div class="become-seller-image">
 						<img src="assets/images/ssl-effect-img2.png" alt="Become a Seller" />
 					</div>
@@ -410,18 +422,170 @@
 							panel which allows you to manage your accounts. Your entire workflow can be automated
 							which means you don&rsquo;t need extra resources to manage everything.
 						</p>
-						<ul class="seller-benefis">
+						<ul class="seller-benefits">
 							<li class="seller-benefit">
 								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
 								<span class="seller-benefit-title">Easy Management</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">Super Stable Servers</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">Credit <b>never</b> Expire</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">24/7 customer support</span>
+							</li>
+						</ul>
+						<ul class="seller-benefits">
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">1 Month: <b>0.1</b> Credit</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">3 Month: <b>0.3</b> Credit</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">6 Month: <b>0.6</b> Credit</span>
+							</li>
+							<li class="seller-benefit">
+								<span class="seller-benefit-icon"><i class="fas fa-check"></i></span>
+								<span class="seller-benefit-title">12 Month: <b>1</b> Credit</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 			<!-- Become a Seller Stop -->
+
+			<!-- Credits Start -->
+			<section class="credits-container">
+				<div class="wrapper">
+					<ul class="credits">
+						<li class="credit">
+							<div class="credit-header">
+								<h3 class="credit-header-title">10 credits</h3>
+								<div class="credit-underline"></div>
+								<p class="credit-header-description">
+									99.95% UPTIME <br />
+									<b>Top performance at an affordable price</b>
+								</p>
+							</div>
+							<div class="credit-footer">
+								<p>Only at:</p>
+								<h1 class="credit-price">&dollar;220</h1>
+								<a href="#" class="credit-cta">order now!</a>
+							</div>
+						</li>
+						<li class="credit">
+							<div class="credit-header">
+								<h3 class="credit-header-title">20 credits</h3>
+								<div class="credit-underline"></div>
+								<p class="credit-header-description">
+									99.95% UPTIME <br />
+									<b>Top performance at an affordable price</b>
+								</p>
+							</div>
+							<div class="credit-footer">
+								<p>Only at:</p>
+								<h1 class="credit-price">&dollar;420</h1>
+								<a href="#" class="credit-cta">order now!</a>
+							</div>
+						</li>
+						<li class="credit">
+							<div class="credit-header">
+								<h3 class="credit-header-title">35 credits</h3>
+								<div class="credit-underline"></div>
+								<p class="credit-header-description">
+									99.95% UPTIME <br />
+									<b>Top performance at an affordable price</b>
+								</p>
+							</div>
+							<div class="credit-footer">
+								<p>Only at:</p>
+								<h1 class="credit-price">&dollar;700</h1>
+								<a href="#" class="credit-cta">order now!</a>
+							</div>
+						</li>
+						<li class="credit">
+							<div class="credit-header">
+								<h3 class="credit-header-title">50 credits</h3>
+								<div class="credit-underline"></div>
+								<p class="credit-header-description">
+									99.95% UPTIME <br />
+									<b>Top performance at an affordable price</b>
+								</p>
+							</div>
+							<div class="credit-footer">
+								<p>Only at:</p>
+								<h1 class="credit-price">&dollar;950</h1>
+								<a href="#" class="credit-cta">order now!</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Credits Stop -->
+
+			<!-- Support Ticket Start -->
+			<section class="support-ticket-container">
+				<div class="wrapper support-ticket-content">
+					<div class="support-image">
+						<i class="fas fa-users"></i>
+					</div>
+					<div class="support-content">
+						<a href="#">open <br />a support ticket</a>
+					</div>
+				</div>
+			</section>
+			<!-- Support Ticket Stop -->
 		</main>
 
-		<footer></footer>
+		<footer>
+			<ul class="footer-list">
+				<li class="footer-item about">
+					<h1 class="footer-item-title">about us</h1>
+					<p class="footer-item description">
+						GEMOTT is the best IPTV subscription service Provider of stable IPTV service to any
+						device Including Smart TVs, PC Macbook, Mobile Devices, Tv Boxes, Apple TV, STBs and
+						more.
+					</p>
+					<a href="#" class="footer-cta-link">get in touch</a>
+				</li>
+				<li class="footer-item support">
+					<h1 class="footer-item-title">support</h1>
+					<ul class="footer-links">
+						<li class="footer-link"><a href="#">knowledge base</a></li>
+						<li class="footer-link"><a href="#">channel list</a></li>
+						<li class="footer-link"><a href="#">my account</a></li>
+						<li class="footer-link"><a href="#">support</a></li>
+					</ul>
+				</li>
+				<li class="footer-item services">
+					<h1 class="footer-item-title">Services</h1>
+					<ul class="footer-links">
+						<li class="footer-link"><a href="#">subscriptions</a></li>
+						<li class="footer-link"><a href="#">resellers</a></li>
+						<li class="footer-link"><a href="#">affiliate</a></li>
+						<li class="footer-link"><a href="#">FAQ</a></li>
+					</ul>
+				</li>
+				<li class="footer-item services">
+					<h1 class="footer-item-title">Company</h1>
+					<ul class="footer-links">
+						<li class="footer-link"><a href="#">terms of service</a></li>
+						<li class="footer-link"><a href="#">privacy policy</a></li>
+						<li class="footer-link"><a href="#">refund policy</a></li>
+						<li class="footer-link"><a href="#">contact us</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="footer-base">&copy; 2023 Kite GEMOTT.</div>
+		</footer>
 	</body>
 </html>
