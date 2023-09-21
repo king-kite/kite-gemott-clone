@@ -12,46 +12,56 @@
 		<header>
 			<!-- Topbar start -->
 			<div class="topbar">
-				<span class="topbar-icon">
-					<i class="fas fa-user"></i>
-				</span>
-				<span class="topbar-icon">
-					<i class="fas fa-shopping-cart"></i>
-				</span>
-				<span class="topbar-icon">
-					<i class="fas fa-bars"></i>
-				</span>
+				<div class="topbar-content wrapper">
+					<span class="topbar-icon">
+						<i class="fas fa-user"></i>
+					</span>
+					<span class="topbar-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</span>
+					<span id="open-menu-button" class="topbar-icon open-menu-icon">
+						<i class="fas fa-bars"></i>
+					</span>
+				</div>
 			</div>
 			<!-- Topbar stop -->
 
 			<!-- Navbar Start -->
 			<nav class="navbar">
-				<h1 class="logo">kite gemott</h1>
-				<div class="menu-container">
-					<div class="menu">
-						<form class="search-form" method="get">
-							<div class="search-input-container">
-								<input type="search" name="search" id="search" />
-								<button type="submit">
-									<i class="fas fa-search"></i>
-								</button>
+				<div class="navbar-content wrapper">
+					<h1 class="logo">kite gemott</h1>
+					<div id="menu-container" class="menu-container">
+						<div id="menu" class="menu">
+							<form class="search-form" method="get">
+								<div class="search-input-container">
+									<input
+										type="search"
+										name="search"
+										id="search"
+										placeholder="Enter your domain name here"
+									/>
+									<button type="submit">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</form>
+							<div id="close-menu-button" class="close-menu-button">
+								<span class="close-title">close</span>
+								<span class="close-icon">
+									<i class="fas fa-times"></i>
+								</span>
 							</div>
-						</form>
-						<div class="close-menu-button">
-							<span class="close-title">close</span>
-							<span class="close-icon">
-								<i class="fas fa-times"></i>
-							</span>
+							<ul class="menu-list">
+								<li class="menu-list-item"><a href="#">home</a></li>
+								<li class="menu-list-item"><a href="#">subscriptions</a></li>
+								<li class="menu-list-item"><a href="#">reseller</a></li>
+								<li class="menu-list-item"><a href="#">channel list</a></li>
+								<li class="menu-list-item"><a href="#">tutorial</a></li>
+								<li class="menu-list-item"><a href="#">FAQ</a></li>
+								<li class="menu-list-item"><a href="#">affiliate program</a></li>
+								<li class="menu-list-item"><a href="#">get a trial</a></li>
+							</ul>
 						</div>
-						<ul class="menu-list">
-							<li class="menu-list-item"><a href="#">home</a></li>
-							<li class="menu-list-item"><a href="#">subscriptions</a></li>
-							<li class="menu-list-item"><a href="#">reseller</a></li>
-							<li class="menu-list-item"><a href="#">channel list</a></li>
-							<li class="menu-list-item"><a href="#">tutorial</a></li>
-							<li class="menu-list-item"><a href="#">FAQ</a></li>
-							<li class="menu-list-item"><a href="#">affiliate program</a></li>
-						</ul>
 					</div>
 				</div>
 			</nav>
@@ -547,45 +557,92 @@
 		</main>
 
 		<footer>
-			<ul class="footer-list">
-				<li class="footer-item about">
-					<h1 class="footer-item-title">about us</h1>
-					<p class="footer-item description">
-						GEMOTT is the best IPTV subscription service Provider of stable IPTV service to any
-						device Including Smart TVs, PC Macbook, Mobile Devices, Tv Boxes, Apple TV, STBs and
-						more.
-					</p>
-					<a href="#" class="footer-cta-link">get in touch</a>
-				</li>
-				<li class="footer-item support">
-					<h1 class="footer-item-title">support</h1>
-					<ul class="footer-links">
-						<li class="footer-link"><a href="#">knowledge base</a></li>
-						<li class="footer-link"><a href="#">channel list</a></li>
-						<li class="footer-link"><a href="#">my account</a></li>
-						<li class="footer-link"><a href="#">support</a></li>
-					</ul>
-				</li>
-				<li class="footer-item services">
-					<h1 class="footer-item-title">Services</h1>
-					<ul class="footer-links">
-						<li class="footer-link"><a href="#">subscriptions</a></li>
-						<li class="footer-link"><a href="#">resellers</a></li>
-						<li class="footer-link"><a href="#">affiliate</a></li>
-						<li class="footer-link"><a href="#">FAQ</a></li>
-					</ul>
-				</li>
-				<li class="footer-item services">
-					<h1 class="footer-item-title">Company</h1>
-					<ul class="footer-links">
-						<li class="footer-link"><a href="#">terms of service</a></li>
-						<li class="footer-link"><a href="#">privacy policy</a></li>
-						<li class="footer-link"><a href="#">refund policy</a></li>
-						<li class="footer-link"><a href="#">contact us</a></li>
-					</ul>
-				</li>
-			</ul>
+			<div class="wrapper footer-container">
+				<ul class="footer-list">
+					<li class="footer-item about">
+						<h1 class="footer-item-title">about us</h1>
+						<p class="footer-item-description">
+							GEMOTT is the best IPTV subscription service Provider of stable IPTV service to any
+							device Including Smart TVs, PC Macbook, Mobile Devices, Tv Boxes, Apple TV, STBs and
+							more.
+						</p>
+						<a href="#" class="footer-cta">get in touch</a>
+					</li>
+					<li class="footer-item support">
+						<h1 class="footer-item-title">support</h1>
+						<ul class="footer-links">
+							<li class="footer-link"><a href="#">knowledge base</a></li>
+							<li class="footer-link"><a href="#">channel list</a></li>
+							<li class="footer-link"><a href="#">my account</a></li>
+							<li class="footer-link"><a href="#">support</a></li>
+						</ul>
+					</li>
+					<li class="footer-item services">
+						<h1 class="footer-item-title">Services</h1>
+						<ul class="footer-links">
+							<li class="footer-link"><a href="#">subscriptions</a></li>
+							<li class="footer-link"><a href="#">resellers</a></li>
+							<li class="footer-link"><a href="#">affiliate</a></li>
+							<li class="footer-link"><a href="#">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="footer-item services">
+						<h1 class="footer-item-title">Company</h1>
+						<ul class="footer-links">
+							<li class="footer-link"><a href="#">terms of service</a></li>
+							<li class="footer-link"><a href="#">privacy policy</a></li>
+							<li class="footer-link"><a href="#">refund policy</a></li>
+							<li class="footer-link"><a href="#">contact us</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 			<div class="footer-base">&copy; 2023 Kite GEMOTT.</div>
 		</footer>
+
+		<script>
+			const menuContainer = document.querySelector('#menu-container');
+			const openMenuBtn = document.querySelector('#open-menu-button');
+			const closeMenuBtn = document.querySelector('#close-menu-button');
+
+			// A function to close the menu
+			function closeMenu() {
+				menuContainer.classList.remove('show');
+				// close the menu
+				// Add the scroll back in for mobile and medium screens
+				const body = document.querySelector('body');
+				body.classList.remove('overflow-y-hidden', 'lg:overflow-y-auto');
+			}
+
+			// Open the menu container
+			openMenuBtn.addEventListener('click', function () {
+				menuContainer.classList.add('show');
+
+				// Remove the scroll from the body element for mobile and medium screens
+				const body = document.querySelector('body');
+				body.classList.add('overflow-y-hidden', 'lg:overflow-y-auto');
+			});
+
+			// Close the menu container
+			closeMenuBtn.addEventListener('click', function () {
+				closeMenu();
+			});
+
+			// Close the menu container on outside click
+			// i.e. if the click does not container the div.menu. element
+			menuContainer.addEventListener('click', function (e) {
+				if (e.target.classList.contains('menu-container')) {
+					closeMenu();
+				}
+			});
+
+			// Close the menu if any of the menu-items are clicked
+			const menuItems = document.querySelectorAll('.menu-list-item');
+			menuItems.forEach((item) => {
+				item.addEventListener('click', function () {
+					closeMenu();
+				});
+			});
+		</script>
 	</body>
 </html>

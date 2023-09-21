@@ -9,37 +9,106 @@
 }
 
 body {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-		Verdana, sans-serif;
+	font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Navigation Start */
+
 header {
-	@apply flex flex-col-reverse w-full;
+	@apply flex flex-col-reverse w-full lg:flex-col;
 }
 
 header .topbar {
-	@apply border-0 border-t border-gray-500 border-opacity-50 border-solid flex justify-center py-4;
+	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-4 md:border-b md:border-t-0;
+}
+
+header .topbar-content {
+	@apply flex justify-center lg:justify-end;
 }
 
 header .topbar .topbar-icon {
-	@apply cursor-pointer duration-300 mx-3 text-lg text-gray-400 transform;
+	@apply cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform;
 }
 
 header .topbar .topbar-icon:hover {
 	@apply scale-105 text-gray-700;
 }
 
-.navbar {
-	@apply flex justify-center py-4;
+.topbar-icon.open-menu-icon {
+	@apply lg:hidden;
 }
 
-.navbar .menu-container {
-	@apply hidden;
+.navbar {
+	@apply py-4;
+}
+
+.navbar-content {
+	@apply flex justify-center;
 }
 
 .navbar .logo {
 	@apply font-semibold outline-1 outline-gray-100 outline-dotted text-purple-800 text-3xl uppercase;
 }
+
+.navbar .menu-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	@apply duration-500 opacity-0 fixed top-0 left-0 h-full w-full z-[-100] lg:z-0 lg:opacity-100 lg:duration-0 lg:static lg:h-auto lg:w-auto lg:bg-transparent;
+}
+
+.navbar .menu-container.show {
+	@apply opacity-100 z-[100];
+}
+
+.menu-container .menu {
+	@apply bg-gray-100 duration-500 h-full ml-auto transition transform translate-x-full opacity-0 w-2/3 md:w-1/2 lg:bg-transparent;
+}
+
+.menu-container.show .menu {
+	@apply translate-x-0 opacity-100;
+}
+
+.menu-container .menu {
+	@apply lg:bg-transparent lg:flex lg:items-center lg:duration-0 lg:translate-x-0 lg:opacity-100 lg:h-auto lg:w-auto lg:transition-none lg:transform-none;
+}
+
+.search-form {
+	@apply px-2 py-6 lg:p-0 lg:hidden;
+}
+
+.search-form .search-input-container {
+	@apply bg-white border border-gray-500 border-solid flex items-center pr-2 rounded-sm;
+}
+
+.search-input-container input {
+	@apply border-none outline-none h-full p-2 placeholder-gray-600 text-gray-800 text-sm w-full;
+}
+
+.search-input-container button {
+	@apply bg-transparent h-full border-none cursor-pointer px-1 py-2 text-gray-800 text-xs;
+}
+
+.menu .close-menu-button {
+	@apply bg-cyan-700 capitalize cursor-pointer flex items-center justify-between px-2 py-3 text-gray-100 text-sm lg:hidden;
+}
+
+.menu .menu-list {
+	@apply list-none lg:flex lg:items-center;
+}
+
+.menu-list .menu-list-item {
+	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:mx-1 lg:border-0;
+}
+
+.menu-list-item a {
+	@apply block duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center lg:text-xs;
+}
+
+.menu-list-item a:hover {
+	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-red-600;
+}
+
+/* Navigation Stop */
 
 /* Common Start */
 
@@ -77,7 +146,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .hero-tag-info {
-	@apply bg-orange-300 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-700;
+	@apply bg-orange-400 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-800;
 }
 
 .hero-description {
@@ -133,11 +202,11 @@ header .topbar .topbar-icon:hover {
 }
 
 .pricings {
-	@apply flex flex-col gap-6 list-none my-3 py-4 w-full;
+	@apply grid grid-cols-1 gap-6 list-none my-3 py-4 w-full md:gap-4 md:grid-cols-2 lg:gap-2 lg:grid-cols-4;
 }
 
 .pricing {
-	@apply bg-white border border-gray-300 p-4 rounded;
+	@apply bg-white border border-gray-300 p-4 rounded w-full;
 }
 
 .pricing-title {
@@ -261,7 +330,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .features {
-	@apply flex flex-col gap-3 list-none my-4 w-full;
+	@apply grid grid-cols-1 gap-3 list-none my-4 w-full md:grid-cols-2 lg:grid-cols-3;
 }
 
 .feature {
@@ -293,15 +362,19 @@ header .topbar .topbar-icon:hover {
 }
 
 .become-seller-content {
-	@apply px-4;
+	@apply px-4 md:flex md:items-center;
 }
 
 .become-seller-image {
-	@apply h-[300px] mx-auto w-[350px];
+	@apply h-[300px] mx-auto max-w-[350px] w-full md:w-1/2;
 }
 
 .become-seller-image img {
 	@apply h-full w-full;
+}
+
+.become-seller-data {
+	@apply md:w-1/2;
 }
 
 .become-seller-data .container-title,
@@ -310,11 +383,11 @@ header .topbar .topbar-icon:hover {
 }
 
 .seller-benefits {
-	@apply list-none my-2;
+	@apply list-none my-2 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-4 md:my-4;
 }
 
 .seller-benefit {
-	@apply flex items-center justify-start text-left text-sm text-gray-700 my-3;
+	@apply flex items-center justify-start text-left text-sm text-gray-700 my-3 md:my-0;
 }
 
 .seller-benefit-icon {
@@ -330,7 +403,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .credits {
-	@apply flex flex-col gap-5 list-none w-full;
+	@apply grid grid-cols-1 gap-5 list-none w-full md:gap-4 md:grid-cols-2 lg:gap-2 lg:grid-cols-4;
 }
 
 .credit {
@@ -410,3 +483,55 @@ header .topbar .topbar-icon:hover {
 }
 
 /* Support Ticket Stop */
+
+/* Footer Start */
+
+footer {
+	@apply bg-gray-800;
+}
+
+.footer-container {
+	@apply py-8;
+}
+
+.footer-list {
+	@apply list-none gap-3 grid grid-cols-1 md:grid-cols-2 lg:gap-2 lg:grid-cols-4;
+}
+
+.footer-item-title {
+	@apply capitalize mb-3 text-3xl text-gray-200;
+}
+
+.footer-item-description {
+	@apply my-2 text-gray-300 text-sm;
+}
+
+.footer-cta {
+	@apply bg-red-500 cursor-pointer duration-500 inline-block my-3 px-6 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
+}
+
+.footer-cta:hover {
+	@apply bg-red-600;
+}
+
+.footer-links {
+	@apply list-none my-4;
+}
+
+.footer-link {
+	@apply my-2;
+}
+
+.footer-link a {
+	@apply capitalize text-gray-300 text-sm no-underline;
+}
+
+.footer-link a:hover {
+	@apply underline;
+}
+
+.footer-base {
+	@apply bg-gray-900 py-3 tracking-tight text-sm text-gray-100 text-center;
+}
+
+/* Footer Stop */
