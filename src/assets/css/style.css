@@ -225,6 +225,13 @@ header .topbar .topbar-icon:hover {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .navbar-content {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .navbar .logo {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -429,8 +436,8 @@ header .topbar .topbar-icon:hover {
 
 @media (min-width: 1024px) {
   .menu-list .menu-list-item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     border-width: 0px;
   }
 }
