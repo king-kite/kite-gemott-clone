@@ -72,22 +72,6 @@ header .topbar .topbar-icon:hover {
 	@apply lg:bg-transparent lg:flex lg:items-center lg:duration-0 lg:translate-x-0 lg:opacity-100 lg:h-auto lg:w-auto lg:transition-none lg:transform-none;
 }
 
-.search-form {
-	@apply px-2 py-6 lg:p-0 lg:hidden;
-}
-
-.search-form .search-input-container {
-	@apply bg-white border border-gray-500 border-solid flex items-center pr-2 rounded-sm;
-}
-
-.search-input-container input {
-	@apply border-none outline-none h-full p-2 placeholder-gray-600 text-gray-800 text-sm w-full;
-}
-
-.search-input-container button {
-	@apply bg-transparent h-full border-none cursor-pointer px-1 py-2 text-gray-800 text-xs;
-}
-
 .menu .close-menu-button {
 	@apply bg-cyan-700 capitalize cursor-pointer flex items-center justify-between px-2 py-3 text-gray-100 text-sm lg:hidden;
 }
@@ -117,15 +101,15 @@ header .topbar .topbar-icon:hover {
 }
 
 .container-title {
-	@apply font-bold my-2 text-xl text-center text-gray-900;
+	@apply font-bold my-2 text-xl text-center text-gray-900 md:text-2xl lg:text-3xl;
 }
 
 .container-subtitle {
-	@apply font-normal leading-6 my-4 text-center text-lg text-gray-900;
+	@apply font-normal leading-6 my-4 text-center text-base text-gray-900 md:text-lg;
 }
 
 .container-description {
-	@apply text-sm text-gray-800 text-center;
+	@apply text-sm text-gray-800 text-center lg:text-base;
 }
 
 /* Common Stop */
@@ -142,15 +126,15 @@ header .topbar .topbar-icon:hover {
 }
 
 .hero-title {
-	@apply my-3 text-3xl text-gray-100 tracking-wide;
+	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
 }
 
 .hero-tag-info {
-	@apply bg-orange-400 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-800;
+	@apply bg-orange-400 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-800 md:my-2 lg:my-3;
 }
 
 .hero-description {
-	@apply my-1 font-medium text-sm text-gray-100;
+	@apply my-1 font-medium text-sm text-gray-100 lg:text-base;
 }
 
 .hero-services {
@@ -174,7 +158,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .hero-service-title {
-	@apply text-xs ml-1 text-gray-100;
+	@apply text-xs ml-1 text-gray-100 md:text-sm;
 }
 
 .hero-content .hero-cta {
@@ -198,7 +182,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .pricing-container .container-description {
-	@apply max-w-xs mx-auto;
+	@apply max-w-xs mx-auto lg:max-w-xl;
 }
 
 .pricings {
@@ -334,7 +318,26 @@ header .topbar .topbar-icon:hover {
 }
 
 .feature {
-	@apply bg-white border-gray-50 border border-solid duration-500 flex flex-col items-center p-5 rounded-sm transition transform w-full;
+	@apply bg-white border-gray-50 border border-solid duration-500 flex flex-col items-center p-5 relative rounded-sm transition transform w-full;
+}
+
+.feature::after,
+.feature::before {
+	content: '';
+	@apply absolute bg-red-500 duration-1000 h-[1px] w-0 transition-all transform;
+}
+
+.feature::after:hover,
+.feature::before:hover {
+	@apply w-1/4;
+}
+
+.feature::after {
+	@apply bottom-0 right-0;
+}
+
+.feature::before {
+	@apply left-0 top-0;
 }
 
 .feature:hover {
@@ -463,7 +466,7 @@ header .topbar .topbar-icon:hover {
 }
 
 .support-ticket-content {
-	@apply flex items-center py-5;
+	@apply flex items-center justify-center py-5;
 }
 
 .support-image {
