@@ -657,3 +657,13 @@ footer {
 /* Subscription Page - Hero Stop */
 
 /* ******************************** */
+
+.channel-list-image {
+	@apply h-auto w-auto;
+}
+
+.channel-list-image img {
+	@apply h-full w-full;
+}
+
+/* ******************************** */

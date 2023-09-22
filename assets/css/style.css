@@ -1880,3 +1880,15 @@ footer {
 /* Subscription Page - Hero Stop */
 
 /* ******************************** */
+
+.channel-list-image {
+  height: auto;
+  width: auto;
+}
+
+.channel-list-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ******************************** */
