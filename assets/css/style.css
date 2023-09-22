@@ -1535,6 +1535,10 @@ footer {
   }
 }
 
+.footer-item.about {
+  padding-right: 0.5rem;
+}
+
 .footer-item-title {
   margin-bottom: 0.75rem;
   font-size: 1.875rem;
