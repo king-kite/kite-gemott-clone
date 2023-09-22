@@ -53,7 +53,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .navbar .logo {
-	@apply font-semibold outline-1 outline-gray-100 outline-dotted text-purple-800 text-3xl uppercase;
+	@apply font-black outline-2 outline-gray-100 outline-dotted text-red-600 text-3xl uppercase;
 }
 
 .navbar .menu-container {
@@ -673,5 +673,19 @@ footer {
 }
 
 /* Channel List Page Stop */
+
+/* ******************************** */
+
+/* Affiliate Program Page Start */
+
+.get-started-container.affiliate-program {
+	@apply bg-red-600;
+}
+
+.get-started-container.affiliate-program .get-started-cta {
+	@apply capitalize;
+}
+
+/* Affiliate Program Page Stop */
 
 /* ******************************** */

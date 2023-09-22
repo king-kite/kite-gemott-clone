@@ -225,12 +225,12 @@ header .topbar .topbar-icon:hover {
 .navbar .logo {
   font-size: 1.875rem;
   line-height: 2.25rem;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity));
+  color: rgb(220 38 38 / var(--tw-text-opacity));
   outline-style: dotted;
-  outline-width: 1px;
+  outline-width: 2px;
   outline-color: #f3f4f6;
 }
 
@@ -1899,5 +1899,20 @@ footer {
 }
 
 /* Channel List Page Stop */
+
+/* ******************************** */
+
+/* Affiliate Program Page Start */
+
+.get-started-container.affiliate-program {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.get-started-container.affiliate-program .get-started-cta {
+  text-transform: capitalize;
+}
+
+/* Affiliate Program Page Stop */
 
 /* ******************************** */
