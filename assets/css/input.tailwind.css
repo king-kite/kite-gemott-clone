@@ -678,6 +678,55 @@ footer {
 
 /* Affiliate Program Page Start */
 
+/* Affiliate Section Start */
+
+.affiliate-container {
+	@apply py-16;
+}
+
+.affiliate-content {
+	@apply md:flex md:flex-row-reverse md:items-center;
+}
+
+.affiliate-data .container-title {
+	@apply text-gray-900;
+}
+
+.affiliate-data .container-subtitle {
+	@apply text-gray-800 md:text-base;
+}
+
+.affiliate-data .container-description {
+	@apply mt-3 lg:text-sm;
+}
+
+.affiliate-image {
+	@apply h-[300px] mx-auto max-w-[350px] w-full md:pl-2 md:w-1/2 lg:pl-3;
+}
+
+.affiliate-image img {
+	@apply h-full w-full;
+}
+
+.affiliate-data {
+	@apply md:w-1/2 md:pr-2;
+}
+
+.affiliate-data .container-title,
+.affiliate-data .container-description {
+	@apply text-left;
+}
+
+.affiliate-content .affiliate-cta {
+	@apply bg-red-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
+}
+
+.affiliate-content .affiliate-cta:hover {
+	@apply border-red-500 text-red-600 bg-transparent;
+}
+
+/* Affiliate Section Stop */
+
 .get-started-container.affiliate-program {
 	@apply bg-red-600;
 }
@@ -685,6 +734,103 @@ footer {
 .get-started-container.affiliate-program .get-started-cta {
 	@apply capitalize;
 }
+
+/* How Steps Start */
+
+.how-steps-container {
+	@apply bg-red-600 py-8;
+}
+
+.how-steps-container .how-steps {
+	@apply list-none sm:flex sm:items-center sm:justify-between;
+}
+
+.how-steps .how-step {
+	@apply flex items-center my-3 w-full sm:my-0;
+}
+
+.how-step .how-step-icon {
+	@apply text-3xl text-gray-900;
+}
+
+.how-step .how-step-title {
+	@apply ml-3 text-sm text-gray-100;
+}
+
+/* How Steps Stop */
+
+/* How does it work Start */
+
+.how-does-it-work-container {
+	@apply py-16;
+}
+
+.how-does-it-work-table {
+	@apply overflow-x-scroll w-full;
+}
+
+.how-does-it-work-table table {
+	@apply border-collapse overflow-x-auto text-sm text-gray-800 w-full;
+}
+
+.how-does-it-work-table table th,
+.how-does-it-work-table table td {
+	@apply border border-gray-300 border-solid p-2 text-left;
+}
+
+.how-does-it-work-table table tbody br:nth-child(even) {
+	@apply bg-gray-200;
+}
+
+/* How does it work Stop */
+
+/* How you do it Start */
+
+.how-you-do-it-container {
+	@apply bg-teal-950 py-16;
+}
+
+.how-you-do-it-container .container-title {
+	@apply text-gray-100;
+}
+
+.how-you-do-it-container .how-you-do-it-list {
+	@apply list-none my-3 grid gap-4 grid-cols-1 md:gap-5 md:grid-cols-2 lg:gap-6;
+}
+
+.how-you-do-it-container .how-you-do-it-item {
+	@apply bg-gray-100 flex flex-col items-center justify-center p-4;
+}
+
+.how-you-do-it-item.item-1 .how-you-do-it-item-icon {
+	@apply text-green-600;
+}
+.how-you-do-it-item.item-2 .how-you-do-it-item-icon {
+	@apply text-red-500;
+}
+
+.how-you-do-it-container .how-you-do-it-item-icon {
+	@apply flex items-center justify-center;
+}
+
+.how-you-do-it-container .how-you-do-it-item-icon span {
+	@apply bg-gray-800 font-bold flex h-10 items-center justify-center rounded-full text-xl w-10 md:h-12 md:w-12;
+}
+
+.how-you-do-it-container .how-you-do-it-item-title {
+	@apply font-medium my-3 text-center text-gray-700 text-base md:text-lg lg:text-xl;
+}
+
+.how-you-do-it-container .how-you-do-it-list-items {
+	list-style-type: circle;
+	@apply list-inside;
+}
+
+.how-you-do-it-item .how-you-do-it-list-item {
+	@apply my-1 text-gray-700 text-sm lg:text-base;
+}
+
+/* How you do it Stop */
 
 /* Affiliate Program Page Stop */
 
