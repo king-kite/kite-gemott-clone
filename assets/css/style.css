@@ -200,8 +200,8 @@ header .topbar .topbar-icon:hover {
 }
 
 @media (min-width: 1024px) {
-  .topbar-icon.open-menu-icon {
-    display: none;
+  header .topbar .topbar-icon.open-menu-icon {
+    display: none !important;
   }
 }
 

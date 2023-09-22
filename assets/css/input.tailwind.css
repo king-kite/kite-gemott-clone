@@ -40,8 +40,8 @@ header .topbar .topbar-icon:hover {
 	@apply absolute bg-white border border-gray-500 border-solid h-5 inline-flex -right-3 -top-3 items-center justify-center rounded-full w-5;
 }
 
-.topbar-icon.open-menu-icon {
-	@apply lg:hidden;
+header .topbar .topbar-icon.open-menu-icon {
+	@apply lg:!hidden;
 }
 
 .navbar {
