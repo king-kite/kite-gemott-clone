@@ -20,7 +20,7 @@ header {
 }
 
 header .topbar {
-	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-4 md:border-b md:border-t-0;
+	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-4 md:border-b md:border-t-0 lg:pb-5 lg:pt-6;
 }
 
 header .topbar-content {
@@ -28,11 +28,16 @@ header .topbar-content {
 }
 
 header .topbar .topbar-icon {
-	@apply cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform;
+	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform;
 }
 
 header .topbar .topbar-icon:hover {
 	@apply scale-105 text-gray-700;
+}
+
+.topbar-icon .topbar-icon-notification {
+	font-size: 10px;
+	@apply absolute bg-white border border-gray-500 border-solid h-5 inline-flex -right-3 -top-3 items-center justify-center rounded-full w-5;
 }
 
 .topbar-icon.open-menu-icon {
@@ -342,6 +347,31 @@ header .topbar .topbar-icon:hover {
 
 .feature:hover {
 	@apply scale-105;
+}
+
+/* Just for diff colors */
+.feature:first-child .feature-image {
+	@apply text-red-600 border-red-600;
+}
+
+.feature:nth-child(2) .feature-image {
+	@apply text-green-600 border-green-600;
+}
+
+.feature:nth-child(3) .feature-image {
+	@apply text-yellow-600 border-yellow-600;
+}
+
+.feature:nth-child(4) .feature-image {
+	@apply text-purple-600 border-purple-600;
+}
+
+.feature:nth-child(5) .feature-image {
+	@apply text-red-600 border-red-600;
+}
+
+.feature:last-child .feature-image {
+	@apply text-blue-600 border-blue-600;
 }
 
 .feature-image {
