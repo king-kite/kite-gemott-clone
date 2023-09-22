@@ -358,8 +358,8 @@ header .topbar .topbar-icon:hover {
 
 @media (min-width: 1024px) {
   .menu-list .menu-list-item {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     border-width: 0px;
   }
 
@@ -389,8 +389,8 @@ header .topbar .topbar-icon:hover {
   .menu-list-item a {
     padding: 0px;
     text-align: center;
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     font-weight: 500;
   }
 }
