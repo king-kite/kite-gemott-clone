@@ -578,6 +578,10 @@ footer {
 	@apply capitalize text-gray-300 text-sm no-underline xl:text-base;
 }
 
+.footer-link.active a {
+	@apply text-red-500;
+}
+
 .footer-link a:hover {
 	@apply underline;
 }
