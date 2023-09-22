@@ -565,6 +565,7 @@ header .topbar .topbar-icon:hover {
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
@@ -2318,12 +2319,14 @@ footer {
 .how-does-it-work-table {
   width: 100%;
   overflow-x: auto;
+  border-radius: 0.125rem;
 }
 
 .how-does-it-work-table table {
   width: 100%;
   border-collapse: collapse;
   overflow-x: auto;
+  border-radius: 0.125rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -2631,20 +2634,20 @@ footer {
 .refund-hero-content {
   max-width: 42rem;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .refund-hero-content {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .refund-hero-content {
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -2675,6 +2678,103 @@ footer {
   .refund-hero-title {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+.refund-container {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .refund-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .refund-container {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.refund-container .refund-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .refund-container .refund-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .refund-container .refund-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .refund-container .refund-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.refund-container .refund-underline {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.refund-underline .big-red {
+  height: 0.25rem;
+  width: 20%;
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
+}
+
+.refund-underline .small-gray {
+  height: 0.125rem;
+  width: 80%;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+}
+
+.refund-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .refund-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .refund-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

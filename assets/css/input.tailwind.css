@@ -125,7 +125,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .container-description {
-	@apply text-sm text-gray-800 text-center lg:text-base xl:text-lg;
+	@apply font-normal text-sm text-gray-800 text-center lg:text-base xl:text-lg;
 }
 
 .red-text {
@@ -775,11 +775,11 @@ footer {
 }
 
 .how-does-it-work-table {
-	@apply overflow-x-auto w-full;
+	@apply overflow-x-auto rounded-sm w-full;
 }
 
 .how-does-it-work-table table {
-	@apply border-collapse overflow-x-auto text-sm text-gray-800 w-full xl:text-base;
+	@apply border-collapse rounded-sm overflow-x-auto text-sm text-gray-800 w-full xl:text-base;
 }
 
 .how-does-it-work-table table th,
@@ -856,7 +856,7 @@ footer {
 }
 
 .faqs-container {
-	@apply bg-gray-50 py-16
+	@apply bg-gray-50 py-16;
 }
 
 .faqs-list {
@@ -925,11 +925,35 @@ footer {
 }
 
 .refund-hero-content {
-	@apply max-w-2xl py-6 md:py-8 lg:py-10 xl:max-w-4xl;
+	@apply max-w-2xl pt-6 pb-8 md:pt-8 md:pb-10 lg:pt-10 lg:pb-12 xl:max-w-4xl;
 }
 
 .refund-hero-title {
 	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
+}
+
+.refund-container {
+	@apply py-3 md:py-4 lg:py-5;
+}
+
+.refund-container .refund-title {
+	@apply mb-3 text-gray-800 text-lg md:text-xl lg:text-2xl xl:text-3xl;
+}
+
+.refund-container .refund-underline {
+	@apply flex items-center my-3 w-full;
+}
+
+.refund-underline .big-red {
+	@apply bg-red-600 bg-opacity-70 h-1 rounded-l-sm w-1/5;
+}
+
+.refund-underline .small-gray {
+	@apply bg-gray-400 bg-opacity-30 h-0.5 w-4/5;
+}
+
+.refund-description {
+	@apply font-normal my-4 text-sm text-gray-800 text-left lg:text-base xl:text-lg;
 }
 
 /* Refund and Cancellation Policy Page Stop */
