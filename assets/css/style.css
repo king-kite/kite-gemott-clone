@@ -458,6 +458,12 @@ header .topbar .topbar-icon:hover {
   padding-right: 1rem;
 }
 
+.wrapper-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .container-title {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -524,8 +530,8 @@ header .topbar .topbar-icon:hover {
   background: url('../images/banner-ch.jpg');
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-content {
@@ -1632,11 +1638,11 @@ footer {
 /* Subscription Page - Hero Start */
 
 .subscription-hero-container {
-  background: url('../images/banner-ch.jpg');
+  background-image: url('../images/banner3.5.jpg');
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .subscription-hero-content {
