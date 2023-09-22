@@ -98,44 +98,6 @@
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1658,9 +1620,3 @@ footer {
 }
 
 /* Footer Stop */
-
-@media (min-width: 1024px) {
-  .lg\:overflow-y-auto {
-    overflow-y: auto;
-  }
-}
