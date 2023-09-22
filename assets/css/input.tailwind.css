@@ -9,8 +9,13 @@
 }
 
 body {
+	@apply bg-gray-50;
 	font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body.hide-scrollbar {
+	@apply overflow-y-hidden lg:overflow-y-auto;
 }
 
 /* Navigation Start */
@@ -20,7 +25,7 @@ header {
 }
 
 header .topbar {
-	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-4 md:border-b md:border-t-0 lg:pb-5 lg:pt-6;
+	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-5 md:border-b md:border-t-0 lg:py-6;
 }
 
 header .topbar-content {
@@ -28,7 +33,7 @@ header .topbar-content {
 }
 
 header .topbar .topbar-icon {
-	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform;
+	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform md:mx-4;
 }
 
 header .topbar .topbar-icon:hover {
@@ -45,7 +50,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .navbar {
-	@apply py-4;
+	@apply shadow-lg py-4;
 }
 
 .navbar-content {
@@ -53,7 +58,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .navbar .logo {
-	@apply font-black outline-2 outline-gray-100 outline-dotted text-red-600 text-3xl uppercase;
+	@apply font-black text-red-600 text-3xl uppercase xl:text-4xl;
 }
 
 .navbar .menu-container {
@@ -70,7 +75,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .menu-container.show .menu {
-	@apply translate-x-0 opacity-100;
+	@apply translate-x-0 opacity-100 overflow-y-auto;
 }
 
 .menu-container .menu {
@@ -86,11 +91,11 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .menu-list .menu-list-item {
-	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:mx-1 lg:last:mr-0 lg:border-0;
+	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:mx-1 lg:last:mr-0 lg:border-0 xl:mx-2;
 }
 
 .menu-list-item a {
-	@apply block duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center lg:text-sm;
+	@apply block duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center xl:text-base;
 }
 
 .menu-list-item a:hover,
@@ -112,15 +117,19 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .container-title {
-	@apply font-bold my-2 text-xl text-center text-gray-900 md:text-2xl lg:text-3xl;
+	@apply font-bold my-2 text-xl text-center text-gray-900 md:text-2xl lg:text-3xl xl:font-black xl:text-4xl;
 }
 
 .container-subtitle {
-	@apply font-normal leading-6 my-4 text-center text-base text-gray-900 md:text-lg;
+	@apply font-normal leading-6 my-4 text-center text-base text-gray-900 md:text-lg xl:text-xl;
 }
 
 .container-description {
-	@apply text-sm text-gray-800 text-center lg:text-base;
+	@apply text-sm text-gray-800 text-center lg:text-base xl:text-lg;
+}
+
+.red-text {
+	@apply text-red-600;
 }
 
 /* Common Stop */
@@ -137,7 +146,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .hero-title {
-	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
+	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl xl:text-6xl;
 }
 
 .hero-tag-info {
@@ -145,7 +154,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .hero-description {
-	@apply my-1 font-medium text-sm text-gray-100 lg:text-base;
+	@apply my-1 font-medium text-sm text-gray-100 lg:text-base xl:text-lg;
 }
 
 .hero-services {
@@ -153,7 +162,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .hero-service {
-	@apply flex items-center px-3 border-0 border-r border-gray-100 border-solid;
+	@apply flex items-center px-3 border-0 border-r border-gray-100 border-solid xl:px-5;
 }
 
 .hero-service:first-child {
@@ -165,23 +174,23 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .hero-service-icon {
-	@apply bg-gray-100 flex h-8 items-center justify-center rounded-full text-gray-700 w-8;
+	@apply bg-gray-100 flex h-8 items-center justify-center rounded-full text-gray-700 w-8 xl:h-12 xl:w-12;
 }
 
 .hero-service-title {
-	@apply text-xs ml-1 text-gray-100 md:text-sm;
+	@apply text-xs ml-1 text-gray-100 md:text-sm lg:ml-2 xl:text-base;
 }
 
 .hero-content .hero-cta {
-	@apply bg-green-800 duration-100 transition-all transform capitalize inline-block mt-3 px-10 py-4 text-center text-gray-100 text-sm no-underline rounded-sm;
+	@apply bg-green-800 duration-100 transition-all transform capitalize inline-block mt-3 px-10 py-4 text-center text-gray-100 text-sm no-underline rounded-sm xl:text-base;
 }
 
 .hero-content .hero-cta .arrow-icon {
-	@apply hidden duration-1000 transition-all transform ease-in-out text-sm;
+	@apply scale-0 opacity-0 duration-1000 transition-all transform ease-in-out text-sm;
 }
 
 .hero-content .hero-cta:hover .arrow-icon {
-	@apply inline ml-2;
+	@apply scale-100 opacity-100 ml-2;
 }
 
 /* Hero Section Stop */
@@ -546,7 +555,7 @@ footer {
 }
 
 .footer-item-description {
-	@apply my-2 text-gray-300 text-sm;
+	@apply my-2 text-gray-300 text-sm xl:text-base;
 }
 
 .footer-cta {
@@ -566,7 +575,7 @@ footer {
 }
 
 .footer-link a {
-	@apply capitalize text-gray-300 text-sm no-underline;
+	@apply capitalize text-gray-300 text-sm no-underline xl:text-base;
 }
 
 .footer-link a:hover {
@@ -574,7 +583,7 @@ footer {
 }
 
 .footer-base {
-	@apply bg-gray-900 py-3 tracking-tight text-sm text-gray-100 text-center;
+	@apply bg-gray-900 py-3 tracking-tight text-sm text-gray-100 text-center xl:text-base;
 }
 
 /* Footer Stop */
@@ -598,7 +607,7 @@ footer {
 }
 
 .stx-ott h1 {
-	@apply font-extrabold text-gray-100 text-3xl md:text-4xl;
+	@apply font-extrabold text-gray-100 text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
 }
 
 .stx-ott h5 {
@@ -611,11 +620,11 @@ footer {
 }
 
 .subscription-hero-content .title-container .title {
-	@apply col-span-2 p-3 flex items-center;
+	@apply col-span-2 p-3 flex items-center lg:p-4 xl:p-5;
 }
 
 .subscription-hero-content .title-container .title h3 {
-	@apply font-bold text-lg text-gray-100 uppercase sm:text-xl md:text-2xl lg:text-3xl;
+	@apply font-bold text-lg text-gray-100 uppercase sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
 }
 
 .subscription-hero-content .subtitle {
@@ -635,11 +644,11 @@ footer {
 }
 
 .subscription-hero-content .iptv-service-icon {
-	@apply text-xs text-gray-800;
+	@apply text-xs text-gray-800 lg:text-sm;
 }
 
 .subscription-hero-content .iptv-service-title {
-	@apply ml-2 text-sm text-gray-700;
+	@apply ml-2 text-sm text-gray-700 xl:text-base;
 }
 
 .subscription-hero-content .subscription-cta-container {
@@ -689,19 +698,19 @@ footer {
 }
 
 .affiliate-data .container-title {
-	@apply text-gray-900;
+	@apply text-gray-900 xl:text-4xl;
 }
 
 .affiliate-data .container-subtitle {
-	@apply text-gray-800 md:text-base;
+	@apply text-gray-800 md:text-base xl:text-lg;
 }
 
 .affiliate-data .container-description {
-	@apply mt-3 lg:text-sm;
+	@apply mt-3 lg:text-sm xl:text-base;
 }
 
 .affiliate-image {
-	@apply h-[300px] mx-auto max-w-[350px] w-full md:pl-2 md:w-1/2 lg:pl-3;
+	@apply h-[250px] mx-auto max-w-[350px] mb-12 w-full md:mb-2 md:pl-2 md:w-1/2 lg:h-[200px] lg:pl-3;
 }
 
 .affiliate-image img {
@@ -750,11 +759,11 @@ footer {
 }
 
 .how-step .how-step-icon {
-	@apply text-3xl text-gray-900;
+	@apply text-3xl text-gray-900 xl:text-4xl;
 }
 
 .how-step .how-step-title {
-	@apply ml-3 text-sm text-gray-100;
+	@apply ml-3 text-sm text-gray-100 xl:text-base;
 }
 
 /* How Steps Stop */
@@ -766,11 +775,11 @@ footer {
 }
 
 .how-does-it-work-table {
-	@apply overflow-x-scroll w-full;
+	@apply overflow-x-auto w-full;
 }
 
 .how-does-it-work-table table {
-	@apply border-collapse overflow-x-auto text-sm text-gray-800 w-full;
+	@apply border-collapse overflow-x-auto text-sm text-gray-800 w-full xl:text-base;
 }
 
 .how-does-it-work-table table th,
@@ -778,7 +787,11 @@ footer {
 	@apply border border-gray-300 border-solid p-2 text-left;
 }
 
-.how-does-it-work-table table tbody br:nth-child(even) {
+.how-does-it-work-table table thead tr {
+	@apply bg-gray-200;
+}
+
+.how-does-it-work-table table tbody tr:nth-child(even) {
 	@apply bg-gray-200;
 }
 
@@ -833,5 +846,92 @@ footer {
 /* How you do it Stop */
 
 /* Affiliate Program Page Stop */
+
+/* ******************************** */
+
+/* Frequently Asked Questions Page Start */
+
+.faqs-header-container {
+	@apply bg-gray-100 py-16;
+}
+
+.faqs-container {
+	@apply bg-gray-50 py-16
+}
+
+.faqs-list {
+	@apply list-none max-w-4xl mx-auto;
+}
+
+.faq-header {
+	@apply border-0 border-b border-solid cursor-pointer flex justify-between py-6;
+	border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.faq-header:hover .title {
+	@apply text-red-600;
+}
+
+.faq-header .title {
+	@apply text-gray-800 font-normal select-none text-sm md:text-base xl:text-lg;
+}
+
+.arrows svg:last-child {
+	@apply hidden;
+}
+
+.faq-content .description {
+	@apply hidden text-gray-700 leading-7 p-0 text-left text-sm md:text-base;
+}
+
+.faq.show .faq-content {
+	@apply border-0 border-b border-solid pb-4;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.faq.show .faq-content .description {
+	@apply block;
+}
+
+.faq.show .faq-header .title {
+	@apply text-red-600;
+}
+
+.faq.show .arrows {
+	@apply rotate-180;
+}
+
+.faq.show .arrows svg:first-child {
+	@apply hidden;
+}
+
+.faq.show .arrows svg:last-child {
+	@apply block;
+}
+
+.faq.show .faq-header {
+	@apply border-b-0;
+}
+
+/* Frequently Asked Questions Page Stop */
+
+/* ******************************** */
+
+/* Refund and Cancellation Policy Page Start */
+
+.refund-hero-container {
+	background: url('../images/term_bg_1.jpg');
+	@apply bg-gray-100 bg-cover bg-center;
+}
+
+.refund-hero-content {
+	@apply max-w-2xl py-6 md:py-8 lg:py-10 xl:max-w-4xl;
+}
+
+.refund-hero-title {
+	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
+}
+
+/* Refund and Cancellation Policy Page Stop */
 
 /* ******************************** */
