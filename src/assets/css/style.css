@@ -400,6 +400,10 @@ header .topbar .topbar-icon:hover {
     margin-right: 0.5rem;
     border-width: 0px;
   }
+
+  .menu-list .menu-list-item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .menu-list-item a {
