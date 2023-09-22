@@ -395,7 +395,8 @@ header .topbar .topbar-icon:hover {
   }
 }
 
-.menu-list-item a:hover {
+.menu-list-item a:hover,
+.menu-list-item.active a {
   --tw-bg-opacity: 1;
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
   font-weight: 500;
@@ -404,7 +405,8 @@ header .topbar .topbar-icon:hover {
 }
 
 @media (min-width: 1024px) {
-  .menu-list-item a:hover {
+  .menu-list-item a:hover,
+.menu-list-item.active a {
     background-color: transparent;
     --tw-text-opacity: 1;
     color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -1624,3 +1626,251 @@ footer {
 }
 
 /* Footer Stop */
+
+/* ********************************* */
+
+/* Subscription Page - Hero Start */
+
+.subscription-hero-container {
+  background: url('../images/banner-ch.jpg');
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.subscription-hero-content {
+  max-width: 36rem;
+}
+
+.stx-ott {
+  background-image: linear-gradient(128deg, #17494d 0, #17494d 50%, #f51322 50%, #f51322 100%);
+  grid-column: span 1 / span 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.stx-ott h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .stx-ott h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.stx-ott h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.subscription-hero-content .title-container {
+  border-color: #17494d;
+  margin-bottom: 0.75rem;
+  display: grid;
+  min-height: 100px;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-width: 2px;
+  border-style: solid;
+}
+
+.subscription-hero-content .title-container .title {
+  grid-column: span 2 / span 2;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.subscription-hero-content .title-container .title h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .subscription-hero-content .title-container .title h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscription-hero-content .title-container .title h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription-hero-content .title-container .title h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.subscription-hero-content .subtitle {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .subscription-hero-content .subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription-hero-content .subtitle {
+    margin-top: 0.75rem;
+  }
+}
+
+.subscription-hero-content .under-line {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 3px;
+  width: 66.666667%;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .subscription-hero-content .under-line {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription-hero-content .under-line {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.subscription-hero-content .iptv-services {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .subscription-hero-content .iptv-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription-hero-content .iptv-services {
+    margin-bottom: 0px;
+  }
+}
+
+.subscription-hero-content .iptv-service {
+  display: flex;
+  align-items: center;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+.subscription-hero-content .iptv-service-icon {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.subscription-hero-content .iptv-service-title {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.subscription-hero-content .subscription-cta-container {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .subscription-hero-content .subscription-cta-container {
+    margin-top: 0px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+.subscription-hero-content .subscription-cta {
+  margin-top: 1.5rem;
+  display: inline-block;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  border-radius: 0.125rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+  text-decoration-line: none;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.subscription-hero-content .subscription-cta:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+/* Subscription Page - Hero Stop */
+
+/* ******************************** */

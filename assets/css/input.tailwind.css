@@ -93,7 +93,8 @@ header .topbar .topbar-icon.open-menu-icon {
 	@apply block duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center lg:text-xs;
 }
 
-.menu-list-item a:hover {
+.menu-list-item a:hover,
+.menu-list-item.active a {
 	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-red-600;
 }
 
@@ -572,3 +573,82 @@ footer {
 }
 
 /* Footer Stop */
+
+/* ********************************* */
+
+/* Subscription Page - Hero Start */
+
+.subscription-hero-container {
+	background: url('../images/banner-ch.jpg');
+	@apply bg-gray-100 py-16;
+}
+
+.subscription-hero-content {
+	@apply max-w-xl;
+}
+
+.stx-ott {
+	background-image: linear-gradient(128deg, #17494d 0, #17494d 50%, #f51322 50%, #f51322 100%);
+	@apply col-span-1 flex flex-col items-center justify-center h-full p-2 text-center w-full;
+}
+
+.stx-ott h1 {
+	@apply font-extrabold text-gray-100 text-3xl md:text-4xl;
+}
+
+.stx-ott h5 {
+	@apply font-bold text-gray-100 text-lg;
+}
+
+.subscription-hero-content .title-container {
+	border-color: #17494d;
+	@apply border-2 border-solid grid grid-cols-3 mb-3 min-h-[100px] w-full;
+}
+
+.subscription-hero-content .title-container .title {
+	@apply col-span-2 p-3 flex items-center;
+}
+
+.subscription-hero-content .title-container .title h3 {
+	@apply font-bold text-lg text-gray-100 uppercase sm:text-xl md:text-2xl lg:text-3xl;
+}
+
+.subscription-hero-content .subtitle {
+	@apply font-medium italic my-1 text-gray-100 text-base md:mt-2 md:text-lg lg:mt-3;
+}
+
+.subscription-hero-content .under-line {
+	@apply h-[3px] my-1 rounded-sm bg-red-600 w-2/3 md:mb-2 lg:mb-3;
+}
+
+.subscription-hero-content .iptv-services {
+	@apply grid grid-cols-1 gap-3 list-none my-2 py-3 sm:grid-cols-2 sm:gap-4 lg:mb-0;
+}
+
+.subscription-hero-content .iptv-service {
+	@apply bg-gray-200 flex items-center p-4 rounded-sm;
+}
+
+.subscription-hero-content .iptv-service-icon {
+	@apply text-xs text-gray-800;
+}
+
+.subscription-hero-content .iptv-service-title {
+	@apply ml-2 text-sm text-gray-700;
+}
+
+.subscription-hero-content .subscription-cta-container {
+	@apply flex justify-center text-center mt-2 sm:justify-start sm:text-left sm:mt-0;
+}
+
+.subscription-hero-content .subscription-cta {
+	@apply bg-red-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
+}
+
+.subscription-hero-content .subscription-cta:hover {
+	@apply border-red-500 text-red-600 bg-transparent;
+}
+
+/* Subscription Page - Hero Stop */
+
+/* ******************************** */
