@@ -658,6 +658,12 @@ footer {
 
 /* ******************************** */
 
+/* Channel List Page Start */
+
+.channel-list-container {
+	@apply py-16;
+}
+
 .channel-list-image {
 	@apply h-auto w-auto;
 }
@@ -665,5 +671,7 @@ footer {
 .channel-list-image img {
 	@apply h-full w-full;
 }
+
+/* Channel List Page Stop */
 
 /* ******************************** */

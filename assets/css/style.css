@@ -1881,6 +1881,13 @@ footer {
 
 /* ******************************** */
 
+/* Channel List Page Start */
+
+.channel-list-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .channel-list-image {
   height: auto;
   width: auto;
@@ -1890,5 +1897,7 @@ footer {
   height: 100%;
   width: 100%;
 }
+
+/* Channel List Page Stop */
 
 /* ******************************** */
