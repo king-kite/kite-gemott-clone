@@ -58,7 +58,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .navbar .logo {
-	@apply font-black text-red-600 text-3xl uppercase xl:text-4xl;
+	@apply font-black text-red-600 text-3xl uppercase lg:text-2xl xl:text-4xl;
 }
 
 .navbar .menu-container {
@@ -130,6 +130,72 @@ header .topbar .topbar-icon.open-menu-icon {
 
 .red-text {
 	@apply text-red-600;
+}
+
+.content-hero-container {
+	background: url('../images/term_bg_1.jpg');
+	@apply bg-gray-100 bg-cover bg-center;
+}
+
+.content-hero-data {
+	@apply max-w-2xl pt-6 pb-8 md:pt-8 md:pb-10 lg:pt-10 lg:pb-12 xl:max-w-4xl;
+}
+
+.content-hero-title {
+	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
+}
+
+.content-hero-container .breadcrumbs {
+	@apply flex flex-wrap items-center list-none my-2 md:my-3 lg:my-4;
+}
+
+.content-hero-container .breadcrumb {
+	@apply max-w-[50ch] overflow-hidden mr-2 text-ellipsis whitespace-nowrap;
+}
+
+.content-hero-container .breadcrumb:first-child::before {
+	content: '';
+	display: none;
+}
+
+.content-hero-container .breadcrumb::before {
+	content: '/';
+	@apply mr-2 !no-underline;
+}
+
+.content-hero-container .breadcrumb a,
+.content-hero-container .breadcrumb::before {
+	@apply capitalize italic no-underline text-gray-100 text-sm md:tracking-wide md:text-base xl:text-lg hover:underline hover:text-red-600;
+}
+
+.content-hero-container .breadcrumb.active a,
+.content-hero-container .breadcrumb.active::before {
+	@apply not-italic text-gray-400 opacity-50;
+}
+
+.content-container,
+.content-wrapper {
+	@apply py-3 md:py-4 lg:py-5;
+}
+
+.content-container .content-title {
+	@apply mb-3 text-gray-800 text-lg md:text-xl lg:text-2xl xl:text-3xl;
+}
+
+.content-container .content-underline {
+	@apply flex items-center my-3 w-full;
+}
+
+.content-underline .big-red {
+	@apply bg-red-600 bg-opacity-70 h-1 rounded-l-sm w-1/5;
+}
+
+.content-underline .small-gray {
+	@apply bg-gray-400 bg-opacity-30 h-0.5 w-4/5;
+}
+
+.content-description {
+	@apply font-normal my-4 text-sm text-gray-800 text-left lg:text-base xl:text-lg;
 }
 
 /* Common Stop */
@@ -590,6 +656,10 @@ footer {
 	@apply bg-gray-900 py-3 tracking-tight text-sm text-gray-100 text-center xl:text-base;
 }
 
+.footer-base a {
+	@apply tracking-tight text-sm text-gray-100 hover:text-white xl:text-base;
+}
+
 /* Footer Stop */
 
 /* ********************************* */
@@ -921,45 +991,130 @@ footer {
 
 /* ******************************** */
 
-/* Refund and Cancellation Policy Page Start */
+/* Tutorial / Knowledge Base Start */
 
-.refund-hero-container {
-	background: url('../images/term_bg_1.jpg');
-	@apply bg-gray-100 bg-cover bg-center;
+.tutorial-wrapper {
+	@apply lg:max-w-5xl lg:mx-auto;
 }
 
-.refund-hero-content {
-	@apply max-w-2xl pt-6 pb-8 md:pt-8 md:pb-10 lg:pt-10 lg:pb-12 xl:max-w-4xl;
+.search-box-container {
+	background: url('../images/top_search-back.png');
+	@apply bg-gray-100 bg-cover bg-center my-4 rounded;
 }
 
-.refund-hero-title {
-	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl;
+.search-box-overlay {
+	background-color: rgba(0, 0, 0, 0.1);
+	@apply rounded;
 }
 
-.refund-container {
-	@apply py-3 md:py-4 lg:py-5;
+.search-form {
+	@apply h-full p-1 rounded-sm sm:p-4 md:p-6;
 }
 
-.refund-container .refund-title {
-	@apply mb-3 text-gray-800 text-lg md:text-xl lg:text-2xl xl:text-3xl;
+.search-form .input-container {
+	@apply bg-gray-100 flex h-8 items-center rounded px-2 sm:h-12 sm:py-2 md:h-16 md:px-4;
 }
 
-.refund-container .refund-underline {
-	@apply flex items-center my-3 w-full;
+.search-form .input-container input {
+	@apply bg-transparent border-none h-full outline-none p-0 rounded-l-sm text-xs text-gray-800 w-full placeholder:text-gray-600 sm:text-sm lg:text-base;
 }
 
-.refund-underline .big-red {
-	@apply bg-red-600 bg-opacity-70 h-1 rounded-l-sm w-1/5;
+.search-form .input-container button {
+	@apply bg-red-500 border-none capitalize h-full px-4 rounded text-gray-200 text-xs sm:text-sm sm:max-h-10 sm:px-8 lg:text-base;
 }
 
-.refund-underline .small-gray {
-	@apply bg-gray-400 bg-opacity-30 h-0.5 w-4/5;
+.tutorial-categories {
+	@apply flex flex-wrap gap-4 items-center list-none my-2 py-3 lg:gap-5;
 }
 
-.refund-description {
-	@apply font-normal my-4 text-sm text-gray-800 text-left lg:text-base xl:text-lg;
+.tutorial-category a {
+	@apply bg-white border border-gray-400 border-opacity-50 border-solid flex items-center p-4 no-underline text-gray-600 text-sm rounded-sm shadow-md uppercase hover:border-red-200 hover:scale-105 hover:duration-300 hover:transform md:tracking-wide md:text-base;
 }
 
-/* Refund and Cancellation Policy Page Stop */
+.tutorial-category a .category-title {
+	@apply inline-block ml-3;
+}
 
-/* ******************************** */
+.tutorial-articles {
+	@apply list-none pt-3;
+}
+
+.tutorial-articles li {
+	@apply my-4;
+}
+
+.tutorial-article {
+	@apply bg-white border border-gray-400 border-solid border-opacity-50 cursor-pointer duration-500 rounded p-4 flex items-start no-underline transition transform hover:scale-[1.0125] md:p-5;
+}
+
+.tutorial-article .article-icon {
+	@apply bg-gray-300 flex items-center justify-center mr-2 p-4 rounded-full text-xs text-gray-700 sm:mr-3 md:mr-4 md:text-sm;
+}
+
+.tutorial-article:hover .article-title {
+	@apply text-red-600;
+}
+
+.tutorial-article .article-title {
+	@apply mb-1 text-base text-gray-800 md:text-lg;
+}
+
+.tutorial-article .article-description {
+	@apply font-normal line-clamp-3 text-sm text-gray-700 text-left lg:text-base;
+}
+
+.tutorial-article-content {
+	@apply bg-white border border-gray-400 border-opacity-50 border-solid shadow-sm my-3 p-3 rounded;
+}
+
+.tutorial-article-content-title {
+	@apply font-medium my-2 text-gray-800 text-base lg:text-lg;
+}
+
+.tutorial-article-content-description {
+	@apply my-2 text-gray-700 text-sm lg:text-base;
+}
+
+.tutorial-article-content-list {
+	@apply list-inside;
+}
+
+.tutorial-article-content-image {
+	@apply h-auto my-2 w-full;
+}
+
+.tutorial-article-content-image img {
+	@apply h-full w-full;
+}
+
+.tutorial-article-content .question-helpful {
+	@apply flex items-center;
+}
+
+.tutorial-article-content .question-helpful h4 {
+	@apply font-medium text-base text-gray-700 md:text-lg;
+}
+
+.question-helpful .helpful-choices {
+	@apply flex items-center ml-3 list-none;
+}
+
+.question-helpful .helpful-choices .helpful-choice {
+	@apply cursor-pointer mx-2 text-sm md:text-base;
+}
+
+.helpful-choices .helpful-choice a {
+	@apply font-normal no-underline;
+}
+
+.helpful-choices .helpful-choice:first-child a {
+	@apply text-green-600 hover:text-green-800;
+}
+
+.helpful-choices .helpful-choice:last-child a {
+	@apply text-red-600 hover:text-red-800;
+}
+
+/* Tutorial / Knowledge Base Stop */
+
+/* ******************************* */
