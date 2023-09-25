@@ -886,7 +886,7 @@ footer {
 }
 
 .how-you-do-it-container .how-you-do-it-item {
-	@apply bg-gray-100 flex flex-col items-center justify-center p-4;
+	@apply bg-gray-100 flex flex-col items-center justify-center p-4 rounded;
 }
 
 .how-you-do-it-item.item-1 .how-you-do-it-item-icon {
@@ -1116,5 +1116,119 @@ footer {
 }
 
 /* Tutorial / Knowledge Base Stop */
+
+/* ******************************* */
+
+/* Reseller Detail Page Start */
+
+.reseller-detail-wrapper {
+	@apply bg-gray-100 py-8;
+}
+
+.reseller-detail-title {
+	@apply mb-4 text-center text-xl text-gray-800 md:text-2xl lg:text-3xl xl:text-4xl;
+}
+
+.reseller-category-container {
+	@apply flex flex-col items-center mb-4 max-w-[15rem] mx-auto relative w-full;
+}
+
+.reseller-category-container .fa-chevron-up {
+	@apply hidden;
+}
+
+.reseller-category-container.show .fa-chevron-down {
+	@apply hidden;
+}
+
+.reseller-category-container.show .fa-chevron-up {
+	@apply inline;
+}
+
+.reseller-category-switch {
+	@apply bg-white border border-gray-400 border-opacity-50 border-solid cursor-pointer flex items-center justify-between px-3 py-2 rounded shadow text-[8px] text-gray-700 w-full hover:shadow-lg;
+}
+
+.reseller-category-container.show .reseller-category-switch {
+	@apply rounded-b-none;
+}
+
+.reseller-category-switch span {
+	@apply block text-sm;
+}
+
+.reseller-select-category-list {
+	@apply absolute hidden left-0 list-none top-[2.4rem] w-full z-20;
+}
+
+.reseller-category-container.show .reseller-select-category-list {
+	@apply block;
+}
+
+.reseller-select-category {
+	@apply border border-gray-200 border-solid w-full;
+}
+
+.reseller-select-category:first-child {
+	@apply border-t-0;
+}
+
+.reseller-select-category:last-child {
+	@apply rounded-b;
+}
+
+.reseller-select-category a {
+	@apply bg-gray-50 cursor-pointer inline-block no-underline px-3 py-2 text-gray-600 w-full hover:bg-gray-100;
+}
+
+.reseller-cards {
+	@apply grid gap-4 my-4 py-3 md:gap-6 md:grid-cols-2;
+}
+
+.reseller-card {
+	@apply bg-white border border-gray-300 border-solid font-normal p-4 rounded;
+}
+
+.reseller-card-title {
+	@apply font-normal mb-3 text-gray-800 text-base md:text-lg;
+}
+
+.reseller-card-price {
+	@apply font-semibold mb-3 text-gray-700 text-lg md:text-xl;
+}
+
+.reseller-card-credits {
+	@apply flex flex-wrap items-center gap-3 list-none my-3;
+}
+
+.reseller-card-credit {
+	@apply border-2 border-red-400 border-solid p-2 rounded;
+}
+
+.reseller-card-credit p {
+	@apply text-center text-gray-600 text-sm lg:text-base;
+}
+
+.reseller-card-credit h2 {
+	@apply text-center mt-1 text-red-600 text-lg md:text-xl xl:text-2xl;
+}
+
+.reseller-card-services {
+	@apply list-none my-3;
+}
+
+.reseller-card-service {
+	@apply my-1 text-sm text-gray-700 md:text-base;
+}
+
+.reseller-card-cta {
+	@apply flex justify-end;
+}
+
+.reseller-card-cta a {
+	@apply bg-teal-600 cursor-pointer rounded px-4 py-2 text-gray-100 no-underline text-sm md:text-base;
+}
+
+/* Reseller Detail Page Stop */
 
 /* ******************************* */
