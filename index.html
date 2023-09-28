@@ -13,6 +13,12 @@
 			rel="stylesheet"
 		/>
 
+		<!-- Slider CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+			rel="stylesheet"
+		/>
+
 		<link href="assets/css/all.min.css" rel="stylesheet" />
 		<link href="assets/css/style.css" rel="stylesheet" />
 	</head>
@@ -131,14 +137,14 @@
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-play"></i>
 							</div>
 							<h5 class="feature-title">unlimited entertainment</h5>
 							<p class="feature-description">Over 10k Premium Live Channels & Over 20K VOD.</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-bars"></i>
 							</div>
 							<h5 class="feature-title">no buffering</h5>
 							<p class="feature-description">
@@ -147,7 +153,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-phone"></i>
 							</div>
 							<h5 class="feature-title">customer support 24/7</h5>
 							<p class="feature-description">
@@ -157,7 +163,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-laptop"></i>
 							</div>
 							<h5 class="feature-title">almost on any device</h5>
 							<p class="feature-description">
@@ -167,7 +173,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-cog"></i>
 							</div>
 							<h5 class="feature-title">easy to setup</h5>
 							<p class="feature-description">
@@ -177,7 +183,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-smile"></i>
 							</div>
 							<h5 class="feature-title">satisfaction guaranteed</h5>
 							<p class="feature-description">
@@ -432,13 +438,13 @@
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-desktop"></i>
 							</div>
 							<p class="feature-description">EPG updates in every 72 hours</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-database"></i>
 							</div>
 							<p class="feature-description">
 								The server always gets updated with New Channels and VODs
@@ -446,7 +452,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-server"></i>
 							</div>
 							<p class="feature-description">
 								You can Request us to Add your Favorite Channels and VODs
@@ -454,7 +460,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-clock"></i>
 							</div>
 							<p class="feature-description">
 								Get your money within 48 Hours If our Server doesn't work for you
@@ -462,7 +468,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-sitemap"></i>
 							</div>
 							<p class="feature-description">
 								Fast Response and Get Solution for any Issue you Face
@@ -470,7 +476,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-signal"></i>
 							</div>
 							<p class="feature-description">Enjoy Best Possible Quality in the Market</p>
 						</li>
@@ -568,7 +574,7 @@
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-shopping-cart"></i>
 							</div>
 							<h5 class="feature-title">1 - Take action and place your order today</h5>
 							<p class="feature-description">
@@ -578,7 +584,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-user"></i>
 							</div>
 							<h5 class="feature-title">2 - Get your account</h5>
 							<p class="feature-description">
@@ -589,7 +595,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-tv"></i>
 							</div>
 							<h5 class="feature-title">3 - Enjoy your IPTV Service!</h5>
 							<p class="feature-description">
@@ -683,140 +689,119 @@
 						When you help others feel important, you help yourself feel important too.
 					</p>
 					<div class="testimonial-buttons">
-						<span class="testimonial-button">
+						<span id="testimonial-button-prev" class="testimonial-button">
 							<small><i class="fas fa-arrow-left"></i></small>&nbsp;&nbsp;PREV
 						</span>
-						<span class="testimonial-button">
+						<span id="testimonial-button-next" class="testimonial-button">
 							NEXT&nbsp;&nbsp;<small><i class="fas fa-arrow-right"></i></small>
 						</span>
 					</div>
-					<ul class="testimonials">
-						<li class="testimonial">
-							<p class="testimonial-description">
-								Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-								entertainment options that cater to every member of my family. A slight hiccup with
-								the initial setup, but their support was prompt and helpful.
-							</p>
-							<div class="testimonial-profile">
-								<div class="testimonial-creator">
-									<div class="testimonial-creator-image">
-										<img src="assets/images/banner3.5.jpg" alt="creator" />
+					<div class="splide" role="group">
+						<div class="splide__track">
+							<ul class="testimonials splide__list">
+								<li class="testimonial splide__slide">
+									<p class="testimonial-description">
+										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
+										entertainment options that cater to every member of my family. A slight hiccup
+										with the initial setup, but their support was prompt and helpful.
+									</p>
+									<div class="testimonial-profile">
+										<div class="testimonial-creator">
+											<div class="testimonial-creator-image">
+												<img src="assets/images/banner3.5.jpg" alt="creator" />
+											</div>
+											<div class="testimonial-creator-title">
+												<h3 class="testimonial-creator-name">Johnson Davis</h3>
+												<p class="testimonial-creator-job">CEO Techcom</p>
+											</div>
+										</div>
+										<div class="testimonial-ratings">
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+										</div>
 									</div>
-									<div class="testimonial-creator-title">
-										<h3 class="testimonial-creator-name">Johnson jtututuuttutut Davis</h3>
-										<p class="testimonial-creator-job">CEO Techcom</p>
+								</li>
+								<li class="testimonial splide__slide">
+									<p class="testimonial-description">
+										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
+										entertainment options that cater to every member of my family. A slight hiccup
+										with the initial setup, but their support was prompt and helpful.
+									</p>
+									<div class="testimonial-profile">
+										<div class="testimonial-creator">
+											<div class="testimonial-creator-image">
+												<img src="assets/images/banner3.5.jpg" alt="creator" />
+											</div>
+											<div class="testimonial-creator-title">
+												<h3 class="testimonial-creator-name">Johnson Davis</h3>
+												<p class="testimonial-creator-job">CEO Techcom</p>
+											</div>
+										</div>
+										<div class="testimonial-ratings">
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+										</div>
 									</div>
-								</div>
-								<div class="testmonial-ratings">
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-								</div>
-							</div>
-						</li>
-						<li class="testimonial">
-							<p class="testimonial-description">
-								Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-								entertainment options that cater to every member of my family. A slight hiccup with
-								the initial setup, but their support was prompt and helpful.
-							</p>
-							<div class="testimonial-profile">
-								<div class="testimonial-creator">
-									<div class="testimonial-creator-image">
-										<img src="assets/images/banner3.5.jpg" alt="creator" />
+								</li>
+								<li class="testimonial splide__slide">
+									<p class="testimonial-description">
+										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
+										entertainment options that cater to every member of my family. A slight hiccup
+										with the initial setup, but their support was prompt and helpful.
+									</p>
+									<div class="testimonial-profile">
+										<div class="testimonial-creator">
+											<div class="testimonial-creator-image">
+												<img src="assets/images/banner3.5.jpg" alt="creator" />
+											</div>
+											<div class="testimonial-creator-title">
+												<h3 class="testimonial-creator-name">Johnson Davis</h3>
+												<p class="testimonial-creator-job">CEO Techcom</p>
+											</div>
+										</div>
+										<div class="testimonial-ratings">
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+										</div>
 									</div>
-									<div class="testimonial-creator-title">
-										<h3 class="testimonial-creator-name">Johnson jtututuuttutut Davis</h3>
-										<p class="testimonial-creator-job">CEO Techcom</p>
+								</li>
+								<li class="testimonial splide__slide">
+									<p class="testimonial-description">
+										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
+										entertainment options that cater to every member of my family. A slight hiccup
+										with the initial setup, but their support was prompt and helpful.
+									</p>
+									<div class="testimonial-profile">
+										<div class="testimonial-creator">
+											<div class="testimonial-creator-image">
+												<img src="assets/images/banner3.5.jpg" alt="creator" />
+											</div>
+											<div class="testimonial-creator-title">
+												<h3 class="testimonial-creator-name">Johnson Davis</h3>
+												<p class="testimonial-creator-job">CEO Techcom</p>
+											</div>
+										</div>
+										<div class="testimonial-ratings">
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+										</div>
 									</div>
-								</div>
-								<div class="testmonial-ratings">
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-								</div>
-							</div>
-						</li>
-						<li class="testimonial">
-							<p class="testimonial-description">
-								Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-								entertainment options that cater to every member of my family. A slight hiccup with
-								the initial setup, but their support was prompt and helpful.
-							</p>
-							<div class="testimonial-profile">
-								<div class="testimonial-creator">
-									<div class="testimonial-creator-image">
-										<img src="assets/images/banner3.5.jpg" alt="creator" />
-									</div>
-									<div class="testimonial-creator-title">
-										<h3 class="testimonial-creator-name">Johnson jtututuuttutut Davis</h3>
-										<p class="testimonial-creator-job">CEO Techcom</p>
-									</div>
-								</div>
-								<div class="testmonial-ratings">
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-								</div>
-							</div>
-						</li>
-						<li class="testimonial">
-							<p class="testimonial-description">
-								Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-								entertainment options that cater to every member of my family. A slight hiccup with
-								the initial setup, but their support was prompt and helpful.
-							</p>
-							<div class="testimonial-profile">
-								<div class="testimonial-creator">
-									<div class="testimonial-creator-image">
-										<img src="assets/images/banner3.5.jpg" alt="creator" />
-									</div>
-									<div class="testimonial-creator-title">
-										<h3 class="testimonial-creator-name">Johnson jtututuuttutut Davis</h3>
-										<p class="testimonial-creator-job">CEO Techcom</p>
-									</div>
-								</div>
-								<div class="testmonial-ratings">
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-								</div>
-							</div>
-						</li>
-						<li class="testimonial">
-							<p class="testimonial-description">
-								Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-								entertainment options that cater to every member of my family. A slight hiccup with
-								the initial setup, but their support was prompt and helpful.
-							</p>
-							<div class="testimonial-profile">
-								<div class="testimonial-creator">
-									<div class="testimonial-creator-image">
-										<img src="assets/images/banner3.5.jpg" alt="creator" />
-									</div>
-									<div class="testimonial-creator-title">
-										<h3 class="testimonial-creator-name">Johnson jtututuuttutut Davis</h3>
-										<p class="testimonial-creator-job">CEO Techcom</p>
-									</div>
-								</div>
-								<div class="testmonial-ratings">
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-									<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-								</div>
-							</div>
-						</li>
-					</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- Testimonials Stop -->
@@ -905,28 +890,28 @@
 							<li class="footer-bottom-sponsor">
 								<a href="#">
 									<div>
-										<img src="assets/images/banner-ch.jpg" alt="link" />
+										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
 									</div>
 								</a>
 							</li>
 							<li class="footer-bottom-sponsor">
 								<a href="#">
 									<div>
-										<img src="assets/images/banner-ch.jpg" alt="link" />
+										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
 									</div>
 								</a>
 							</li>
 							<li class="footer-bottom-sponsor">
 								<a href="#">
 									<div>
-										<img src="assets/images/banner-ch.jpg" alt="link" />
+										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
 									</div>
 								</a>
 							</li>
 							<li class="footer-bottom-sponsor">
 								<a href="#">
 									<div>
-										<img src="assets/images/banner-ch.jpg" alt="link" />
+										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
 									</div>
 								</a>
 							</li>
@@ -993,6 +978,45 @@
 			</div>
 		</footer>
 
+		<!-- Slider Js -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+		<script>
+			// Testimonial Slider
+			const splide = new Splide('.splide', {
+				arrows: null,
+				breakpoints: {
+					1023: {
+						perPage: 2,
+						gap: '.7rem',
+					},
+					767: {
+						perPage: 1,
+						gap: '.7rem',
+					},
+				},
+				gap: '1rem',
+				perPage: 3,
+				rewind: true,
+				type: 'loop',
+			});
+			splide.mount(window.splide.Extensions);
+
+			// Slider Buttons
+			const prevButton = document.querySelector('#testimonial-button-prev');
+			const nextButton = document.querySelector('#testimonial-button-next');
+
+			prevButton.addEventListener('click', function () {
+				splide.go('<');
+			});
+
+			nextButton.addEventListener('click', function () {
+				splide.go('>');
+			});
+		</script>
+
+		<!-- Main PDF -->
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
