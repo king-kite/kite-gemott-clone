@@ -2458,6 +2458,7 @@ header .topbar .topbar-icon {
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+  text-decoration-line: none;
   transition-duration: 300ms;
 }
 
@@ -7096,6 +7097,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 .contact-submit-button button {
   display: block;
   width: 100%;
+  cursor: pointer;
   border-radius: 0.375rem;
   border-style: none;
   --tw-bg-opacity: 1;
