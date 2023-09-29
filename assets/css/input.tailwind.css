@@ -33,7 +33,7 @@ header .topbar-content {
 }
 
 header .topbar .topbar-icon {
-	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 transform md:mx-4;
+	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 no-underline transform md:mx-4;
 }
 
 header .topbar .topbar-icon:hover {
@@ -1375,6 +1375,132 @@ footer {
 
 /* Tutorial / Knowledge Base Stop */
 
+/* Setup Guides Start */
+.setup-guides {
+	@apply grid mt-4 pt-2 grid-cols-1 gap-5 md:grid-cols-2 md:gap-6 lg:gap-7 lg:grid-cols-3;
+}
+
+.setup-guide {
+	@apply bg-white p-5 shadow-lg rounded-lg w-full;
+}
+
+.setup-guide .setup-guide-title {
+	@apply font-bold mb-2 text-lg text-red-500 tracking-wide md:text-xl lg:text-2xl;
+}
+
+.setup-guide .setup-guide-description {
+	@apply leading-6 line-clamp-5 my-2 text-gray-600 text-sm md:leading-7 md:text-base lg:text-sm lg:leading-6 xl:text-base xl:leading-7;
+}
+
+.setup-guide .setup-guide-cta {
+	@apply bg-red-500 font-medium inline-block text-center text-gray-100 mt-2 px-8 py-3 rounded-full no-underline hover:bg-red-600;
+}
+
+/* Setup Guides Start */
+
+/* ******************************** */
+
+/* Troubleshooting page start */
+
+.troubleshooting-content {
+	@apply flex flex-col gap-6 my-2 py-3 w-full lg:flex-row-reverse;
+}
+
+.troubleshooting-content-image {
+	@apply h-auto w-full lg:max-h-96 lg:w-1/2;
+}
+
+.troubleshooting-content-image img {
+	@apply h-full w-full;
+}
+
+.troubleshooting-guides {
+	@apply list-none lg:w-1/2;
+}
+
+.troubleshooting-guide {
+	@apply mb-4 md:mb-6;
+}
+
+.troubleshooting-guide-content {
+	@apply bg-white hidden shadow-xl p-3 rounded-b-md;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-content {
+	@apply block;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header {
+	@apply bg-gray-800;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header .title {
+	@apply text-gray-100;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header:hover .title {
+	@apply text-red-400;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header .action-icons {
+	@apply bg-white;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header .action-icons .action-icon.open {
+	@apply hidden;
+}
+
+.troubleshooting-guide.show .troubleshooting-guide-header .action-icons .action-icon.close {
+	@apply inline;
+}
+
+.troubleshooting-guide-header {
+	@apply bg-white cursor-pointer shadow-lg flex items-center justify-between p-4 rounded-md;
+}
+
+.troubleshooting-guide-header .title {
+	@apply text-gray-800 font-normal select-none text-sm md:text-base;
+}
+
+.troubleshooting-guide-header:hover .title {
+	@apply text-red-600;
+}
+
+.troubleshooting-guide-header:hover .action-icons .action-icon {
+	@apply text-red-600;
+}
+
+.troubleshooting-guide-header .action-icons {
+	@apply bg-gray-300 flex items-center justify-center h-8 w-8 rounded-full text-lg text-gray-800;
+}
+
+.troubleshooting-guide-header .action-icons .action-icon {
+	@apply font-black text-xs text-gray-800 sm:text-sm;
+}
+
+.troubleshooting-guide-header .action-icon.close {
+	@apply hidden;
+}
+
+.troubleshooting-guide-description {
+	@apply font-normal leading-5 text-xs sm:text-sm text-gray-800 md:text-base lg:text-sm;
+}
+/* 
+background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3px,#222629 10px);
+
+.wgl-accordion .accordion__header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    background-attachment: local;
+    pointer-events: none; */
+
+/* Troubleshooting page stop */
+
 /* ******************************* */
 
 /* Reseller Detail Page Start */
@@ -1490,3 +1616,84 @@ footer {
 /* Reseller Detail Page Stop */
 
 /* ******************************* */
+
+/* Performance Tips Page Start */
+
+.performance .tips {
+	@apply list-none my-4 py-4;
+}
+
+.performance .tip {
+	@apply flex flex-col items-center gap-4 my-4 py-4 md:flex-row md:even:flex-row-reverse lg:gap-5 xl:gap-7;
+}
+
+.performance .tip .tip-content {
+	@apply w-full md:w-1/2;
+}
+
+.performance .tip .tip-image {
+	@apply w-full md:w-1/2;
+}
+
+.performance .tip .tip-image img {
+	@apply h-full w-full;
+}
+
+/* Performance Tips Page Stop */
+
+/* ******************************** */
+
+/* Contact Us Page Start */
+
+.contact-us-container {
+	@apply max-w-4xl mx-auto;
+}
+
+.contact-form-container {
+	@apply grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2;
+}
+
+.contact-field-label {
+	@apply block text-sm font-semibold leading-6 text-gray-700 md:text-base;
+}
+
+.contact-input-container {
+	@apply mt-2.5;
+}
+
+.contact-input-container input,
+.contact-input-container textarea {
+	@apply block w-full text-sm tracking-wide leading-6 rounded-md border-0 px-4 py-3 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 md:text-base md:leading-7;
+}
+
+.contact-select-container {
+	@apply absolute inset-y-0 left-0 flex items-center;
+}
+
+.contact-select-arrow {
+	@apply pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400;
+}
+
+.contact-phone-input {
+	@apply !pl-20;
+}
+
+.contact-select {
+	@apply h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm;
+}
+
+.contact-field-container.span-2 {
+	@apply sm:col-span-2;
+}
+
+.contact-submit-button {
+	@apply mt-10;
+}
+
+.contact-submit-button button {
+	@apply block border-none w-full rounded-md bg-red-600 p-4 text-center text-sm font-black tracking-wide uppercase text-white md:text-base shadow-sm hover:bg-red-500;
+}
+
+/* Contact Us Page Stop */
+
+/* ********************************* */

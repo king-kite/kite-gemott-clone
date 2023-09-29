@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js}'],
+	content: ['./**/*.{html,js}'],
 	theme: {
 		extend: {
 			colors: {
@@ -29,9 +29,7 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [
-    require('@tailwindcss/line-clamp')
-	],
+	plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/forms')],
 	corePlugins: {
 		preflight: false,
 	},

@@ -44,7 +44,6 @@ menuItems.forEach((item) => {
 
 // ************ Handle Navigation Stop
 
-
 // *********** Handle Frequently Asked Questions Start
 
 const faqs = document.querySelectorAll('.faq');
@@ -59,8 +58,8 @@ faqs.forEach((faq) => {
 		// Loop through the questions and find the question that
 		// owns the id
 
-		let question = null
-		faqs.forEach(function(item) {
+		let question = null;
+		faqs.forEach(function (item) {
 			const questionId = +item.getAttribute('data-id');
 
 			// If a question has already been found, return;
@@ -68,8 +67,8 @@ faqs.forEach((faq) => {
 			if (isNaN(questionId)) return;
 			if (questionId !== id) return;
 
-			question = item
-		})
+			question = item;
+		});
 
 		if (!question) return;
 
@@ -77,15 +76,51 @@ faqs.forEach((faq) => {
 		question = null;
 
 		// Close any other question that might be opened
-		faqs.forEach(faq => {
+		faqs.forEach((faq) => {
 			const questionId = +faq.getAttribute('data-id');
 			if (isNaN(questionId)) return;
 
 			if (questionId !== id && faq.classList.contains('show')) {
-				faq.classList.remove('show')
+				faq.classList.remove('show');
 			}
-		})
-	})
-})
+		});
+	});
+});
 
 // *********** Handle Frequently Asked Questions Stop
+
+// *********** Handle Troubleshooting Guides Start
+
+const troubleshootingGuides = document.querySelectorAll('.troubleshooting-guide');
+const troubleshootingGuideHeaders = document.querySelectorAll('.troubleshooting-guide-header');
+
+// Add an onclick event listener that gets the data-id
+// attribute from an element
+troubleshootingGuideHeaders.forEach((guide) => {
+	guide.addEventListener('click', function () {
+		const id = +this.getAttribute('data-id');
+		if (isNaN(id)) return;
+
+		// Loop through the guides and find the guide that
+		// owns the id
+
+		let guide = null;
+		troubleshootingGuides.forEach(function (item) {
+			const guideId = +item.getAttribute('data-id');
+
+			// If a question has already been found, return;
+			if (guide) return;
+			if (isNaN(guideId)) return;
+			if (guideId !== id) return;
+
+			guide = item;
+		});
+
+		if (!guide) return;
+
+		guide.classList.toggle('show');
+		guide = null;
+	});
+});
+
+// *********** Handle Troubleshooting Guides Stop
