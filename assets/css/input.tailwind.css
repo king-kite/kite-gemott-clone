@@ -1663,6 +1663,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 .contact-input-container input,
 .contact-input-container textarea {
+	outline: none;
 	@apply block w-full text-sm tracking-wide leading-6 rounded-md border-0 px-4 py-3 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 md:text-base md:leading-7;
 }
 
@@ -1675,10 +1676,11 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .contact-phone-input {
-	@apply !pl-20;
+	@apply !pl-28;
 }
 
 .contact-select {
+	outline: none;
 	@apply h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm;
 }
 
