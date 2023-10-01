@@ -55,12 +55,13 @@ if (menuItems.length > 0) {
 // *********** Handle Frequently Asked Questions Start
 
 const faqs = document.querySelectorAll('.faq');
+const faqHeaders = document.querySelectorAll('.faq-header');
 
 // Add an onclick event listener that gets the data-id
 // attribute from an element
-if (faqs.length > 0) {
-	faqs.forEach((faq) => {
-		faq.addEventListener('click', function () {
+if (faqs.length > 0 && faqHeaders.length > 0) {
+	faqHeaders.forEach((header) => {
+		header.addEventListener('click', function () {
 			const id = +this.getAttribute('data-id');
 			if (isNaN(id)) return;
 
