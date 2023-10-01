@@ -13,34 +13,42 @@ function closeMenu() {
 }
 
 // Open the menu container
-openMenuBtn.addEventListener('click', function () {
-	menuContainer.classList.add('show');
+if (openMenuBtn) {
+	openMenuBtn.addEventListener('click', function () {
+		menuContainer.classList.add('show');
 
-	// Remove the scroll from the body element for mobile and medium screens
-	const body = document.querySelector('body');
-	body.classList.add('hide-scrollbar');
-});
+		// Remove the scroll from the body element for mobile and medium screens
+		const body = document.querySelector('body');
+		body.classList.add('hide-scrollbar');
+	});
+}
 
 // Close the menu container
-closeMenuBtn.addEventListener('click', function () {
-	closeMenu();
-});
+if (closeMenuBtn) {
+	closeMenuBtn.addEventListener('click', function () {
+		closeMenu();
+	});
+}
 
 // Close the menu container on outside click
 // i.e. if the click does not container the div.menu. element
-menuContainer.addEventListener('click', function (e) {
-	if (e.target.classList.contains('menu-container')) {
-		closeMenu();
-	}
-});
+if (menuContainer) {
+	menuContainer.addEventListener('click', function (e) {
+		if (e.target.classList.contains('menu-container')) {
+			closeMenu();
+		}
+	});
+}
 
 // Close the menu if any of the menu-items are clicked
 const menuItems = document.querySelectorAll('.menu-list-item');
-menuItems.forEach((item) => {
-	item.addEventListener('click', function () {
-		closeMenu();
+if (menuItems.length > 0) {
+	menuItems.forEach((item) => {
+		item.addEventListener('click', function () {
+			closeMenu();
+		});
 	});
-});
+}
 
 // ************ Handle Navigation Stop
 
@@ -50,42 +58,44 @@ const faqs = document.querySelectorAll('.faq');
 
 // Add an onclick event listener that gets the data-id
 // attribute from an element
-faqs.forEach((faq) => {
-	faq.addEventListener('click', function () {
-		const id = +this.getAttribute('data-id');
-		if (isNaN(id)) return;
+if (faqs.length > 0) {
+	faqs.forEach((faq) => {
+		faq.addEventListener('click', function () {
+			const id = +this.getAttribute('data-id');
+			if (isNaN(id)) return;
 
-		// Loop through the questions and find the question that
-		// owns the id
+			// Loop through the questions and find the question that
+			// owns the id
 
-		let question = null;
-		faqs.forEach(function (item) {
-			const questionId = +item.getAttribute('data-id');
+			let question = null;
+			faqs.forEach(function (item) {
+				const questionId = +item.getAttribute('data-id');
 
-			// If a question has already been found, return;
-			if (question) return;
-			if (isNaN(questionId)) return;
-			if (questionId !== id) return;
+				// If a question has already been found, return;
+				if (question) return;
+				if (isNaN(questionId)) return;
+				if (questionId !== id) return;
 
-			question = item;
-		});
+				question = item;
+			});
 
-		if (!question) return;
+			if (!question) return;
 
-		question.classList.toggle('show');
-		question = null;
+			question.classList.toggle('show');
+			question = null;
 
-		// Close any other question that might be opened
-		faqs.forEach((faq) => {
-			const questionId = +faq.getAttribute('data-id');
-			if (isNaN(questionId)) return;
+			// Close any other question that might be opened
+			faqs.forEach((faq) => {
+				const questionId = +faq.getAttribute('data-id');
+				if (isNaN(questionId)) return;
 
-			if (questionId !== id && faq.classList.contains('show')) {
-				faq.classList.remove('show');
-			}
+				if (questionId !== id && faq.classList.contains('show')) {
+					faq.classList.remove('show');
+				}
+			});
 		});
 	});
-});
+}
 
 // *********** Handle Frequently Asked Questions Stop
 
@@ -96,31 +106,33 @@ const troubleshootingGuideHeaders = document.querySelectorAll('.troubleshooting-
 
 // Add an onclick event listener that gets the data-id
 // attribute from an element
-troubleshootingGuideHeaders.forEach((guide) => {
-	guide.addEventListener('click', function () {
-		const id = +this.getAttribute('data-id');
-		if (isNaN(id)) return;
+if (troubleshootingGuideHeaders.length > 0 && troubleshootingGuides.length > 0) {
+	troubleshootingGuideHeaders.forEach((guide) => {
+		guide.addEventListener('click', function () {
+			const id = +this.getAttribute('data-id');
+			if (isNaN(id)) return;
 
-		// Loop through the guides and find the guide that
-		// owns the id
+			// Loop through the guides and find the guide that
+			// owns the id
 
-		let guide = null;
-		troubleshootingGuides.forEach(function (item) {
-			const guideId = +item.getAttribute('data-id');
+			let guide = null;
+			troubleshootingGuides.forEach(function (item) {
+				const guideId = +item.getAttribute('data-id');
 
-			// If a question has already been found, return;
-			if (guide) return;
-			if (isNaN(guideId)) return;
-			if (guideId !== id) return;
+				// If a question has already been found, return;
+				if (guide) return;
+				if (isNaN(guideId)) return;
+				if (guideId !== id) return;
 
-			guide = item;
+				guide = item;
+			});
+
+			if (!guide) return;
+
+			guide.classList.toggle('show');
+			guide = null;
 		});
-
-		if (!guide) return;
-
-		guide.classList.toggle('show');
-		guide = null;
 	});
-});
+}
 
 // *********** Handle Troubleshooting Guides Stop
