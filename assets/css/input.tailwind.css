@@ -58,7 +58,8 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .navbar .logo,
-.login-container .logo {
+.login-container .logo,
+.review-form-container .logo {
 	@apply font-black text-red-600 text-3xl uppercase lg:text-2xl xl:text-4xl;
 }
 
@@ -658,7 +659,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .testimonial-creator-title .testimonial-creator-name {
-	@apply max-w-[12ch] overflow-hidden text-ellipsis whitespace-nowrap text-gray-800 text-sm md:text-base;
+	@apply max-w-[12ch] overflow-hidden text-ellipsis whitespace-nowrap text-gray-800 text-sm md:text-base lg:text-sm;
 }
 
 @media (min-width: 450px) {
@@ -698,7 +699,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .testimonial-creator-title .testimonial-creator-job {
-	@apply text-gray-700 text-xs md:text-sm;
+	@apply text-gray-700 text-xs md:text-sm lg:text-xs;
 }
 
 .testimonial-profile {
@@ -710,7 +711,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .testimonial-rating {
-	@apply ml-0.5 text-sm text-yellow-400 sm:text-base md:text-lg;
+	@apply ml-0.5 text-sm text-yellow-400 sm:text-base md:text-sm lg:text-xs;
 }
 
 .testimonial-creator-image {
@@ -1654,11 +1655,13 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2;
 }
 
+.review-field-label,
 .login-field-label,
 .contact-field-label {
 	@apply block text-sm font-semibold leading-6 text-gray-700 md:text-base;
 }
 
+.review-input-container,
 .login-input-container,
 .contact-input-container {
 	@apply mt-2.5;
@@ -1666,7 +1669,10 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 .login-input-container input,
 .contact-input-container input,
-.contact-input-container textarea {
+.review-input-container input,
+.review-select-container select,
+.contact-input-container textarea,
+.review-input-container textarea {
 	outline: none;
 	@apply block w-full text-sm tracking-wide leading-6 rounded-md border-0 px-4 py-3 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 md:text-base md:leading-7;
 }
@@ -1683,7 +1689,8 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply !pl-28;
 }
 
-.contact-select {
+.contact-select,
+.review-select {
 	outline: none;
 	@apply h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm;
 }
@@ -1697,6 +1704,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .login-button button,
+.review-button button,
 .contact-submit-button button {
 	@apply block border-none cursor-pointer w-full rounded-md bg-red-600 p-4 text-center text-sm font-black tracking-wide uppercase text-white md:text-base shadow-sm hover:bg-red-500;
 }
@@ -1814,5 +1822,59 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 /* Login Page Stop */
+
+/* ********************************* */
+
+/* Reviews Page Start */
+
+.reviews-container .testimonials {
+	@apply grid grid-cols-1 my-4 w-full md:gap-x-6 md:grid-cols-2 md:my-6 lg:grid-cols-3 lg:my-8;
+}
+
+.reviews-container .testimonials .testimonial {
+	@apply !h-auto;
+}
+
+.review-add-container {
+	@apply flex justify-end my-4;
+}
+
+.review-add-container .review-add-button {
+	@apply bg-red-500 border-none capitalize cursor-pointer duration-500 min-w-[8rem] px-4 py-3 rounded-lg text-gray-100 text-center text-sm md:min-w-[9rem] md:text-base hover:bg-red-400 active:scale-95 md:p-4;
+}
+
+.review-form-wrapper {
+	background: rgba(0, 0, 0, 0.4);
+	@apply hidden items-center justify-center fixed h-full left-0 top-0 w-full z-30;
+}
+
+.review-form-wrapper.show {
+	@apply flex;
+}
+
+.review-form-container {
+	@apply bg-white max-w-md max-h-[95vh] overflow-y-auto mx-auto p-4 rounded-lg shadow-lg w-full md:p-5 lg:p-6;
+}
+
+.review-form-header {
+	@apply flex items-center justify-between;
+}
+
+.review-form-header .close-icon {
+	@apply cursor-pointer flex items-center justify-center px-3 py-2 rounded-full text-gray-600 text-lg hover:bg-gray-300 hover:text-gray-100;
+}
+
+.review-form-title {
+	@apply font-black italic my-2 text-center text-lg text-red-600 md:text-xl lg:text-2xl;
+}
+
+.review-form {
+	@apply mt-2 grid grid-cols-1 gap-y-4 md:mt-3 md:gap-y-5 lg:mt-4 lg:gap-y-6;
+}
+
+.review-select {
+	@apply cursor-pointer mt-3 pr-2;
+}
+/* Reviews Page Stop */
 
 /* ********************************* */

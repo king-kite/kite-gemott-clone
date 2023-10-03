@@ -137,3 +137,24 @@ if (troubleshootingGuideHeaders.length > 0 && troubleshootingGuides.length > 0) 
 }
 
 // *********** Handle Troubleshooting Guides Stop
+
+// ********** Handle Review Modal Start
+
+const reviewForm = document.querySelector('#review-form-wrapper');
+
+if (reviewForm) {
+	const reviewClose = document.querySelector('#review-close-icon');
+	const reviewOpen = document.querySelector('#review-open-button');
+
+	if (reviewClose)
+		reviewClose.addEventListener('click', function () {
+			reviewForm.classList.remove('show');
+		});
+
+	if (reviewOpen)
+		reviewOpen.addEventListener('click', function () {
+			reviewForm.classList.add('show');
+		});
+}
+
+// ********** Handle Review Modal Stop
