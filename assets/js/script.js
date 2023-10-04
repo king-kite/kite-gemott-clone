@@ -146,15 +146,40 @@ if (reviewForm) {
 	const reviewClose = document.querySelector('#review-close-icon');
 	const reviewOpen = document.querySelector('#review-open-button');
 
+	function closeReviewForm() {
+		reviewForm.classList.remove('show');
+	}
+
 	if (reviewClose)
 		reviewClose.addEventListener('click', function () {
-			reviewForm.classList.remove('show');
+			closeReviewForm();
 		});
 
 	if (reviewOpen)
 		reviewOpen.addEventListener('click', function () {
 			reviewForm.classList.add('show');
 		});
+
+	// Close the review form wrapper on outside click
+	reviewForm.addEventListener('click', function (e) {
+		if (e.target.classList.contains('review-form-wrapper')) {
+			closeReviewForm();
+		}
+	});
 }
 
 // ********** Handle Review Modal Stop
+
+// ********* Handle Reseller Dropdown Start
+const resellerSwitch = document.querySelector('#reseller-category-switch');
+
+if (resellerSwitch) {
+	resellerSwitch.addEventListener('click', function () {
+		const resellerSelect = document.querySelector('#reseller-category-container');
+		
+		if (resellerSelect) resellerSelect.classList.toggle('show');
+	});
+}
+
+
+// ********* Handle Reseller Dropdown Stop

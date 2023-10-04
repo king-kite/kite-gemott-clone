@@ -73,7 +73,7 @@
 				<div class="wrapper">
 					<h1 class="reseller-detail-title">Platinum IPTV Resellers</h1>
 					<div id="reseller-category-container" class="reseller-category-container">
-						<button id="reseller-category-switch" class="reseller-category-switch">
+						<button id="reseller-category-switch" type="button" class="reseller-category-switch">
 							<span>Choose Another Category</span>
 							<i class="fas fa-chevron-down"></i>
 							<i class="fas fa-chevron-up"></i>
@@ -436,13 +436,5 @@
 		</footer>
 
 		<script src="assets/js/script.js"></script>
-		<script>
-			const resellerSelect = document.querySelector('#reseller-category-container');
-			const resellerSwitch = document.querySelector('#reseller-category-switch');
-
-			resellerSwitch.addEventListener('click', function () {
-				resellerSelect.classList.toggle('show');
-			});
-		</script>
 	</body>
 </html>

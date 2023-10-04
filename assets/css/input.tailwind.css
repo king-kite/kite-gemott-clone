@@ -514,7 +514,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .seller-benefits {
-	@apply flex flex-wrap items-center list-none justify-between my-2;
+	@apply flex items-center list-none justify-between my-2;
 }
 
 .seller-benefit {
@@ -1716,11 +1716,11 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 /* Login Page Start */
 
 .login-wrapper {
-	@apply bg-gray-100 w-full sm:py-4 md:bg-gray-50 flex items-center justify-center md:justify-between md:py-0;
+	@apply bg-gray-100 min-h-screen w-full sm:py-4 md:bg-gray-50 flex items-center justify-center md:justify-between md:py-0;
 }
 
 .login-container {
-	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow-lg w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md md:w-1/2;
+	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md md:w-1/2;
 }
 
 .login-container .logo {
@@ -1840,16 +1840,18 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .review-add-container .review-add-button {
-	@apply bg-red-500 border-none capitalize cursor-pointer duration-500 min-w-[8rem] px-4 py-3 rounded-lg text-gray-100 text-center text-sm md:min-w-[9rem] md:text-base hover:bg-red-400 active:scale-95 md:p-4;
+	@apply bg-red-500 border-none capitalize cursor-pointer duration-500 min-w-[8rem] px-4 py-3 rounded-lg text-gray-100 text-center text-sm md:min-w-[9rem] hover:bg-red-400 active:scale-95 md:px-6 md:py-4;
 }
 
 .review-form-wrapper {
 	background: rgba(0, 0, 0, 0.4);
-	@apply hidden items-center justify-center fixed h-full left-0 top-0 w-full z-30;
+	@apply flex items-center justify-center fixed h-full left-0 top-0 w-full;
+	@apply duration-500 scale-0 origin-bottom transition transform ease-in-out -z-30;
 }
 
 .review-form-wrapper.show {
-	@apply flex;
+	/* @apply flex; */
+	@apply scale-100 z-30;
 }
 
 .review-form-container {
@@ -1861,20 +1863,157 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .review-form-header .close-icon {
-	@apply cursor-pointer flex items-center justify-center px-3 py-2 rounded-full text-gray-600 text-lg hover:bg-gray-300 hover:text-gray-100;
+	@apply cursor-pointer flex items-center justify-center px-3 py-2.5 rounded-full text-gray-600 text-lg hover:bg-gray-300 hover:text-gray-100;
 }
 
 .review-form-title {
-	@apply font-black italic my-2 text-center text-lg text-red-600 md:text-xl lg:text-2xl;
+	@apply font-black italic text-lg text-red-600 uppercase;
 }
 
 .review-form {
-	@apply mt-2 grid grid-cols-1 gap-y-4 md:mt-3 md:gap-y-5 lg:mt-4 lg:gap-y-6;
+	@apply mt-2 grid grid-cols-1 gap-y-4 md:mt-3 lg:mt-4;
+}
+
+.review-field-label {
+	@apply text-sm;
+}
+
+.review-input-container input,
+.review-select-container select,
+.review-input-container textarea {
+	@apply text-sm;
 }
 
 .review-select {
 	@apply cursor-pointer mt-3 pr-2;
 }
 /* Reviews Page Stop */
+
+/* ********************************* */
+
+/* Cart Page Start */
+
+.cart-grid-container {
+	@apply py-4 grid gap-4 grid-cols-1 md:grid-cols-12;
+}
+
+.cart-categories {
+	@apply md:col-span-6 lg:col-span-3;
+}
+
+.cart-categories .reseller-category-container {
+	@apply max-w-none mx-0;
+}
+
+.cart-categories .reseller-select-category-list {
+	@apply static;
+}
+
+.cart-container {
+	@apply md:col-span-7 lg:col-span-6;
+}
+
+.order-summary-container {
+	@apply rounded-lg rounded-b-lg border-0 border-b border-gray-50 border-solid pb-4 md:col-span-5 lg:col-span-3;
+}
+
+.order-summary-container .order-summary-title {
+	@apply bg-red-500 font-medium py-3 rounded-t-sm text-center text-gray-100 text-base;
+}
+
+.order-summary-container .order-summary-items {
+	@apply list-none border border-t-0 border-b-0 border-gray-400 border-opacity-50 border-solid;
+}
+
+.order-summary-container .order-summary-item {
+	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid flex items-center justify-between px-3 py-2 sm:px-4 md:px-3;
+}
+
+.order-summary-items .order-summary-item-title {
+	@apply text-sm text-gray-700 sm:text-base md:text-sm;
+}
+
+.order-summary-items .order-summary-item-price {
+	@apply text-sm text-gray-800 sm:text-base md:text-sm;
+}
+
+.order-summary-total-price {
+	@apply border border-t-0 border-gray-400 border-solid border-opacity-50 flex font-medium items-center justify-between rounded-b-sm text-gray-800 text-base px-3 py-2 sm:px-4 md:px-3 sm:text-lg md:text-base;
+}
+
+.order-summary-total-cta {
+	@apply flex justify-end mt-2;
+}
+
+.order-summary-total-cta a {
+	@apply bg-red-500 cursor-pointer mt-3 px-4 py-3 rounded-lg no-underline text-center text-sm text-gray-100 hover:bg-red-600;
+}
+
+.cart-table {
+	@apply overflow-x-auto w-full;
+}
+
+.cart-table table {
+	@apply border-collapse overflow-x-auto text-sm text-gray-800 w-full xl:text-base;
+}
+
+.cart-table table th,
+.cart-table table td {
+	@apply border border-gray-300 border-solid p-2 text-left;
+}
+
+.cart-table table thead tr {
+	@apply bg-red-500 text-gray-100;
+}
+
+.cart-table table thead tr th {
+	@apply py-3;
+}
+
+.cart-table table tbody tr:nth-child(even) {
+	@apply bg-gray-200;
+}
+
+.cart-table table td h1 {
+	@apply text-base text-left text-gray-700;
+}
+
+.cart-table table td span {
+	@apply text-sm text-left text-gray-800;
+}
+
+.cart-table table tbody .table-actions {
+	@apply list-none flex items-center justify-center;
+}
+
+.cart-table table tbody .table-actions li {
+	@apply mx-2;
+}
+
+.cart-table table tbody .table-action {
+	@apply cursor-pointer no-underline text-base text-gray-800;
+}
+
+.cart-table table tbody .table-action.red-text {
+	@apply text-red-500;
+}
+
+.order-summary-total .promo-code-container {
+	@apply mt-3;
+}
+
+.promo-code-container form .input-container {
+	@apply border-2 border-solid border-gray-400 border-opacity-40 flex items-center justify-between h-12 rounded;
+}
+
+.promo-code-container form input {
+	@apply border-none outline-none text-sm pl-2 h-full w-2/3;
+}
+
+.promo-code-container form button {
+	@apply bg-red-500 border-none cursor-pointer text-center h-full text-gray-100 w-1/3 hover:bg-red-400;
+}
+
+/* Cart Page Stop */
 
 /* ********************************* */
