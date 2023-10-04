@@ -2611,6 +2611,39 @@ header .topbar .topbar-icon:hover {
   }
 }
 
+.content-hero-description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .content-hero-description {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-hero-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-hero-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 .content-hero-container .breadcrumbs {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -7784,6 +7817,12 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 /* Cart Page Stop */
+
+/* ********************************* */
+
+/* Checkout Page Start */
+
+/* Checkout Page Stop */
 
 /* ********************************* */
 
