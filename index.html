@@ -1063,37 +1063,39 @@
 		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
 		<script>
-			// Testimonial Slider
-			const splide = new Splide('.splide', {
-				arrows: null,
-				breakpoints: {
-					1023: {
-						perPage: 2,
-						gap: '.7rem',
+			if (Splide) {
+				// Testimonial Slider
+				const splide = new Splide('.splide', {
+					arrows: null,
+					breakpoints: {
+						1023: {
+							perPage: 2,
+							gap: '.7rem',
+						},
+						767: {
+							perPage: 1,
+							gap: '.7rem',
+						},
 					},
-					767: {
-						perPage: 1,
-						gap: '.7rem',
-					},
-				},
-				gap: '1rem',
-				perPage: 3,
-				rewind: true,
-				type: 'loop',
-			});
-			splide.mount(window.splide.Extensions);
+					gap: '1rem',
+					perPage: 3,
+					rewind: true,
+					type: 'loop',
+				});
+				splide.mount(window.splide.Extensions);
 
-			// Slider Buttons
-			const prevButton = document.querySelector('#testimonial-button-prev');
-			const nextButton = document.querySelector('#testimonial-button-next');
+				// Slider Buttons
+				const prevButton = document.querySelector('#testimonial-button-prev');
+				const nextButton = document.querySelector('#testimonial-button-next');
 
-			prevButton.addEventListener('click', function () {
-				splide.go('<');
-			});
+				prevButton.addEventListener('click', function () {
+					splide.go('<');
+				});
 
-			nextButton.addEventListener('click', function () {
-				splide.go('>');
-			});
+				nextButton.addEventListener('click', function () {
+					splide.go('>');
+				});
+			}
 		</script>
 
 		<!-- Main PDF -->
