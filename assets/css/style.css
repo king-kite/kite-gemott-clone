@@ -5527,7 +5527,6 @@ footer {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 @media (min-width: 640px) {
@@ -5535,6 +5534,7 @@ footer {
     height: 3rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -6930,6 +6930,13 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
   flex-direction: row-reverse;
 }
 
+.login-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   .login-container {
     position: absolute;
@@ -6948,9 +6955,6 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.25rem;
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {
@@ -6959,9 +6963,6 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
     background-color: transparent;
     padding-top: 0px;
     padding-bottom: 0px;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
@@ -6981,7 +6982,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
   }
 
   .login-container.registration .auth-container {
-    max-width: 36rem;
+    max-width: 32rem;
   }
 }
 

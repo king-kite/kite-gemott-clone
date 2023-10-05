@@ -1276,7 +1276,7 @@ footer {
 }
 
 .search-form .input-container {
-	@apply bg-gray-100 flex h-8 items-center rounded px-2 sm:h-12 sm:py-2 md:h-16 md:px-4;
+	@apply bg-gray-100 flex h-8 items-center rounded pl-2 sm:h-12 sm:pr-2 sm:py-2 md:h-16 md:px-4;
 }
 
 .search-form .input-container input {
@@ -1730,11 +1730,11 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .login-container {
-	@apply lg:w-1/2 lg:absolute lg:top-0 lg:left-0;
+	@apply flex items-center justify-center h-full lg:w-1/2 lg:absolute lg:top-0 lg:left-0;
 }
 
 .auth-container {
-	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md;
+	@apply bg-white max-w-sm mx-auto p-5 rounded-lg w-full md:bg-transparent md:py-0 md:max-w-md;
 }
 
 .login-container.registration {
