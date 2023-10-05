@@ -1738,7 +1738,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .login-container.registration {
-	@apply pb-3 sm:pb-2 lg:pb-1;
+	@apply pb-3 sm:pb-2 lg:pb-1 lg:left-auto lg:right-0;
 }
 
 .login-container.registration .auth-container {
@@ -1848,6 +1848,10 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 .login-image-container {
 	background-image: url('../images/banner3.5.jpg');
 	@apply bg-gray-100 bg-center bg-cover hidden h-full min-h-screen lg:block lg:fixed lg:top-0 lg:right-0 lg:w-1/2;
+}
+
+.login-image-container.registration {
+	@apply lg:left-0;
 }
 
 .login-overlay {

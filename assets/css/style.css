@@ -6978,6 +6978,8 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 @media (min-width: 1024px) {
   .login-container.registration {
+    left: auto;
+    right: 0px;
     padding-bottom: 0.25rem;
   }
 
@@ -7223,6 +7225,10 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
     right: 0px;
     display: block;
     width: 50%;
+  }
+
+  .login-image-container.registration {
+    left: 0px;
   }
 }
 
