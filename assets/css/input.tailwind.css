@@ -18,6 +18,10 @@ body.hide-scrollbar {
 	@apply overflow-y-hidden lg:overflow-y-auto;
 }
 
+body.hide-scrollbar-lg {
+	@apply overflow-y-hidden;
+}
+
 /* Navigation Start */
 
 header {
@@ -203,6 +207,39 @@ header .topbar .topbar-icon.open-menu-icon {
 .content-description {
 	@apply font-normal my-4 text-sm text-gray-800 text-left lg:text-base xl:text-lg;
 }
+
+/* Modal Start */
+
+.modal-content-wrapper {
+	background: rgba(0, 0, 0, 0.5);
+	@apply hidden fixed h-full left-0 p-4 top-0 overflow-y-auto w-full z-40;
+}
+
+.modal-content-wrapper.show {
+	@apply block;
+}
+
+.modal-content-wrapper .modal-content-close {
+	@apply flex justify-end py-4 sm:py-2;
+}
+
+.modal-content-close span {
+	@apply bg-white cursor-pointer duration-700 flex items-center h-8 text-red-500 justify-center rounded-full text-base transition transform w-8 hover:scale-105;
+}
+
+.modal-login-container {
+	@apply flex items-center justify-center pb-4;
+}
+
+.modal-login-container .auth-container {
+	@apply bg-white py-3;
+}
+
+.modal-login-container .logo {
+	@apply font-black text-center text-red-600 text-3xl uppercase lg:text-2xl xl:text-4xl;
+}
+
+/* Modal Stop */
 
 /* Common Stop */
 

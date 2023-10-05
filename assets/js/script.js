@@ -176,10 +176,53 @@ const resellerSwitch = document.querySelector('#reseller-category-switch');
 if (resellerSwitch) {
 	resellerSwitch.addEventListener('click', function () {
 		const resellerSelect = document.querySelector('#reseller-category-container');
-		
+
 		if (resellerSelect) resellerSelect.classList.toggle('show');
 	});
 }
 
-
 // ********* Handle Reseller Dropdown Stop
+
+// ********* Handle Common Modal Wrapper Start
+
+// Get all modal content wrapper buttons i.e. buttons responsible for opening/closing a modal content wrapper
+// buttons should have a class of modal-content-wrapper-button
+// and should also have the modal-content-wrapper ID that it toggles on/off
+// e.g. <button class="modal-content-wrapper-button" data-modal-content-wrapper-id="1"></button>
+const modalContentButtons = document.querySelectorAll('.modal-content-button');
+
+// Get all the modal content wrappers. Note: Each should have a unique identifier and a class of modal-content-wrapper e.g.
+// <div data-modal-content-wrapper-id="1" class="modal-content-wrapper"></div>
+const modalContentWrappers = document.querySelectorAll('.modal-content-wrapper');
+
+const tag = 'data-modal-content-wrapper-id';
+
+modalContentButtons.forEach((button) => {
+	const buttonId = button.getAttribute(tag);
+
+	// Get the id of the modal content wrapper that the button controllers
+	let modalContentWrapper = null;
+	modalContentWrappers.forEach((wrapper) => {
+		if (modalContentWrapper !== null) return;
+
+		const wrapperId = wrapper.getAttribute(tag);
+		if (wrapperId === buttonId) modalContentWrapper = wrapper;
+	});
+
+	// If the modal content wrapper is found, add event listeners
+	if (modalContentWrapper) {
+		button.addEventListener('click', function () {
+			if (modalContentWrapper.classList.contains('show')) {
+				modalContentWrapper.classList.remove('show');
+				// show the overflow on the body
+				document.querySelector('body').classList.remove('hide-scrollbar-lg');
+			} else {
+				modalContentWrapper.classList.add('show');
+				// Hide the overflow on the body
+				document.querySelector('body').classList.add('hide-scrollbar-lg');
+			}
+		});
+	}
+});
+
+// ********* Handle Common Modal Wrapper Stop

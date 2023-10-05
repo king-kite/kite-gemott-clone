@@ -23,6 +23,96 @@
 		<link href="assets/css/style.css" rel="stylesheet" />
 	</head>
 	<body>
+		<!-- Common Modal (For Sign up) Start -->
+		<section data-modal-content-wrapper-id="1" class="modal-content-wrapper">
+			<div class="modal-content-close">
+				<span data-modal-content-wrapper-id="1" class="modal-content-button"
+					><i class="fas fa-times"></i
+				></span>
+			</div>
+			<div class="modal-login-container">
+				<div class="auth-container">
+					<h1 class="logo">GEMOTT</h1>
+					<h1 class="login-header">Create an account.</h1>
+					<div class="socials-sign-in-container">
+						<div class="socials-sign-ins">
+							<div class="social-sign-in facebook">
+								<span><i class="fab fa-facebook"></i></span>
+							</div>
+							<div class="social-sign-in twitter">
+								<span><i class="fab fa-twitter"></i></span>
+							</div>
+							<div class="social-sign-in github">
+								<span><i class="fab fa-github"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="sign-in-or-section">
+						<hr />
+						<span>Or continue with</span>
+						<hr />
+					</div>
+					<form action="#" class="login-form registration">
+						<div class="login-field-container span-2">
+							<label for="email" class="login-field-label">Email Address</label>
+							<div class="login-input-container">
+								<input placeholder="Email Address" type="email" name="email" id="email" />
+							</div>
+						</div>
+						<div class="login-field-container">
+							<label for="full_name" class="login-field-label">Full Name</label>
+							<div class="login-input-container">
+								<input placeholder="Full Name" type="text" name="full_name" id="full_name" />
+							</div>
+						</div>
+						<div class="login-field-container">
+							<label for="phone-number" class="login-field-label">Phone number</label>
+							<div class="relative login-input-container">
+								<div class="login-select-container">
+									<select id="country" name="country" class="login-select">
+										<option>+1</option>
+										<option>+233</option>
+										<option>+234</option>
+									</select>
+								</div>
+								<input
+									type="tel"
+									name="phone-number"
+									id="phone-number"
+									autocomplete="tel"
+									class="login-phone-input"
+								/>
+							</div>
+						</div>
+						<div class="login-field-container">
+							<label for="password" class="login-field-label">Password</label>
+							<div class="login-input-container">
+								<input placeholder="Password" type="password" name="password" id="password" />
+							</div>
+						</div>
+						<div class="login-field-container">
+							<label for="password2" class="login-field-label">Confirm Password</label>
+							<div class="login-input-container">
+								<input
+									placeholder="Confirm Password"
+									type="password"
+									name="password2"
+									id="password2"
+								/>
+							</div>
+						</div>
+						<div class="login-button span-2">
+							<button type="submit">Continue</button>
+						</div>
+					</form>
+					<p class="sign-up-description">
+						Already have an account? <a href="login.html">Sign In</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- Common Modal (For Sign up) Stop -->
+
 		<header>
 			<!-- Topbar start -->
 			<div class="topbar">
@@ -85,40 +175,10 @@
 								Paid <b>IPTV Service</b> <br />
 								<b>Provider</b>
 							</h1>
-							<!-- <span class="hero-tag-info"> in 8K, 4K, FHD & HD! </span> -->
 							<p class="hero-description">
 								Over 1000 Live TV Channels +20000 Movies &amp; TV Shows (VOD) <br />
 								On your TV, Computer, Tablet Or Smartphone.
 							</p>
-							<!-- <ul class="hero-services">
-								<li class="hero-service">
-									<span class="hero-service-icon">
-										<i class="fas fa-users"></i>
-									</span>
-									<span class="hero-service-title"
-										>Cancel <br />
-										Any Time</span
-									>
-								</li>
-								<li class="hero-service">
-									<span class="hero-service-icon">
-										<i class="fas fa-users"></i>
-									</span>
-									<span class="hero-service-title"
-										>Trusted by <br />
-										12K users</span
-									>
-								</li>
-								<li class="hero-service">
-									<span class="hero-service-icon">
-										<i class="fas fa-users"></i>
-									</span>
-									<span class="hero-service-title"
-										>Speed Like <br />
-										No One Else</span
-									>
-								</li>
-							</ul> -->
 							<a href="#" class="hero-cta">
 								<span>Get Trial Now!</span>
 								<span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
@@ -255,7 +315,12 @@
 									Cancel at any time and pay only for the period you have used and get the rest
 									refunded.
 								</p>
-								<a href="cart.html" class="pricing-footer-cta"> order now </a>
+								<span
+									data-modal-content-wrapper-id="1"
+									class="pricing-footer-cta modal-content-button"
+								>
+									order now
+								</span>
 							</div>
 						</li>
 						<li class="pricing red">
@@ -306,7 +371,12 @@
 									Cancel at any time and pay only for the period you have used and get the rest
 									refunded.
 								</p>
-								<a href="cart.html" class="pricing-footer-cta"> order now </a>
+								<span
+									data-modal-content-wrapper-id="1"
+									class="pricing-footer-cta modal-content-button"
+								>
+									order now
+								</span>
 							</div>
 						</li>
 						<li class="pricing dark-green">
@@ -357,7 +427,12 @@
 									Cancel at any time and pay only for the period you have used and get the rest
 									refunded.
 								</p>
-								<a href="cart.html" class="pricing-footer-cta"> order now </a>
+								<span
+									data-modal-content-wrapper-id="1"
+									class="pricing-footer-cta modal-content-button"
+								>
+									order now
+								</span>
 							</div>
 						</li>
 						<li class="pricing purple">
@@ -408,7 +483,12 @@
 									Cancel at any time and pay only for the period you have used and get the rest
 									refunded.
 								</p>
-								<a href="cart.html" class="pricing-footer-cta"> order now </a>
+								<span
+									data-modal-content-wrapper-id="1"
+									class="pricing-footer-cta modal-content-button"
+								>
+									order now
+								</span>
 							</div>
 						</li>
 					</ul>
