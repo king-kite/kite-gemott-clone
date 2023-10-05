@@ -2024,6 +2024,42 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 /* Checkout Page Start */
 
+.checkout-grid-container {
+	@apply grid grid-cols-1 gap-6 lg:pt-4 lg:grid-cols-12;
+}
+
+.checkout-grid-container .checkout-container {
+	@apply lg:col-span-8;
+}
+
+.checkout-grid-container .order-summary-container {
+	@apply max-w-sm lg:col-span-4 lg:mt-16;
+}
+
+.checkout-form-section {
+	@apply gap-4 grid grid-cols-1 mb-4 md:grid-cols-2;
+}
+
+.payment-choices {
+	@apply flex flex-wrap items-center gap-4 mb-4;
+}
+
+.payment-choice label {
+	@apply cursor-pointer text-gray-700 text-sm hover:text-gray-800;
+}
+
+.addition-information {
+	@apply mb-4;
+}
+
+.terms-of-service-container {
+	@apply my-4;
+}
+
+.terms-of-service-container label {
+	@apply flex items-center;
+}
+
 /* Checkout Page Stop */
 
 /* ********************************* */
