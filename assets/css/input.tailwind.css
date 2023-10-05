@@ -1722,7 +1722,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 /* Login Page Start */
 
 .login-wrapper {
-	@apply bg-gray-100 min-h-screen w-full sm:py-4 md:bg-gray-50 flex items-center justify-center md:justify-between md:py-0;
+	@apply bg-gray-100 min-h-screen w-full sm:py-4 md:bg-gray-50 md:py-0;
 }
 
 .login-wrapper.reverse {
@@ -1730,15 +1730,23 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .login-container {
-	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md md:w-1/2;
+	@apply lg:w-1/2 lg:absolute lg:top-0 lg:left-0;
+}
+
+.auth-container {
+	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md;
 }
 
 .login-container.registration {
-	@apply lg:max-w-xl lg:pb-1;
+	@apply pb-3 sm:pb-2 lg:pb-1;
+}
+
+.login-container.registration .auth-container {
+	@apply lg:max-w-lg;
 }
 
 .login-container .logo {
-	@apply text-center;
+	@apply pt-2 text-center;
 }
 
 .login-header {
@@ -1839,7 +1847,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 .login-image-container {
 	background-image: url('../images/banner3.5.jpg');
-	@apply bg-gray-100 bg-center bg-cover hidden h-full min-h-screen lg:block lg:w-1/2;
+	@apply bg-gray-100 bg-center bg-cover hidden h-full min-h-screen lg:block lg:fixed lg:top-0 lg:right-0 lg:w-1/2;
 }
 
 .login-overlay {

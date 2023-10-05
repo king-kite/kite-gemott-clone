@@ -6904,11 +6904,8 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 /* Login Page Start */
 
 .login-wrapper {
-  display: flex;
   min-height: 100vh;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
@@ -6922,7 +6919,6 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 @media (min-width: 768px) {
   .login-wrapper {
-    justify-content: space-between;
     --tw-bg-opacity: 1;
     background-color: rgb(249 250 251 / var(--tw-bg-opacity));
     padding-top: 0px;
@@ -6934,7 +6930,16 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
   flex-direction: row-reverse;
 }
 
-.login-container {
+@media (min-width: 1024px) {
+  .login-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+  }
+}
+
+.auth-container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -6949,8 +6954,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 @media (min-width: 768px) {
-  .login-container {
-    width: 50%;
+  .auth-container {
     max-width: 28rem;
     background-color: transparent;
     padding-top: 0px;
@@ -6961,14 +6965,28 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
   }
 }
 
+.login-container.registration {
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .login-container.registration {
+    padding-bottom: 0.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .login-container.registration {
-    max-width: 36rem;
     padding-bottom: 0.25rem;
+  }
+
+  .login-container.registration .auth-container {
+    max-width: 36rem;
   }
 }
 
 .login-container .logo {
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -7199,6 +7217,9 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 @media (min-width: 1024px) {
   .login-image-container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
     display: block;
     width: 50%;
   }
