@@ -1681,7 +1681,8 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply block w-full text-sm tracking-wide leading-6 rounded-md border-0 px-4 py-3 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 md:text-base md:leading-7;
 }
 
-.contact-select-container {
+.contact-select-container,
+.login-select-container {
 	@apply absolute inset-y-0 left-0 flex items-center;
 }
 
@@ -1694,7 +1695,8 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .contact-select,
-.review-select {
+.review-select,
+.login-select {
 	outline: none;
 	@apply h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-500 sm:text-sm;
 }
@@ -1723,8 +1725,16 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply bg-gray-100 min-h-screen w-full sm:py-4 md:bg-gray-50 flex items-center justify-center md:justify-between md:py-0;
 }
 
+.login-wrapper.reverse {
+	@apply flex-row-reverse;
+}
+
 .login-container {
 	@apply bg-white max-w-sm mx-auto p-5 rounded-lg shadow w-full md:bg-transparent md:shadow-none md:py-0 md:max-w-md md:w-1/2;
+}
+
+.login-container.registration {
+	@apply lg:max-w-xl lg:pb-1;
 }
 
 .login-container .logo {
@@ -1735,8 +1745,24 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply mt-1 text-center text-xl font-extrabold text-gray-800 lg:my-3;
 }
 
+.login-container.registration .login-header {
+	@apply lg:my-0;
+}
+
 .login-form {
-	@apply grid grid-cols-1 gap-y-4;
+	@apply grid grid-cols-1 gap-4;
+}
+
+.login-form.registration {
+	@apply lg:grid-cols-2;
+}
+
+.login-field-container.span-2 {
+	@apply lg:col-span-2;
+}
+
+.login-button button {
+	@apply lg:col-span-2 lg:p-3;
 }
 
 .socials-sign-in-container {
@@ -1775,6 +1801,10 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply flex items-center justify-between;
 }
 
+.login-field-container {
+	@apply col-span-1;
+}
+
 .login-bottom-section .remember-me {
 	@apply flex items-center;
 }
@@ -1795,13 +1825,21 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 	@apply py-2;
 }
 
-.login-button button {
-	@apply py-3;
+.login-phone-input {
+	@apply !pl-[5rem];
+}
+
+.login-select {
+	@apply !px-2;
+}
+
+.login-button.span-2 {
+	@apply lg:col-span-2;
 }
 
 .login-image-container {
 	background-image: url('../images/banner3.5.jpg');
-	@apply bg-gray-100 bg-center bg-cover hidden h-full min-h-screen md:block md:w-1/2;
+	@apply bg-gray-100 bg-center bg-cover hidden h-full min-h-screen lg:block lg:w-1/2;
 }
 
 .login-overlay {
