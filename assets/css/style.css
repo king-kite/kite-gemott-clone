@@ -7846,7 +7846,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 @media (min-width: 1024px) {
   .checkout-grid-container .order-summary-container {
     grid-column: span 4 / span 4;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
   }
 }
 
@@ -8052,6 +8052,16 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 }
 

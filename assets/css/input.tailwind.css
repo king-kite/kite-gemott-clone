@@ -2033,7 +2033,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .checkout-grid-container .order-summary-container {
-	@apply max-w-sm lg:col-span-4 lg:mt-16;
+	@apply max-w-sm lg:col-span-4 lg:mt-[4.5rem];
 }
 
 .checkout-form-section {
@@ -2045,7 +2045,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .payment-choice label {
-	@apply cursor-pointer text-gray-700 text-sm hover:text-gray-800;
+	@apply cursor-pointer flex items-start text-gray-700 text-sm hover:text-gray-800;
 }
 
 .addition-information {
@@ -2057,7 +2057,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .terms-of-service-container label {
-	@apply flex items-center;
+	@apply flex items-start;
 }
 
 /* Checkout Page Stop */
