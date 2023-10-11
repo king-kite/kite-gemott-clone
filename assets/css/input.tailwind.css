@@ -1984,8 +1984,13 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 
 /* Cart Page Start */
 
-.cart-grid-container {
+.cart-grid-container,
+.configure-product-grid-container {
 	@apply py-4 grid gap-4 grid-cols-1 md:grid-cols-12;
+}
+
+.configure-product {
+	@apply bg-gray-200 px-4 py-3 rounded;
 }
 
 .cart-categories {
@@ -2001,6 +2006,10 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .cart-container {
+	@apply md:col-span-7 lg:col-span-9;
+}
+
+.configure-product-container {
 	@apply md:col-span-7 lg:col-span-6;
 }
 

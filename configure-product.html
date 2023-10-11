@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite Gemott Clone | Cart</title>
+		<title>Kite Gemott Clone | Configure Product</title>
 
 		<!-- Poppins (Google Fonts) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,127 +69,84 @@
 		</header>
 
 		<main>
-			<!-- Hero Section Start -->
-			<section class="content-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="content-hero-data">
-							<h1 class="content-hero-title">Cart</h1>
-							<ul class="breadcrumbs">
-								<li class="breadcrumb"><a href="index.html">Home</a></li>
-								<li class="breadcrumb active"><a href="cart.html">Cart</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
-
 			<!-- Review & Checkout Start -->
 			<section class="content-wrapper">
 				<div class="wrapper">
 					<div class="content-container">
-						<h3 class="content-title">Review &amp; Checkout</h3>
+						<h3 class="content-title">Configure your desired options and continue to checkout.</h3>
 						<div class="content-underline">
 							<div class="big-red"></div>
 							<div class="small-gray"></div>
 						</div>
-						<div class="cart-grid-container">
-							<!-- Cart Start -->
-							<div class="cart-container">
-								<div class="cart">
-									<div class="cart-table">
-										<table>
-											<thead>
-												<tr>
-													<th>Product/Options</th>
-													<th>Price/Cycle</th>
-													<th>Actions</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<h1>Platinum 3 Month Subscription</h1>
-														<span>Platinum IPTV</span>
-													</td>
-													<td>
-														<h1>&dollar;18.00&nbsp;USD</h1>
-														<span>Quarterly</span>
-													</td>
-													<td class="table-actions-data">
-														<ul class="table-actions">
-															<li>
-																<span class="table-action red-text"
-																	><i class="fas fa-trash"></i
-																></span>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<h1>Trial Plan</h1>
-														<span>Platinum Reseller IPTV</span>
-													</td>
-													<td>
-														<h1>&dollar;00.00&nbsp;USD</h1>
-														<span>Quarterly</span>
-													</td>
-													<td class="table-actions-data">
-														<ul class="table-actions">
-															<li>
-																<span class="table-action red-text"
-																	><i class="fas fa-trash"></i
-																></span>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<h1>1 Connection</h1>
-														<span>Monthly</span>
-													</td>
-													<td>
-														<h1>&dollar;15.00&nbsp;USD</h1>
-														<span>Monthly</span>
-													</td>
-													<td class="table-actions-data">
-														<ul class="table-actions">
-															<li>
-																<span class="table-action red-text"
-																	><i class="fas fa-trash"></i
-																></span>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<h1>12 Months Account</h1>
-														<span>Monthly</span>
-													</td>
-													<td>
-														<h1>&dollar;100.00&nbsp;USD</h1>
-														<span>Monthly</span>
-													</td>
-													<td class="table-actions-data">
-														<ul class="table-actions">
-															<li>
-																<span class="table-action red-text"
-																	><i class="fas fa-trash"></i
-																></span>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+						<div class="configure-product-grid-container">
+							<!-- Cart Categories Start -->
+							<div class="cart-categories">
+								<div id="reseller-category-container" class="reseller-category-container show">
+									<button
+										id="reseller-category-switch"
+										type="button"
+										class="reseller-category-switch"
+									>
+										<span><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Categories</span>
+										<i class="fas fa-chevron-down"></i>
+										<i class="fas fa-chevron-up"></i>
+									</button>
+									<ul class="reseller-select-category-list">
+										<li class="reseller-select-category">
+											<a href="reseller-detail.html">Trial</a>
+										</li>
+										<li class="reseller-select-category">
+											<a href="reseller-detail.html">Platinum IPTV</a>
+										</li>
+										<li class="reseller-select-category">
+											<a href="reseller-detail.html">Platinum IPTV Resellers</a>
+										</li>
+									</ul>
+								</div>
+								<div class="reseller-category-container show">
+									<button type="button" class="reseller-category-switch">
+										<span><i class="fas fa-plus"></i>&nbsp;&nbsp;Actions</span>
+										<i class="fas fa-chevron-down"></i>
+										<i class="fas fa-chevron-up"></i>
+									</button>
+									<ul class="reseller-select-category-list">
+										<li class="reseller-select-category">
+											<a href="cart.html"
+												><i class="fas fa-shopping-cart"></i>&nbsp;&nbspView Cart</a
+											>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<!-- Cart Stop -->
+							<!-- Cart Categories Stop -->
+
+							<!-- Configure Product Container Start -->
+							<div class="configure-product-container">
+								<div class="configure-product">
+									<h3 class="content-title">Platinum 3 Month Subscription</h3>
+									<p class="content-description">
+										Over 7400 Live Channels <br />
+										Over 29000VOD <br />
+										Compatible Almost on All devices <br />
+										AntiFreeze Technology <br />
+										FHD HD SD Channels <br />
+										Free Updates <br />
+										24/7 Updates <br />
+										Fast &amp; Stable <br />
+										99&percnt; Uptime
+									</p>
+								</div>
+								<br />
+								<div class="review-select-container">
+									<label class="review-field-label" for="billing-cycle">Choose Billing Cycle</label>
+									<select name="billing-cycle" id="billing-cycle">
+										<option value="1">&euro;18.00EUR Quarterly</option>
+										<option value="1">&euro;24.00EUR Quarterly</option>
+										<option value="1">&euro;36.00EUR Quarterly</option>
+									</select>
+								</div>
+							</div>
+							<!-- Configure Product Container Stop -->
 
 							<!-- Order Summary Start -->
 							<div class="order-summary-container">
@@ -203,43 +160,19 @@
 											>USD
 										</span>
 									</li>
-									<li class="order-summary-item">
-										<p class="order-summary-item-title">12 Months Account</p>
-										<span class="order-summary-item-price">
-											&dollar;<b><big>100.00&nbsp;</big></b
-											>USD
-										</span>
-									</li>
-									<li class="order-summary-item">
-										<p class="order-summary-item-title">12 Months Account</p>
-										<span class="order-summary-item-price">
-											&dollar;<b><big>100.00&nbsp;</big></b
-											>USD
-										</span>
-									</li>
 								</ul>
 
 								<div class="order-summary-total">
 									<h1 class="order-summary-total-price">
 										<span>Total</span>
 										<span>
-											&dollar;<b><big>300.00</big></b
+											&dollar;<b><big>100.00</big></b
 											>&nbsp;USD
 										</span>
 									</h1>
-
-									<div class="promo-code-container">
-										<form action="#">
-											<div class="input-container">
-												<input name="promo" placeholder="Enter promo code" type="text" />
-												<button type="submit">Validate</button>
-											</div>
-										</form>
-									</div>
-
 									<div class="order-summary-total-cta">
-										<a href="checkout.html"
-											>Checkout &nbsp; <span><i class="fas fa-arrow-right"></i></span
+										<a href="cart.html"
+											>Continue &nbsp; <span><i class="fas fa-arrow-right"></i></span
 										></a>
 									</div>
 								</div>
