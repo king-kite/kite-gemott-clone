@@ -64,7 +64,7 @@ header .topbar .topbar-icon.open-menu-icon {
 .navbar .logo,
 .login-container .logo,
 .review-form-container .logo {
-	@apply font-black text-red-600 text-3xl uppercase lg:text-2xl xl:text-4xl;
+	@apply font-black text-primary-600 text-2xl uppercase lg:text-xl xl:text-3xl;
 }
 
 .navbar .menu-container {
@@ -106,7 +106,7 @@ header .topbar .topbar-icon.open-menu-icon {
 
 .menu-list-item a:hover,
 .menu-list-item.active a {
-	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-red-600;
+	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-primary-600;
 }
 
 /* Navigation Stop */
@@ -135,7 +135,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .red-text {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .content-hero-container {
@@ -175,7 +175,7 @@ header .topbar .topbar-icon.open-menu-icon {
 
 .content-hero-container .breadcrumb a,
 .content-hero-container .breadcrumb::before {
-	@apply capitalize italic no-underline text-gray-100 text-sm md:tracking-wide md:text-base xl:text-lg hover:underline hover:text-red-600;
+	@apply capitalize italic no-underline text-gray-100 text-sm md:tracking-wide md:text-base xl:text-lg hover:underline hover:text-primary-600;
 }
 
 .content-hero-container .breadcrumb.active a,
@@ -197,7 +197,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .content-underline .big-red {
-	@apply bg-red-600 bg-opacity-70 h-1 rounded-l-sm w-1/5;
+	@apply bg-primary-600 bg-opacity-70 h-1 rounded-l-sm w-1/5;
 }
 
 .content-underline .small-gray {
@@ -224,7 +224,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .modal-content-close span {
-	@apply bg-white cursor-pointer duration-700 flex items-center h-8 text-red-500 justify-center rounded-full text-base transition transform w-8 hover:scale-105;
+	@apply bg-white cursor-pointer duration-700 flex items-center h-8 text-primary-500 justify-center rounded-full text-base transition transform w-8 hover:scale-105;
 }
 
 .modal-login-container {
@@ -236,7 +236,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .modal-login-container .logo {
-	@apply font-black text-center text-red-600 text-3xl uppercase lg:text-2xl xl:text-4xl;
+	@apply font-black text-center text-primary-600 text-2xl uppercase lg:text-xl xl:text-3xl;
 }
 
 /* Modal Stop */
@@ -258,37 +258,9 @@ header .topbar .topbar-icon.open-menu-icon {
 	@apply my-3 text-3xl text-gray-100 tracking-wide md:text-4xl lg:text-5xl xl:text-6xl;
 }
 
-/* .hero-tag-info {
-	@apply bg-orange-400 font-medium inline-block my-1 px-4 py-2 rounded-sm text-gray-800 md:my-2 lg:my-3;
-} */
-
 .hero-description {
 	@apply my-1 font-medium text-sm text-gray-100 lg:text-base xl:text-lg;
 }
-
-/* .hero-services {
-	@apply flex items-center list-none my-8;
-}
-
-.hero-service {
-	@apply flex items-center px-3 border-0 border-r border-gray-100 border-solid xl:px-5;
-}
-
-.hero-service:first-child {
-	@apply pl-0;
-}
-
-.hero-service:last-child {
-	@apply border-0;
-}
-
-.hero-service-icon {
-	@apply bg-gray-100 flex h-8 items-center justify-center rounded-full text-gray-700 w-8 xl:h-12 xl:w-12;
-}
-
-.hero-service-title {
-	@apply text-xs ml-1 text-gray-100 md:text-sm lg:ml-2 xl:text-base;
-} */
 
 .hero-content .hero-cta {
 	@apply bg-green-800 duration-100 transition-all transform capitalize inline-block mt-3 px-10 py-4 text-center text-gray-100 text-sm no-underline rounded-sm xl:text-base;
@@ -387,15 +359,15 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .pricing.red .pricing-title {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .pricing.red .pricing-price {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .pricing.red .pricing-item-icon {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .pricing.dark-green .pricing-title {
@@ -415,7 +387,7 @@ header .topbar .topbar-icon.open-menu-icon {
 /* Get Started Start */
 
 .get-started-container {
-	@apply bg-red-500 py-4 text-center text-gray-100;
+	@apply bg-primary-500 py-4 text-center text-gray-100;
 }
 
 .get-started-content {
@@ -431,7 +403,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .get-started-cta:hover {
-	@apply text-red-500 border-red-500 bg-gray-100;
+	@apply text-primary-500 border-primary-500 bg-gray-100;
 }
 
 /* Get Started Stop */
@@ -453,7 +425,7 @@ header .topbar .topbar-icon.open-menu-icon {
 .feature::after,
 .feature::before {
 	content: '';
-	@apply absolute bg-red-500 duration-1000 h-[1px] w-0 transition-all transform;
+	@apply absolute bg-primary-500 duration-1000 h-[1px] w-0 transition-all transform;
 }
 
 .feature::after:hover,
@@ -475,7 +447,7 @@ header .topbar .topbar-icon.open-menu-icon {
 
 /* Just for diff colors */
 .feature:first-child .feature-image {
-	@apply text-red-600 border-red-600;
+	@apply text-primary-600 border-primary-600;
 }
 
 .feature:nth-child(2) .feature-image {
@@ -491,7 +463,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .feature:nth-child(5) .feature-image {
-	@apply text-red-600 border-red-600;
+	@apply text-primary-600 border-primary-600;
 }
 
 .feature:last-child .feature-image {
@@ -523,7 +495,11 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .become-seller-data .container-title {
-	@apply text-lg lg:text-xl xl:text-2xl;
+	@apply font-bold text-lg md:font-extrabold lg:text-xl xl:text-2xl;
+}
+
+.become-seller-data .container-description {
+	@apply md:font-bold md:text-right;
 }
 
 .become-seller-image {
@@ -543,106 +519,34 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .become-seller-cta {
-	@apply flex justify-center;
+	@apply flex justify-center pt-1;
 }
 
 .become-seller-cta a {
-	@apply bg-transparent border-2 border-red-500 border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded text-red-600 text-base uppercase transition transform no-underline hover:scale-x-105;
+	@apply bg-transparent border-2 border-primary-500 border-solid inline-block cursor-pointer duration-500 px-5 py-3 rounded text-primary-600 text-base uppercase transition transform no-underline hover:scale-x-105;
 }
 
 .become-seller-cta a:hover {
-	@apply text-red-500 border-red-500 bg-gray-100;
+	@apply text-primary-500 border-primary-500 bg-gray-100;
 }
 
 .seller-benefits {
-	@apply flex items-center list-none justify-between my-2;
+	@apply flex items-center list-none justify-between;
 }
 
 .seller-benefit {
-	@apply flex flex-col items-center justify-center p-2 md:p-3 lg:p-4;
+	@apply flex flex-col items-center justify-center px-2 md:px-3 lg:px-4;
 }
 
 .seller-benefit-title {
-	@apply font-black mb-1 text-red-500 text-center text-lg md:text-xl lg:text-2xl xl:text-3xl;
+	@apply font-black mb-1 text-primary-500 text-center text-lg md:text-xl lg:text-2xl xl:text-3xl;
 }
 
 .seller-benefit-description {
 	@apply text-sm text-center text-gray-700 lg:text-base;
 }
 
-/* .seller-benefits {
-	@apply list-none my-2 md:grid md:grid-cols-2 md:gap-x-2 md:gap-y-4 md:my-4;
-}
-
-.seller-benefit {
-	@apply flex items-center justify-start text-left text-sm text-gray-700 my-3 md:my-0;
-}
-
-.seller-benefit-icon {
-	@apply text-xs text-red-600 mr-2;
-} */
-
 /* Become a Seller Stop */
-
-/* Credits Start */
-
-/* .credits-container {
-	@apply bg-gray-100 py-8;
-}
-
-.credits {
-	@apply grid grid-cols-1 gap-5 list-none w-full md:gap-4 md:grid-cols-2 lg:gap-2 lg:grid-cols-4;
-}
-
-.credit {
-	@apply bg-gray-50 border-gray-200 border border-solid duration-500 flex flex-col items-center p-5 rounded-sm shadow-md transition transform w-full;
-}
-
-.credit:hover {
-	@apply -translate-y-4;
-}
-
-.credit-header {
-	@apply flex flex-col items-center;
-}
-
-.credit-header-title {
-	@apply font-bold mb-1 text-center text-2xl text-gray-900 uppercase;
-}
-
-.credit-underline {
-	@apply bg-red-500 h-[3px] my-2 w-1/4;
-}
-
-.credit-header-description {
-	@apply font-medium my-1 text-sm text-center text-gray-800;
-}
-
-.credit-header-description strong {
-	@apply font-semibold;
-}
-
-.credit-footer {
-	@apply flex flex-col items-center mt-2 pt-2;
-}
-
-.credit-footer p {
-	@apply font-medium my-1 text-gray-700 text-sm text-center;
-}
-
-.credit-footer .credit-price {
-	@apply font-black mt-2 text-center text-2xl text-gray-900 uppercase;
-}
-
-.credit-cta {
-	@apply bg-red-500 border-transparent border-2 border-solid cursor-pointer duration-500 my-4 px-6 py-4 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
-}
-
-.credit-cta:hover {
-	@apply text-red-600 bg-transparent border-red-500;
-} */
-
-/* Credits Stop */
 
 /* Testimonials Start */
 
@@ -684,7 +588,7 @@ header .topbar .topbar-icon.open-menu-icon {
 .testimonial::after {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
 		Verdana, sans-serif;
-	@apply absolute bg-red-500 rounded h-5 w-8 pt-4 flex items-center justify-center text-center text-3xl text-gray-100 z-20;
+	@apply absolute bg-primary-500 rounded h-5 w-8 pt-4 flex items-center justify-center text-center text-3xl text-gray-100 z-20;
 }
 
 .testimonial .testimonial-description {
@@ -788,7 +692,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .support-cta a {
-	@apply bg-transparent border-2 border-red-500 border-solid cursor-pointer duration-700 px-8 py-4 rounded text-gray-100 text-sm tracking-widest uppercase transition transform no-underline lg:text-base;
+	@apply bg-transparent border-2 border-primary-500 border-solid cursor-pointer duration-700 px-8 py-4 rounded text-gray-100 text-sm tracking-widest uppercase transition transform no-underline lg:text-base;
 }
 
 .support-cta a:active {
@@ -832,7 +736,7 @@ footer {
 }
 
 .footer-link.active a {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .footer-link a:hover {
@@ -857,7 +761,7 @@ footer {
 
 .footer-bottom-cta:hover,
 .footer-bottom-cta.cta-2:hover {
-	@apply bg-red-500 border-red-500 text-gray-100;
+	@apply bg-primary-500 border-primary-500 text-gray-100;
 }
 
 .footer-bottom-cta.cta-2 {
@@ -897,7 +801,7 @@ footer {
 }
 
 .footer-end .logo {
-	@apply font-black text-center text-red-600 text-3xl uppercase md:text-left lg:text-2xl xl:text-4xl;
+	@apply font-black text-center text-primary-600 text-2xl uppercase md:text-left lg:text-xl xl:text-3xl;
 }
 
 .footer-end-links {
@@ -946,11 +850,11 @@ footer {
 }
 
 .footer-end-social a.instagram:hover {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .footer-end-social a.youtube:hover {
-	@apply text-red-700;
+	@apply text-primary-700;
 }
 
 .footer-base {
@@ -1007,7 +911,7 @@ footer {
 }
 
 .subscription-hero-content .under-line {
-	@apply h-[3px] my-1 rounded-sm bg-red-600 w-2/3 md:mb-2 lg:mb-3;
+	@apply h-[3px] my-1 rounded-sm bg-primary-600 w-2/3 md:mb-2 lg:mb-3;
 }
 
 .subscription-hero-content .iptv-services {
@@ -1031,11 +935,11 @@ footer {
 }
 
 .subscription-hero-content .subscription-cta {
-	@apply bg-red-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
+	@apply bg-primary-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
 }
 
 .subscription-hero-content .subscription-cta:hover {
-	@apply border-red-500 text-red-600 bg-transparent;
+	@apply border-primary-500 text-primary-600 bg-transparent;
 }
 
 /* Subscription Page - Hero Stop */
@@ -1102,17 +1006,17 @@ footer {
 }
 
 .affiliate-content .affiliate-cta {
-	@apply bg-red-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
+	@apply bg-primary-500 border-2 border-transparent border-solid inline-block cursor-pointer duration-500 mt-6 px-5 py-3 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline;
 }
 
 .affiliate-content .affiliate-cta:hover {
-	@apply border-red-500 text-red-600 bg-transparent;
+	@apply border-primary-500 text-primary-600 bg-transparent;
 }
 
 /* Affiliate Section Stop */
 
 .get-started-container.affiliate-program {
-	@apply bg-red-600;
+	@apply bg-primary-600;
 }
 
 .get-started-container.affiliate-program .get-started-cta {
@@ -1122,7 +1026,7 @@ footer {
 /* How Steps Start */
 
 .how-steps-container {
-	@apply bg-red-600 py-8;
+	@apply bg-primary-600 py-8;
 }
 
 .how-steps-container .how-steps {
@@ -1194,7 +1098,7 @@ footer {
 	@apply text-green-600;
 }
 .how-you-do-it-item.item-2 .how-you-do-it-item-icon {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .how-you-do-it-container .how-you-do-it-item-icon {
@@ -1244,7 +1148,7 @@ footer {
 }
 
 .faq-header:hover .title {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .faq-header .title {
@@ -1269,7 +1173,7 @@ footer {
 }
 
 .faq.show .faq-header .title {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .faq.show .arrows {
@@ -1321,7 +1225,7 @@ footer {
 }
 
 .search-form .input-container button {
-	@apply bg-red-500 border-none capitalize h-full px-4 rounded text-gray-200 text-xs sm:text-sm sm:max-h-10 sm:px-8 lg:text-base;
+	@apply bg-primary-500 border-none capitalize h-full px-4 rounded text-gray-200 text-xs sm:text-sm sm:max-h-10 sm:px-8 lg:text-base;
 }
 
 .tutorial-categories {
@@ -1329,7 +1233,7 @@ footer {
 }
 
 .tutorial-category a {
-	@apply bg-white border border-gray-400 border-opacity-50 border-solid flex items-center p-4 no-underline text-gray-600 text-sm rounded-sm shadow-md uppercase hover:border-red-200 hover:scale-105 hover:duration-300 hover:transform md:tracking-wide md:text-base;
+	@apply bg-white border border-gray-400 border-opacity-50 border-solid flex items-center p-4 no-underline text-gray-600 text-sm rounded-sm shadow-md uppercase hover:border-primary-200 hover:scale-105 hover:duration-300 hover:transform md:tracking-wide md:text-base;
 }
 
 .tutorial-category a .category-title {
@@ -1353,7 +1257,7 @@ footer {
 }
 
 .tutorial-article:hover .article-title {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .tutorial-article .article-title {
@@ -1413,7 +1317,7 @@ footer {
 }
 
 .helpful-choices .helpful-choice:last-child a {
-	@apply text-red-600 hover:text-red-800;
+	@apply text-primary-600 hover:text-primary-800;
 }
 
 /* Tutorial / Knowledge Base Stop */
@@ -1428,7 +1332,7 @@ footer {
 }
 
 .setup-guide .setup-guide-title {
-	@apply font-bold mb-2 text-lg text-red-500 tracking-wide md:text-xl lg:text-2xl;
+	@apply font-bold mb-2 text-lg text-primary-500 tracking-wide md:text-xl lg:text-2xl;
 }
 
 .setup-guide .setup-guide-description {
@@ -1436,7 +1340,7 @@ footer {
 }
 
 .setup-guide .setup-guide-cta {
-	@apply bg-red-500 font-medium inline-block text-center text-gray-100 mt-2 px-8 py-3 rounded-full no-underline hover:bg-red-600;
+	@apply bg-primary-500 font-medium inline-block text-center text-gray-100 mt-2 px-8 py-3 rounded-full no-underline hover:bg-primary-600;
 }
 
 /* Setup Guides Start */
@@ -1482,7 +1386,7 @@ footer {
 }
 
 .troubleshooting-guide.show .troubleshooting-guide-header:hover .title {
-	@apply text-red-400;
+	@apply text-primary-400;
 }
 
 .troubleshooting-guide.show .troubleshooting-guide-header .action-icons {
@@ -1506,11 +1410,11 @@ footer {
 }
 
 .troubleshooting-guide-header:hover .title {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .troubleshooting-guide-header:hover .action-icons .action-icon {
-	@apply text-red-600;
+	@apply text-primary-600;
 }
 
 .troubleshooting-guide-header .action-icons {
@@ -1528,19 +1432,6 @@ footer {
 .troubleshooting-guide-description {
 	@apply font-normal leading-5 text-xs sm:text-sm text-gray-800 md:text-base lg:text-sm;
 }
-/* 
-background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3px,#222629 10px);
-
-.wgl-accordion .accordion__header:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: inherit;
-    background-attachment: local;
-    pointer-events: none; */
 
 /* Troubleshooting page stop */
 
@@ -1629,7 +1520,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .reseller-card-credit {
-	@apply border-2 border-red-400 border-solid p-2 rounded;
+	@apply border-2 border-primary-400 border-solid p-2 rounded;
 }
 
 .reseller-card-credit p {
@@ -1637,7 +1528,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .reseller-card-credit h2 {
-	@apply text-center mt-1 text-red-600 text-lg md:text-xl xl:text-2xl;
+	@apply text-center mt-1 text-primary-600 text-lg md:text-xl xl:text-2xl;
 }
 
 .reseller-card-services {
@@ -1749,7 +1640,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 .login-button button,
 .review-button button,
 .contact-submit-button button {
-	@apply block border-none cursor-pointer w-full rounded-md bg-red-600 p-4 text-center text-sm font-black tracking-wide uppercase text-white md:text-base shadow-sm hover:bg-red-500;
+	@apply block border-none cursor-pointer w-full rounded-md bg-primary-600 p-4 text-center text-sm font-black tracking-wide uppercase text-white md:text-base shadow-sm hover:bg-primary-500;
 }
 
 /* Contact Us Page Stop */
@@ -1863,7 +1754,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .login-bottom-section a {
-	@apply cursor-pointer no-underline text-red-500 text-xs hover:text-red-600 hover:underline md:text-sm;
+	@apply cursor-pointer no-underline text-primary-500 text-xs hover:text-primary-600 hover:underline md:text-sm;
 }
 
 .login-input-container input {
@@ -1909,7 +1800,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .sign-up-description a {
-	@apply cursor-pointer text-red-500 no-underline hover:text-red-600 hover:underline;
+	@apply cursor-pointer text-primary-500 no-underline hover:text-primary-600 hover:underline;
 }
 
 /* Login Page Stop */
@@ -1931,7 +1822,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .review-add-container .review-add-button {
-	@apply bg-red-500 border-none capitalize cursor-pointer duration-500 min-w-[8rem] px-4 py-3 rounded-lg text-gray-100 text-center text-sm md:min-w-[9rem] hover:bg-red-400 active:scale-95 md:px-6 md:py-4;
+	@apply bg-primary-500 border-none capitalize cursor-pointer duration-500 min-w-[8rem] px-4 py-3 rounded-lg text-gray-100 text-center text-sm md:min-w-[9rem] hover:bg-primary-400 active:scale-95 md:px-6 md:py-4;
 }
 
 .review-form-wrapper {
@@ -1958,7 +1849,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .review-form-title {
-	@apply font-black italic text-lg text-red-600 uppercase;
+	@apply font-black italic text-lg text-primary-600 uppercase;
 }
 
 .review-form {
@@ -2018,7 +1909,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .order-summary-container .order-summary-title {
-	@apply bg-red-500 font-medium py-3 rounded-t-sm text-center text-gray-100 text-base;
+	@apply bg-primary-500 font-medium py-3 rounded-t-sm text-center text-gray-100 text-base;
 }
 
 .order-summary-container .order-summary-items {
@@ -2046,7 +1937,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .order-summary-total-cta a {
-	@apply bg-red-500 cursor-pointer mt-3 px-4 py-3 rounded-lg no-underline text-center text-sm text-gray-100 hover:bg-red-600;
+	@apply bg-primary-500 cursor-pointer mt-3 px-4 py-3 rounded-lg no-underline text-center text-sm text-gray-100 hover:bg-primary-600;
 }
 
 .cart-table {
@@ -2063,7 +1954,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .cart-table table thead tr {
-	@apply bg-red-500 text-gray-100;
+	@apply bg-primary-500 text-gray-100;
 }
 
 .cart-table table thead tr th {
@@ -2095,7 +1986,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .cart-table table tbody .table-action.red-text {
-	@apply text-red-500;
+	@apply text-primary-500;
 }
 
 .order-summary-total .promo-code-container {
@@ -2111,7 +2002,7 @@ background-image: repeating-linear-gradient(-45deg,#1b1b1b,#1b1b1b 2px,#222629 3
 }
 
 .promo-code-container form button {
-	@apply bg-red-500 border-none cursor-pointer text-center h-full text-gray-100 w-1/3 hover:bg-red-400;
+	@apply bg-primary-500 border-none cursor-pointer text-center h-full text-gray-100 w-1/3 hover:bg-primary-400;
 }
 
 /* Cart Page Stop */
