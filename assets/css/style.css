@@ -2538,6 +2538,12 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   position: relative;
 }
 
+@media (min-width: 1024px) {
+  .menu .client-area-nav {
+    display: none;
+  }
+}
+
 .menu .client-area-nav .client-area-list {
   display: none;
   list-style-type: none;

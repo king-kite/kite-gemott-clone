@@ -149,7 +149,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .menu .client-area-nav {
-	@apply relative;
+	@apply relative lg:hidden;
 }
 
 .menu .client-area-nav .client-area-list {
