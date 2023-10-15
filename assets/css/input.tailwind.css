@@ -1231,7 +1231,7 @@ footer {
 }
 
 .how-step .how-step-icon {
-	@apply text-3xl text-gray-900 xl:text-4xl;
+	@apply text-3xl text-gray-100 xl:text-4xl;
 }
 
 .how-step .how-step-title {

@@ -21,13 +21,35 @@
 			<!-- Topbar start -->
 			<div class="topbar">
 				<div class="topbar-content wrapper">
-					<a href="login.html" class="topbar-icon">
-						<i class="fas fa-user"></i>
-					</a>
 					<a href="cart.html" class="topbar-icon">
 						<i class="fas fa-shopping-cart"></i>
 						<span class="topbar-icon-notification">99</span>
 					</a>
+					<div id="client-area" class="client-area">
+						<button id="client-area-button" class="client-area-button" type="button">
+							<span>Client Area</span>
+							<span class="icon"><i class="fas fa-chevron-down"></i></span>
+						</button>
+						<ul id="client-area-list" class="client-area-list">
+							<li class="client-area-list-item">
+								<a href="login.html"
+									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
+								>
+							</li>
+							<li class="client-area-list-item">
+								<a href="register.html"
+									><span class="icon"><i class="fas fa-user-plus"></i></span
+									><span>Register</span></a
+								>
+							</li>
+							<li class="client-area-list-item">
+								<a href="logout.html"
+									><span class="icon"><i class="fas fa-sign-out-alt"></i></span
+									><span>Logout</span></a
+								>
+							</li>
+						</ul>
+					</div>
 					<span id="open-menu-button" class="topbar-icon open-menu-icon">
 						<i class="fas fa-bars"></i>
 					</span>
@@ -46,6 +68,32 @@
 								<span class="close-icon">
 									<i class="fas fa-times"></i>
 								</span>
+							</div>
+							<div id="client-area-nav" class="client-area-nav">
+								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
+									<span>Client Area</span>
+									<span class="icon"><i class="fas fa-chevron-down"></i></span>
+								</span>
+								<ul id="client-area-list" class="client-area-list">
+									<li class="client-area-list-item">
+										<a href="login.html"
+											><span class="icon"><i class="fas fa-arrow-right"></i></span
+											><span>Login</span></a
+										>
+									</li>
+									<li class="client-area-list-item">
+										<a href="register.html"
+											><span class="icon"><i class="fas fa-user-plus"></i></span
+											><span>Register</span></a
+										>
+									</li>
+									<li class="client-area-list-item">
+										<a href="logout.html"
+											><span class="icon"><i class="fas fa-sign-out-alt"></i></span
+											><span>Logout</span></a
+										>
+									</li>
+								</ul>
 							</div>
 							<ul class="menu-list">
 								<li class="menu-list-item"><a href="index.html">home</a></li>
