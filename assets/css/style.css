@@ -248,6 +248,11 @@
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -380,6 +385,10 @@
 
 .h-24 {
   height: 6rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -916,6 +925,10 @@
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-6 {
@@ -4043,6 +4056,80 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 /* Become a Seller Stop */
+
+/* Availability Start */
+
+.availables {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .availables {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .availables {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.available img {
+  height: 100%;
+  width: 100%;
+}
+
+.availability-steps {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+.availability-steps .availability-step {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .availability-steps .availability-step {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.availability-step span.icon {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(176 23 31 / var(--tw-text-opacity));
+}
+
+.availability-step .availability-step-content {
+  margin-left: 0.5rem;
+}
+
+.availability-step .availability-step-content-title {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(176 23 31 / var(--tw-text-opacity));
+}
+
+.availability-step .availability-step-content-description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+/* Availability Stop */
 
 /* Testimonials Start */
 

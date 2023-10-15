@@ -616,6 +616,42 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 /* Become a Seller Stop */
 
+/* Availability Start */
+
+.availables {
+	@apply gap-5 grid grid-cols-1 list-none sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.available img {
+	@apply h-full w-full;
+}
+
+.availability-steps {
+	@apply list-none my-2;
+}
+
+.availability-steps .availability-step {
+	@apply flex items-start my-2 lg:my-3;
+}
+
+.availability-step span.icon {
+	@apply text-lg text-primary-500;
+}
+
+.availability-step .availability-step-content {
+	@apply ml-2;
+}
+
+.availability-step .availability-step-content-title {
+	@apply mb-1 text-base text-primary-500;
+}
+
+.availability-step .availability-step-content-description {
+	@apply text-gray-700 text-sm;
+}
+
+/* Availability Stop */
+
 /* Testimonials Start */
 
 .testimonials-container {
