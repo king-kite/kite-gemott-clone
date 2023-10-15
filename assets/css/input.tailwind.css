@@ -22,6 +22,14 @@ body.hide-scrollbar-lg {
 	@apply overflow-y-hidden;
 }
 
+main {
+	@apply container mx-auto;
+}
+
+footer {
+	@apply container mx-auto;
+}
+
 /* Navigation Start */
 
 header {
@@ -33,7 +41,7 @@ header .topbar {
 }
 
 header .topbar-content {
-	@apply flex justify-center lg:justify-end;
+	@apply flex items-center justify-center lg:justify-end;
 }
 
 header .topbar .topbar-icon {
@@ -51,6 +59,54 @@ header .topbar .topbar-icon:hover {
 
 header .topbar .topbar-icon.open-menu-icon {
 	@apply lg:!hidden;
+}
+
+header .topbar-content .client-area {
+	@apply relative ml-4;
+}
+
+header .topbar-content .client-area.show .client-area-list {
+	@apply lg:block;
+}
+
+header .topbar-content .client-area.show .client-area-button {
+	@apply rounded-b-none;
+}
+
+header .topbar-content .client-area-button {
+	@apply bg-transparent border border-solid border-gray-500 cursor-pointer hidden items-center justify-between px-4 py-2 rounded-md text-gray-700 text-sm min-w-[8rem] hover:shadow-lg lg:flex;
+}
+
+header .topbar-content .client-area-button .icon {
+	@apply text-[8px];
+}
+
+header .topbar-content .client-area-list {
+	@apply absolute border border-t-0 border-gray-500 border-solid hidden left-0 list-none rounded-b-md top-8 w-full z-40;
+}
+
+header .topbar-content .client-area-list-item {
+	@apply bg-white border-0 border-t border-gray-400 border-solid border-opacity-40;
+}
+
+header .topbar-content .client-area-list-item:last-child {
+	@apply rounded-b-md;
+}
+
+header .topbar-content .client-area-list-item span.icon {
+	@apply text-gray-700 text-xs mr-2;
+}
+
+header .topbar-content .client-area-list-item a {
+	@apply cursor-pointer h-full flex items-center px-4 py-2 no-underline text-gray-700 text-sm w-full;
+}
+
+header .topbar-content .client-area-list-item a:hover {
+	@apply bg-primary-600 text-gray-100;
+}
+
+header .topbar-content .client-area-list-item a:hover span.icon {
+	@apply text-gray-100;
 }
 
 .navbar {
@@ -92,20 +148,45 @@ header .topbar .topbar-icon.open-menu-icon {
 	@apply bg-cyan-700 capitalize cursor-pointer flex items-center justify-between px-2 py-3 text-gray-100 text-sm lg:hidden;
 }
 
+.menu .client-area-nav {
+	@apply relative;
+}
+
+.menu .client-area-nav .client-area-list {
+	@apply hidden list-none;
+}
+
+.menu .client-area-nav.show .client-area-list {
+	@apply block;
+}
+
 .menu .menu-list {
 	@apply list-none lg:flex lg:items-center;
 }
 
-.menu-list .menu-list-item {
+.menu-list .menu-list-item,
+.menu .client-area-nav .client-area-list-item {
 	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:mx-1 lg:last:mr-0 lg:border-0 xl:mx-2;
 }
 
-.menu-list-item a {
-	@apply block duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center xl:text-base;
+.menu-list-item a,
+.menu .client-area-nav-button,
+.menu .client-area-nav .client-area-list-item a {
+	@apply block cursor-pointer duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center xl:text-base;
+}
+
+.menu .client-area-nav .client-area-list-item a {
+	@apply px-6;
+}
+
+.menu .client-area-nav .client-area-list-item a span.icon {
+	@apply mr-2;
 }
 
 .menu-list-item a:hover,
-.menu-list-item.active a {
+.menu-list-item.active a,
+.menu .client-area-nav-button:hover,
+.menu .client-area-nav .client-area-list-item a:hover {
 	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-primary-600;
 }
 
@@ -118,7 +199,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .wrapper-overlay {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	@apply py-16;
 }
 
@@ -246,7 +327,7 @@ header .topbar .topbar-icon.open-menu-icon {
 /* Hero Section Start */
 
 .hero-container {
-	background: url('../images/banner-ch.jpg');
+	background: url('../images/banner-1.png');
 	@apply bg-gray-100 bg-cover bg-center;
 }
 
@@ -445,37 +526,16 @@ header .topbar .topbar-icon.open-menu-icon {
 	@apply scale-105;
 }
 
-/* Just for diff colors */
-.feature:first-child .feature-image {
-	@apply text-primary-600 border-primary-600;
-}
-
-.feature:nth-child(2) .feature-image {
-	@apply text-green-600 border-green-600;
-}
-
-.feature:nth-child(3) .feature-image {
-	@apply text-yellow-600 border-yellow-600;
-}
-
-.feature:nth-child(4) .feature-image {
-	@apply text-purple-600 border-purple-600;
-}
-
-.feature:nth-child(5) .feature-image {
-	@apply text-primary-600 border-primary-600;
-}
-
-.feature:last-child .feature-image {
-	@apply text-blue-600 border-blue-600;
-}
-
 .feature-image {
-	@apply flex h-16 items-center justify-center border-2 mb-2 border-gray-700 border-solid rounded-full text-3xl text-gray-700 w-16;
+	@apply flex h-28 items-center justify-center text-gray-700 w-28;
+}
+
+.feature-image img {
+	@apply h-full w-full;
 }
 
 .feature-title {
-	@apply font-bold mb-2 text-center text-lg text-gray-800 uppercase;
+	@apply font-bold mb-2 text-center text-lg text-gray-800;
 }
 
 .feature-description {
@@ -487,7 +547,7 @@ header .topbar .topbar-icon.open-menu-icon {
 /* Become a Seller Start */
 
 .become-seller-container {
-	@apply bg-gray-100 py-8;
+	@apply bg-gradient-to-r from-white via-gray-100 to-[#d6d6d6] bg-gray-100 py-8 md:py-12;
 }
 
 .become-seller-content {
@@ -495,7 +555,7 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .become-seller-data .container-title {
-	@apply font-bold text-lg md:font-extrabold lg:text-xl xl:text-2xl;
+	@apply font-bold text-lg md:font-extrabold md:text-xl lg:text-2xl xl:text-3xl;
 }
 
 .become-seller-data .container-description {
@@ -514,16 +574,12 @@ header .topbar .topbar-icon.open-menu-icon {
 	@apply md:w-1/2;
 }
 
-.become-seller-data .container-description {
-	@apply text-left;
-}
-
 .become-seller-cta {
-	@apply flex justify-center pt-1;
+	@apply flex justify-center md:justify-end;
 }
 
 .become-seller-cta a {
-	@apply bg-transparent border-2 border-primary-500 border-solid inline-block cursor-pointer duration-500 px-5 py-3 rounded text-primary-600 text-base uppercase transition transform no-underline hover:scale-x-105;
+	@apply bg-transparent border-2 border-primary-500 border-solid inline-block cursor-pointer duration-500 my-2 px-5 py-3 rounded text-primary-600 text-base uppercase transition transform no-underline hover:scale-x-105;
 }
 
 .become-seller-cta a:hover {
@@ -571,7 +627,8 @@ header .topbar .topbar-icon.open-menu-icon {
 }
 
 .testimonial {
-	@apply bg-white my-6 px-5 !h-full w-full block py-4 relative rounded shadow-lg;
+	@apply bg-white my-6 px-5 !h-full w-full py-4 relative rounded shadow-lg;
+	@apply flex flex-col justify-between min-h-[15rem];
 }
 
 .testimonial::before {

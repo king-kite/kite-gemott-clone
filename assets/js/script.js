@@ -52,6 +52,26 @@ if (menuItems.length > 0) {
 
 // ************ Handle Navigation Stop
 
+// ************ Handle Client Area Start
+
+const clientAreaButton = document.querySelector('#client-area-button');
+const clientArea = document.querySelector('#client-area');
+if (clientArea && clientAreaButton) {
+	clientAreaButton.addEventListener('click', function () {
+		clientArea.classList.toggle('show');
+	});
+}
+
+const clientAreaNavButton = document.querySelector('#client-area-nav-button');
+const clientAreaNav = document.querySelector('#client-area-nav');
+if (clientAreaNav && clientAreaNavButton) {
+	clientAreaNavButton.addEventListener('click', function () {
+		clientAreaNav.classList.toggle('show');
+	});
+}
+
+// ************ Handle Client Area Stop
+
 // *********** Handle Frequently Asked Questions Start
 
 const faqs = document.querySelectorAll('.faq');

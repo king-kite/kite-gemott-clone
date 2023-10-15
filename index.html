@@ -117,13 +117,35 @@
 			<!-- Topbar start -->
 			<div class="topbar">
 				<div class="topbar-content wrapper">
-					<a href="login.html" class="topbar-icon">
-						<i class="fas fa-user"></i>
-					</a>
 					<a href="cart.html" class="topbar-icon">
 						<i class="fas fa-shopping-cart"></i>
 						<span class="topbar-icon-notification">99</span>
 					</a>
+					<div id="client-area" class="client-area">
+						<button id="client-area-button" class="client-area-button" type="button">
+							<span>Client Area</span>
+							<span class="icon"><i class="fas fa-chevron-down"></i></span>
+						</button>
+						<ul id="client-area-list" class="client-area-list">
+							<li class="client-area-list-item">
+								<a href="login.html"
+									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
+								>
+							</li>
+							<li class="client-area-list-item">
+								<a href="register.html"
+									><span class="icon"><i class="fas fa-user-plus"></i></span
+									><span>Register</span></a
+								>
+							</li>
+							<li class="client-area-list-item">
+								<a href="logout.html"
+									><span class="icon"><i class="fas fa-sign-out-alt"></i></span
+									><span>Logout</span></a
+								>
+							</li>
+						</ul>
+					</div>
 					<span id="open-menu-button" class="topbar-icon open-menu-icon">
 						<i class="fas fa-bars"></i>
 					</span>
@@ -142,6 +164,32 @@
 								<span class="close-icon">
 									<i class="fas fa-times"></i>
 								</span>
+							</div>
+							<div id="client-area-nav" class="client-area-nav">
+								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
+									<span>Client Area</span>
+									<span class="icon"><i class="fas fa-chevron-down"></i></span>
+								</span>
+								<ul id="client-area-list" class="client-area-list">
+									<li class="client-area-list-item">
+										<a href="login.html"
+											><span class="icon"><i class="fas fa-arrow-right"></i></span
+											><span>Login</span></a
+										>
+									</li>
+									<li class="client-area-list-item">
+										<a href="register.html"
+											><span class="icon"><i class="fas fa-user-plus"></i></span
+											><span>Register</span></a
+										>
+									</li>
+									<li class="client-area-list-item">
+										<a href="logout.html"
+											><span class="icon"><i class="fas fa-sign-out-alt"></i></span
+											><span>Logout</span></a
+										>
+									</li>
+								</ul>
 							</div>
 							<ul class="menu-list">
 								<li class="menu-list-item active"><a href="index.html">home</a></li>
@@ -197,7 +245,7 @@
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-play"></i>
+								<img src="assets/images/icons/1.png" alt="Live Sports Coverage" />
 							</div>
 							<h5 class="feature-title">Live Sports Coverage</h5>
 							<p class="feature-description">
@@ -209,7 +257,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-bars"></i>
+								<img src="assets/images/icons/2.png" alt="Premium Channels Library" />
 							</div>
 							<h5 class="feature-title">Premium Channels Library</h5>
 							<p class="feature-description">
@@ -220,9 +268,9 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-phone"></i>
+								<img src="assets/images/icons/3.png" alt="Updated VOD(Video On Demand)" />
 							</div>
-							<h5 class="feature-title">Updated VOD(Video On Demand)</h5>
+							<h5 class="feature-title">Updated VOD <br />(Video On Demand)</h5>
 							<p class="feature-description">
 								Our updated Video On Demand library offers a vast selection of movies, series and
 								special programs. Discover a diverse range of content that&apos;s refreshed
@@ -232,7 +280,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-laptop"></i>
+								<img src="assets/images/icons/4.png" alt="Multi-Device Compatibility" />
 							</div>
 							<h5 class="feature-title">Multi-Device Compatibility</h5>
 							<p class="feature-description">
@@ -243,7 +291,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-cog"></i>
+								<img src="assets/images/icons/5.png" alt="Easy Installation" />
 							</div>
 							<h5 class="feature-title">Easy Installation</h5>
 							<p class="feature-description">
@@ -255,7 +303,7 @@
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-smile"></i>
+								<img src="assets/images/icons/6.png" alt="99% Uptime" />
 							</div>
 							<h5 class="feature-title">99.9% Uptime</h5>
 							<p class="feature-description">
@@ -532,47 +580,45 @@
 					<ul class="features">
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-desktop"></i>
+								<img src="assets/images/icons/7.png" alt="EPG" />
 							</div>
-							<p class="feature-description">EPG updates in every 72 hours</p>
+							<p class="feature-description">EPG refreshed Every 72 Hours</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-database"></i>
+								<img src="assets/images/icons/8.png" alt="Server" />
 							</div>
 							<p class="feature-description">
-								The server always gets updated with New Channels and VODs
+								Our Server Receives Regular Updates, Bringing New Channels and VODs to You
 							</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-server"></i>
+								<img src="assets/images/icons/9.png" alt="Custom Channel" />
+							</div>
+							<p class="feature-description">Request Custom Channel And VOD Additions</p>
+						</li>
+						<li class="feature">
+							<div class="feature-image">
+								<img src="assets/images/icons/10.png" alt="Get A Refund" />
 							</div>
 							<p class="feature-description">
-								You can Request us to Add your Favorite Channels and VODs
+								Get A Refund Within 48 Hours If Our Server Doesn&apos;t Meet Your Expectations
 							</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-clock"></i>
+								<img src="assets/images/icons/11.png" alt="Custom Channel" />
 							</div>
-							<p class="feature-description">
-								Get your money within 48 Hours If our Server doesn't work for you
-							</p>
+							<p class="feature-description">Prompt Customer Support And Quick Issue Resolution</p>
 						</li>
 						<li class="feature">
 							<div class="feature-image">
-								<i class="fas fa-sitemap"></i>
+								<img src="assets/images/icons/12.png" alt="Highest Quality" />
 							</div>
 							<p class="feature-description">
-								Fast Response and Get Solution for any Issue you Face
+								Experience The Highest Quality Available In The Market
 							</p>
-						</li>
-						<li class="feature">
-							<div class="feature-image">
-								<i class="fas fa-signal"></i>
-							</div>
-							<p class="feature-description">Enjoy Best Possible Quality in the Market</p>
 						</li>
 					</ul>
 				</div>
@@ -590,9 +636,8 @@
 							MORE THAN 10,000 LIVE TV CHANNELS FROM ALL OVER THE WORLD
 						</h2>
 						<p class="container-description">
-							OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE TELEVISION STATIONS.
-							<br />
-							GET ACCESS TO WATCH.
+							OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE TELEVISION STATIONS. GET
+							ACCESS TO WATCH.
 						</p>
 						<div class="become-seller-cta">
 							<a href="cart.html">
@@ -691,8 +736,29 @@
 								<li class="testimonial splide__slide">
 									<p class="testimonial-description">
 										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-										entertainment options that cater to every member of my family. A slight hiccup
-										with the initial setup, but their support was prompt and helpful.
+									</p>
+									<div class="testimonial-profile">
+										<div class="testimonial-creator">
+											<div class="testimonial-creator-image">
+												<img src="assets/images/banner3.5.jpg" alt="creator" />
+											</div>
+											<div class="testimonial-creator-title">
+												<h3 class="testimonial-creator-name">Johnson Davis</h3>
+												<p class="testimonial-creator-job">CEO Techcom</p>
+											</div>
+										</div>
+										<div class="testimonial-ratings">
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
+										</div>
+									</div>
+								</li>
+								<li class="testimonial splide__slide">
+									<p class="testimonial-description">
+										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
 									</p>
 									<div class="testimonial-profile">
 										<div class="testimonial-creator">
@@ -741,33 +807,6 @@
 								<li class="testimonial splide__slide">
 									<p class="testimonial-description">
 										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-										entertainment options that cater to every member of my family. A slight hiccup
-										with the initial setup, but their support was prompt and helpful.
-									</p>
-									<div class="testimonial-profile">
-										<div class="testimonial-creator">
-											<div class="testimonial-creator-image">
-												<img src="assets/images/banner3.5.jpg" alt="creator" />
-											</div>
-											<div class="testimonial-creator-title">
-												<h3 class="testimonial-creator-name">Johnson Davis</h3>
-												<p class="testimonial-creator-job">CEO Techcom</p>
-											</div>
-										</div>
-										<div class="testimonial-ratings">
-											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<p class="testimonial-description">
-										Consistent, reliable and packed with features! XtremeHD IPTV offers a blend of
-										entertainment options that cater to every member of my family. A slight hiccup
-										with the initial setup, but their support was prompt and helpful.
 									</p>
 									<div class="testimonial-profile">
 										<div class="testimonial-creator">
