@@ -3793,13 +3793,20 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .feature-image {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
 .feature-image img {
   height: 100%;
   width: 100%;
 }
 
 .feature-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3809,7 +3816,6 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-description {
-  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   text-align: center;
   font-size: 0.875rem;

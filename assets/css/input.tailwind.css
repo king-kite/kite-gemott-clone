@@ -539,7 +539,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-image {
-	@apply flex h-28 items-center justify-center w-28;
+	@apply flex h-28 items-center justify-center w-28 lg:h-36 lg:w-36;
 }
 
 .feature-image img {
@@ -547,11 +547,11 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-title {
-	@apply font-bold mb-2 text-center text-lg text-gray-800;
+	@apply font-bold mb-3 text-center text-lg text-gray-800;
 }
 
 .feature-description {
-	@apply font-normal my-1 text-sm text-center text-gray-600;
+	@apply font-normal mb-1 text-sm text-center text-gray-600;
 }
 
 /* Features Section Stop */
