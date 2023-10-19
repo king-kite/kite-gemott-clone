@@ -22,10 +22,8 @@ body.hide-scrollbar-lg {
 	@apply overflow-y-hidden;
 }
 
-main {
-	@apply container mx-auto;
-}
-
+header,
+main,
 footer {
 	@apply container mx-auto;
 }
@@ -37,7 +35,7 @@ header {
 }
 
 header .topbar {
-	@apply border-0 border-t border-gray-400 border-opacity-50 border-solid py-5 md:border-b md:border-t-0 lg:py-6;
+	@apply bg-gray-900 border-0 border-t border-gray-400 border-opacity-50 border-solid p-4 md:border-b md:border-t-0 lg:py-4;
 }
 
 header .topbar-content {
@@ -45,20 +43,30 @@ header .topbar-content {
 }
 
 header .topbar .topbar-icon {
-	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-500 no-underline transform md:mx-4;
+	@apply inline-flex relative cursor-pointer duration-300 mx-3 text-lg text-gray-100 no-underline transform select-none md:mx-4;
 }
 
 header .topbar .topbar-icon:hover {
-	@apply scale-105 text-gray-700;
+	@apply scale-105 text-white;
 }
 
 .topbar-icon .topbar-icon-notification {
 	font-size: 10px;
-	@apply absolute bg-white border border-gray-500 border-solid h-5 inline-flex -right-3 -top-3 items-center justify-center rounded-full w-5;
+	@apply absolute bg-white border border-gray-500 border-solid h-5 inline-flex -right-3 -top-3 items-center justify-center rounded-full text-gray-800 w-5;
 }
 
-header .topbar .topbar-icon.open-menu-icon {
+header .topbar .topbar-icon.open-menu-icon,
+header .topbar .topbar-icon.cart-icon {
 	@apply lg:!hidden;
+}
+
+header .topbar .topbar-link {
+	@apply bg-primary-600 cursor-pointer duration-500 hidden items-center justify-between no-underline px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] transition transform hover:scale-105 lg:flex;
+}
+
+header .topbar .topbar-link .topbar-link-badge {
+	font-size: 10px;
+	@apply bg-white border border-gray-500 border-solid h-5 inline-flex items-center justify-center rounded-full text-gray-800 w-5;
 }
 
 header .topbar-content .client-area {
@@ -74,7 +82,7 @@ header .topbar-content .client-area.show .client-area-button {
 }
 
 header .topbar-content .client-area-button {
-	@apply bg-transparent border border-solid border-gray-500 cursor-pointer hidden items-center justify-between px-4 py-2 rounded-md text-gray-700 text-sm min-w-[14rem] hover:shadow-lg lg:flex;
+	@apply bg-transparent border border-solid border-gray-100 cursor-pointer hidden items-center justify-between px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] lg:flex;
 }
 
 header .topbar-content .client-area-button .icon {
@@ -82,7 +90,7 @@ header .topbar-content .client-area-button .icon {
 }
 
 header .topbar-content .client-area-list {
-	@apply absolute border border-t-0 border-gray-500 border-solid hidden left-0 list-none rounded-b-md top-8 w-full z-40;
+	@apply absolute border border-t-0 border-gray-500 border-solid hidden left-0 list-none rounded-b-md top-12 w-full z-40;
 }
 
 header .topbar-content .client-area-list-item {
@@ -110,7 +118,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .navbar {
-	@apply shadow-lg py-4;
+	@apply bg-gray-800 py-4 lg:py-0;
 }
 
 .navbar-content {
@@ -133,7 +141,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .menu-container .menu {
-	@apply bg-gray-100 duration-500 h-full ml-auto transition transform translate-x-full opacity-0 w-2/3 md:w-1/2 lg:bg-transparent;
+	@apply bg-gray-800 duration-500 h-full ml-auto transition transform translate-x-full opacity-0 w-2/3 md:w-1/2 lg:bg-transparent;
 }
 
 .menu-container.show .menu {
@@ -172,7 +180,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item a,
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
-	@apply block cursor-pointer duration-500 px-2 py-3 no-underline text-gray-800 text-sm uppercase transition-colors lg:font-medium lg:p-0 lg:text-center xl:text-base;
+	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-medium lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
 }
 
 .menu .client-area-nav .client-area-list-item a {
@@ -187,7 +195,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item.active a,
 .menu .client-area-nav-button:hover,
 .menu .client-area-nav .client-area-list-item a:hover {
-	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:text-primary-600;
+	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:border-primary-600;
 }
 
 /* Navigation Stop */
