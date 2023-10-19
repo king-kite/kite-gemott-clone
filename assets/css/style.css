@@ -2676,7 +2676,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
     border-style: solid;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
     text-align: center;
     font-weight: 500;
   }
