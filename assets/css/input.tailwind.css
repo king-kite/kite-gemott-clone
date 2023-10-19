@@ -74,7 +74,7 @@ header .topbar-content .client-area.show .client-area-button {
 }
 
 header .topbar-content .client-area-button {
-	@apply bg-transparent border border-solid border-gray-500 cursor-pointer hidden items-center justify-between px-4 py-2 rounded-md text-gray-700 text-sm min-w-[8rem] hover:shadow-lg lg:flex;
+	@apply bg-transparent border border-solid border-gray-500 cursor-pointer hidden items-center justify-between px-4 py-2 rounded-md text-gray-700 text-sm min-w-[14rem] hover:shadow-lg lg:flex;
 }
 
 header .topbar-content .client-area-button .icon {
@@ -1396,7 +1396,7 @@ footer {
 }
 
 .search-box-container {
-	background: url('../images/top_search-back.png');
+	/* background: url('../images/top_search-back.png'); */
 	@apply bg-gray-100 bg-cover bg-center my-4 rounded;
 }
 
