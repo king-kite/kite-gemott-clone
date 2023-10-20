@@ -2156,13 +2156,16 @@ header {
 }
 
 header .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-width: 0px;
   border-top-width: 1px;
   border-style: solid;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
   --tw-border-opacity: 0.5;
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 1rem;
 }
 
@@ -2175,8 +2178,49 @@ header .topbar {
 
 @media (min-width: 1024px) {
   header .topbar {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  header .topbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+header .topbar .logo {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 168 38 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  header .topbar .logo {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  header .topbar .logo {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+header .topbar .logo {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .topbar .logo {
+    display: block;
   }
 }
 
@@ -2288,6 +2332,8 @@ header .topbar .topbar-link:hover {
 @media (min-width: 1024px) {
   header .topbar .topbar-link {
     display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -2350,6 +2396,8 @@ header .topbar-content .client-area-button {
 @media (min-width: 1024px) {
   header .topbar-content .client-area-button {
     display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -2360,7 +2408,7 @@ header .topbar-content .client-area-button .icon {
 header .topbar-content .client-area-list {
   position: absolute;
   left: 0px;
-  top: 3rem;
+  top: 2.85rem;
   z-index: 40;
   display: none;
   width: 100%;
@@ -2427,8 +2475,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .navbar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: #3e3e3e;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -2448,7 +2495,11 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 1024px) {
   .navbar-content {
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  .navbar-content .logo {
+    display: none;
   }
 }
 
@@ -2627,8 +2678,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 1024px) {
   .menu-list .menu-list-item,
 .menu .client-area-nav .client-area-list-item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: 0.875rem;
     border-width: 0px;
   }
 
@@ -2641,8 +2691,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 1280px) {
   .menu-list .menu-list-item,
 .menu .client-area-nav .client-area-list-item {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1.25rem;
   }
 }
 
@@ -2679,7 +2728,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
   }
 }
 
@@ -2707,7 +2756,6 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu .client-area-nav .client-area-list-item a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
-  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
@@ -3287,6 +3335,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .hero-description {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+  max-width: 24rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
@@ -3296,6 +3345,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 @media (min-width: 1024px) {
   .hero-description {
+    max-width: none;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -3746,12 +3796,20 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 768px) {
   .features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   .features {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .features {
+    gap: 1.5rem;
   }
 }
 
@@ -3832,16 +3890,16 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 .feature-image {
   display: flex;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   align-items: center;
   justify-content: center;
 }
 
 @media (min-width: 1024px) {
   .feature-image {
-    height: 9rem;
-    width: 9rem;
+    height: 6rem;
+    width: 6rem;
   }
 }
 
@@ -3851,17 +3909,18 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-title {
-  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .feature-description {
-  margin-bottom: 0.25rem;
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;

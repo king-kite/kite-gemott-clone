@@ -35,7 +35,12 @@ header {
 }
 
 header .topbar {
-	@apply bg-gray-900 border-0 border-t border-gray-400 border-opacity-50 border-solid p-4 md:border-b md:border-t-0 lg:py-4;
+	@apply bg-black border-0 border-t border-gray-400 border-opacity-50 border-solid flex items-center justify-center p-4 md:border-b md:border-t-0 lg:justify-between lg:py-5 xl:py-6;
+}
+
+header .topbar .logo {
+	@apply font-black text-primary-600 text-2xl uppercase lg:text-3xl xl:text-4xl;
+	@apply hidden lg:block;
 }
 
 header .topbar-content {
@@ -61,7 +66,7 @@ header .topbar .topbar-icon.cart-icon {
 }
 
 header .topbar .topbar-link {
-	@apply bg-primary-600 cursor-pointer duration-500 hidden items-center justify-between no-underline px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] transition transform hover:scale-105 lg:flex;
+	@apply bg-primary-600 cursor-pointer duration-500 hidden items-center justify-between no-underline px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] transition transform hover:scale-105 lg:flex lg:py-4;
 }
 
 header .topbar .topbar-link .topbar-link-badge {
@@ -82,7 +87,7 @@ header .topbar-content .client-area.show .client-area-button {
 }
 
 header .topbar-content .client-area-button {
-	@apply bg-transparent border border-solid border-gray-100 cursor-pointer hidden items-center justify-between px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] lg:flex;
+	@apply bg-transparent border border-solid border-gray-100 cursor-pointer hidden items-center justify-between px-4 py-3 rounded-md text-gray-100 text-sm min-w-[10rem] lg:flex lg:py-4;
 }
 
 header .topbar-content .client-area-button .icon {
@@ -90,7 +95,7 @@ header .topbar-content .client-area-button .icon {
 }
 
 header .topbar-content .client-area-list {
-	@apply absolute border border-t-0 border-gray-500 border-solid hidden left-0 list-none rounded-b-md top-12 w-full z-40;
+	@apply absolute border border-t-0 border-gray-500 border-solid hidden left-0 list-none rounded-b-md top-[2.85rem] w-full z-40;
 }
 
 header .topbar-content .client-area-list-item {
@@ -118,11 +123,16 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .navbar {
-	@apply bg-gray-800 py-4 lg:py-0;
+	background-color: #3e3e3e;
+	@apply py-4 lg:py-0;
 }
 
 .navbar-content {
-	@apply flex justify-center lg:items-center lg:justify-between;
+	@apply flex justify-center lg:items-center lg:justify-end;
+}
+
+.navbar-content .logo {
+	@apply lg:hidden;
 }
 
 .navbar .logo,
@@ -174,13 +184,13 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 .menu-list .menu-list-item,
 .menu .client-area-nav .client-area-list-item {
-	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:mx-1 lg:last:mr-0 lg:border-0 xl:mx-2;
+	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:ml-3.5 lg:last:mr-0 lg:border-0 xl:ml-5;
 }
 
 .menu-list-item a,
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
-	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-medium lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
+	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-extrabold lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
 }
 
 .menu .client-area-nav .client-area-list-item a {
@@ -195,7 +205,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item.active a,
 .menu .client-area-nav-button:hover,
 .menu .client-area-nav .client-area-list-item a:hover {
-	@apply bg-cyan-700 font-medium text-gray-100 lg:bg-transparent lg:border-primary-600;
+	@apply bg-cyan-700 text-gray-100 lg:bg-transparent lg:border-primary-600;
 }
 
 /* Navigation Stop */
@@ -348,7 +358,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .hero-description {
-	@apply my-1 font-medium text-sm text-gray-800 lg:text-base xl:text-lg;
+	@apply max-w-sm my-1 font-medium text-sm text-gray-800 lg:max-w-none lg:text-base xl:text-lg;
 }
 
 .hero-content .hero-cta {
@@ -512,7 +522,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .features {
-	@apply grid grid-cols-1 gap-3 list-none my-4 w-full md:grid-cols-2 lg:grid-cols-3;
+	@apply grid grid-cols-1 gap-3 list-none my-4 w-full md:gap-4 md:grid-cols-2 lg:gap-5 lg:grid-cols-3 xl:gap-6;
 }
 
 .feature {
@@ -547,7 +557,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-image {
-	@apply flex h-28 items-center justify-center w-28 lg:h-36 lg:w-36;
+	@apply flex h-20 items-center justify-center w-20 lg:h-24 lg:w-24;
 }
 
 .feature-image img {
@@ -555,11 +565,11 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .feature-title {
-	@apply font-bold mb-3 text-center text-lg text-gray-800;
+	@apply font-bold my-1 text-center text-lg text-gray-800 uppercase;
 }
 
 .feature-description {
-	@apply font-normal mb-1 text-sm text-center text-gray-600;
+	@apply font-normal text-sm text-center text-gray-600;
 }
 
 /* Features Section Stop */
