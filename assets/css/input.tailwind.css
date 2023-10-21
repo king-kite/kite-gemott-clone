@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: Interface;
+	src: url(../fonts/InterFace.otf);
+}
+
+@font-face {
+	font-family: Interface;
+	font-weight: 700;
+	src: url(../fonts/InterFace Bold.otf);
+}
+
+@font-face {
+	font-family: Interface;
+	font-weight: 800;
+	src: url(../fonts/InterFace XBold.otf);
+}
+
+@font-face {
+	font-family: Interface;
+	font-weight: 900;
+	src: url(../fonts/InterFace Black.otf);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -190,7 +213,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item a,
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
-	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-extrabold lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
+	font-family: Interface, Arial, sans-serif;
+	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-black lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
 }
 
 .menu .client-area-nav .client-area-list-item a {

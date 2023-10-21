@@ -2061,6 +2061,36 @@
   -webkit-line-clamp: unset;
 }
 
+@font-face {
+  font-family: Interface;
+
+  src: url(../fonts/InterFace.otf);
+}
+
+@font-face {
+  font-family: Interface;
+
+  font-weight: 700;
+
+  src: url(../fonts/InterFace Bold.otf);
+}
+
+@font-face {
+  font-family: Interface;
+
+  font-weight: 800;
+
+  src: url(../fonts/InterFace XBold.otf);
+}
+
+@font-face {
+  font-family: Interface;
+
+  font-weight: 900;
+
+  src: url(../fonts/InterFace Black.otf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -2698,6 +2728,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item a,
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
+  font-family: Interface, Arial, sans-serif;
   display: block;
   cursor: pointer;
   border-width: 0px;
@@ -2728,7 +2759,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
     text-align: center;
-    font-weight: 800;
+    font-weight: 900;
   }
 }
 
