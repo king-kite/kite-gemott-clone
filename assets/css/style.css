@@ -2072,7 +2072,7 @@
 
   font-weight: 700;
 
-  src: url(../fonts/InterFace Bold.otf);
+  src: url(../fonts/InterFace-Bold.otf);
 }
 
 @font-face {
@@ -2080,7 +2080,7 @@
 
   font-weight: 800;
 
-  src: url(../fonts/InterFace XBold.otf);
+  src: url(../fonts/InterFace-XBold.otf);
 }
 
 @font-face {
@@ -2088,7 +2088,7 @@
 
   font-weight: 900;
 
-  src: url(../fonts/InterFace Black.otf);
+  src: url(../fonts/InterFace-Black.otf);
 }
 
 * {
@@ -2100,7 +2100,7 @@
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  font-family: 'Poppins', Interface, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -2759,7 +2759,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
     text-align: center;
-    font-weight: 900;
+    font-weight: 800;
   }
 }
 
@@ -3541,8 +3541,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 @media (min-width: 1024px) {
   .pricings {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -3550,8 +3549,11 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
-  --tw-border-opacity: 1;
+  border-top-width: 4px;
+  border-style: solid;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-top-color: rgb(0 204 48 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1rem;
@@ -3565,7 +3567,13 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   font-weight: 700;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.pricing:hover .pricing-title,
+.pricing:hover .pricing-price {
+  --tw-text-opacity: 1;
+  color: rgb(0 168 38 / var(--tw-text-opacity));
 }
 
 .pricing-description {
@@ -3584,7 +3592,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .pricing-price small {
@@ -3626,8 +3634,9 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   margin-right: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
+  font-weight: 900;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(0 168 38 / var(--tw-text-opacity));
 }
 
 .pricing-footer {
@@ -3665,9 +3674,6 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   cursor: pointer;
   border-radius: 0.125rem;
-  border-width: 2px;
-  border-style: solid;
-  border-color: transparent;
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
@@ -3686,56 +3692,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricing-footer-cta:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  background-color: transparent;
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.pricing.purple .pricing-title {
-  --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
-}
-
-.pricing.purple .pricing-price {
-  --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
-}
-
-.pricing.purple .pricing-item-icon {
-  --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
-}
-
-.pricing.red .pricing-title {
-  --tw-text-opacity: 1;
-  color: rgb(0 204 48 / var(--tw-text-opacity));
-}
-
-.pricing.red .pricing-price {
-  --tw-text-opacity: 1;
-  color: rgb(0 204 48 / var(--tw-text-opacity));
-}
-
-.pricing.red .pricing-item-icon {
-  --tw-text-opacity: 1;
-  color: rgb(0 204 48 / var(--tw-text-opacity));
-}
-
-.pricing.dark-green .pricing-title {
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity));
-}
-
-.pricing.dark-green .pricing-price {
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity));
-}
-
-.pricing.dark-green .pricing-item-icon {
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 168 38 / var(--tw-bg-opacity));
 }
 
 /* Pricing Section Stop */

@@ -10,19 +10,19 @@
 @font-face {
 	font-family: Interface;
 	font-weight: 700;
-	src: url(../fonts/InterFace Bold.otf);
+	src: url(../fonts/InterFace-Bold.otf);
 }
 
 @font-face {
 	font-family: Interface;
 	font-weight: 800;
-	src: url(../fonts/InterFace XBold.otf);
+	src: url(../fonts/InterFace-XBold.otf);
 }
 
 @font-face {
 	font-family: Interface;
 	font-weight: 900;
-	src: url(../fonts/InterFace Black.otf);
+	src: url(../fonts/InterFace-Black.otf);
 }
 
 * {
@@ -33,7 +33,7 @@
 
 body {
 	@apply bg-gray-50;
-	font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+	font-family: 'Poppins', Interface, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -214,7 +214,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
 	font-family: Interface, Arial, sans-serif;
-	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-black lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
+	@apply block border-0 border-transparent cursor-pointer duration-500 px-2 py-3 no-underline text-gray-100 text-sm uppercase transition-colors lg:font-extrabold lg:px-0 lg:pt-4 lg:pb-3 lg:border-b-4 lg:border-solid lg:text-center xl:text-base;
 }
 
 .menu .client-area-nav .client-area-list-item a {
@@ -418,15 +418,20 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricings {
-	@apply grid grid-cols-1 gap-6 list-none my-3 py-4 w-full md:gap-4 md:grid-cols-2 lg:gap-2 lg:grid-cols-4;
+	@apply grid grid-cols-1 gap-6 list-none my-3 py-4 w-full md:gap-4 md:grid-cols-2 lg:grid-cols-3;
 }
 
 .pricing {
-	@apply bg-white border border-gray-300 p-4 rounded w-full;
+	@apply bg-white border border-t-4 border-t-primary-500 border-gray-300 border-solid p-4 rounded w-full;
 }
 
 .pricing-title {
-	@apply text-xl text-gray-700 font-bold mb-2 text-center uppercase;
+	@apply text-xl text-gray-900 font-bold mb-2 text-center uppercase;
+}
+
+.pricing:hover .pricing-title,
+.pricing:hover .pricing-price {
+	@apply text-primary-600;
 }
 
 .pricing-description {
@@ -434,7 +439,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricing-price {
-	@apply font-bold text-gray-700 text-xl text-center;
+	@apply font-bold text-gray-900 text-xl text-center;
 }
 
 .pricing-price small {
@@ -454,7 +459,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricing-item-icon {
-	@apply text-xs text-gray-700 mr-2;
+	@apply font-black text-xs text-primary-600 mr-2;
 }
 
 .pricing-footer {
@@ -470,47 +475,11 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricing-footer-cta {
-	@apply bg-gray-900 border-transparent border-2 border-solid cursor-pointer duration-500 my-4 px-6 py-4 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
+	@apply bg-gray-900 cursor-pointer duration-500 my-4 px-6 py-4 rounded-sm text-gray-100 text-base uppercase transition-colors transform no-underline scale-100;
 }
 
 .pricing-footer-cta:hover {
-	@apply text-gray-700 bg-transparent border-gray-700;
-}
-
-.pricing.purple .pricing-title {
-	@apply text-purple-700;
-}
-
-.pricing.purple .pricing-price {
-	@apply text-purple-700;
-}
-
-.pricing.purple .pricing-item-icon {
-	@apply text-purple-700;
-}
-
-.pricing.red .pricing-title {
-	@apply text-primary-500;
-}
-
-.pricing.red .pricing-price {
-	@apply text-primary-500;
-}
-
-.pricing.red .pricing-item-icon {
-	@apply text-primary-500;
-}
-
-.pricing.dark-green .pricing-title {
-	@apply text-green-900;
-}
-
-.pricing.dark-green .pricing-price {
-	@apply text-green-900;
-}
-
-.pricing.dark-green .pricing-item-icon {
-	@apply text-green-900;
+	@apply bg-primary-600;
 }
 
 /* Pricing Section Stop */
