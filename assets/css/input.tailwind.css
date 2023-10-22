@@ -868,7 +868,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .about-our-service-item {
-	@apply bg-primary-500 p-4 rounded shadow-lg text-gray-100;
+	background-color: #3e3e3e;
+	@apply p-4 rounded shadow-lg text-gray-100;
 }
 
 .about-our-service-item-icon {
@@ -880,23 +881,30 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .about-our-service-item:nth-child(2) .about-our-service-item-icon {
-	@apply text-primary-500;
-}
-
-.about-our-service-item:nth-child(3) {
-	@apply sm:bg-white sm:text-gray-700;
-}
-
-.about-our-service-item:nth-child(3) .about-our-service-item-icon {
-	@apply sm:text-primary-500;
+	color: #3e3e3e;
 }
 
 .about-our-service-item:nth-child(4) {
-	@apply bg-white text-gray-700 sm:bg-primary-500 sm:text-gray-100;
+	@apply bg-white text-gray-700 sm:text-gray-100;
+}
+
+@media (min-width: 640px) {
+	.about-our-service-item:nth-child(4) {
+		background-color: #3e3e3e;
+	}
+
+	.about-our-service-item:nth-child(3) .about-our-service-item-icon {
+		color: #3e3e3e;
+	}
+
+	.about-our-service-item:nth-child(3) {
+		color: #3e3e3e;
+		@apply bg-white;
+	}
 }
 
 .about-our-service-item:nth-child(4) .about-our-service-item-icon {
-	@apply text-primary-500 sm:text-gray-100;
+	@apply text-gray-700 sm:text-gray-100;
 }
 
 .about-our-service-item-title {
