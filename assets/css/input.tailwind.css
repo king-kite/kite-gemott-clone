@@ -207,7 +207,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 .menu-list .menu-list-item,
 .menu .client-area-nav .client-area-list-item {
-	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:ml-3.5 lg:last:mr-0 lg:border-0 xl:ml-5;
+	@apply border-0 border-b border-gray-400 border-opacity-50 border-solid lg:ml-2.5 lg:last:mr-0 lg:border-0 xl:ml-5;
 }
 
 .menu-list-item a,
@@ -414,7 +414,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .pricing-container .container-description {
-	@apply max-w-xs mx-auto lg:max-w-xl;
+	@apply max-w-xs mx-auto lg:max-w-2xl;
 }
 
 .pricings {

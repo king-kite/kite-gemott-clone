@@ -2708,7 +2708,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 1024px) {
   .menu-list .menu-list-item,
 .menu .client-area-nav .client-area-list-item {
-    margin-left: 0.875rem;
+    margin-left: 0.625rem;
     border-width: 0px;
   }
 
@@ -3516,7 +3516,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 @media (min-width: 1024px) {
   .pricing-container .container-description {
-    max-width: 36rem;
+    max-width: 42rem;
   }
 }
 
