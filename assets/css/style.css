@@ -248,11 +248,6 @@
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -925,10 +920,6 @@
 
 .justify-items-stretch {
   justify-items: stretch;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-6 {
@@ -2062,6 +2053,12 @@
 }
 
 @font-face {
+  font-family: 'Bobby Jones';
+
+  src: url(../fonts/Bobby-Jones-Soft.otf);
+}
+
+@font-face {
   font-family: Interface;
 
   src: url(../fonts/InterFace.otf);
@@ -2100,8 +2097,7 @@
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-  font-family: 'Poppins', Interface, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', Interface, 'Bobby Jones', sans-serif;
 }
 
 body.hide-scrollbar {
@@ -2728,7 +2724,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 .menu-list-item a,
 .menu .client-area-nav-button,
 .menu .client-area-nav .client-area-list-item a {
-  font-family: Interface, Arial, sans-serif;
+  font-family: 'Bobby Jones', Interface, sans-serif;
   display: block;
   cursor: pointer;
   border-width: 0px;
@@ -4188,6 +4184,43 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   list-style-type: none;
 }
 
+@media (min-width: 768px) {
+  .availability-steps {
+    width: 50%;
+  }
+}
+
+.availability-steps-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .availability-steps-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.availability-steps-image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .availability-steps-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .availability-steps-image {
+    width: 40%;
+  }
+}
+
 .availability-steps .availability-step {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -4221,11 +4254,25 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   color: rgb(0 204 48 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .availability-step .availability-step-content-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .availability-step .availability-step-content-description {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .availability-step .availability-step-content-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* Availability Stop */
@@ -4575,6 +4622,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 .support-cta {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .support-cta a {
