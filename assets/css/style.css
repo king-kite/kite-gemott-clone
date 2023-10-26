@@ -4394,6 +4394,18 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   padding-bottom: 1rem;
 }
 
+.testimonial-wrapper.sliding-box-borders::after {
+  bottom: 0px;
+  left: 0px !important;
+  right: auto;
+}
+
+.testimonial-wrapper.sliding-box-borders::before {
+  left: auto;
+  right: 0px !important;
+  top: 0px;
+}
+
 .testimonial::before {
   content: '“';
   left: 0.5rem;
@@ -4499,6 +4511,12 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 @media (min-width: 1024px) {
   .testimonial-creator-title .testimonial-creator-name {
     max-width: 12ch;
+  }
+}
+
+@media (min-width: 1280px) {
+  .testimonial-creator-title .testimonial-creator-name {
+    max-width: 18ch;
   }
 }
 
