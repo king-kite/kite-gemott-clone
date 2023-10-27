@@ -834,7 +834,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 .support-ticket-content {
-	@apply flex flex-col items-center py-8;
+	@apply flex flex-col items-center px-4 py-8;
 }
 
 .support-ticket-content .support-title {

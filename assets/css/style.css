@@ -4609,6 +4609,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
