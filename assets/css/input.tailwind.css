@@ -1228,30 +1228,6 @@ footer {
 	@apply capitalize;
 }
 
-/* How Steps Start */
-
-.how-steps-container {
-	@apply bg-primary-600 py-8;
-}
-
-.how-steps-container .how-steps {
-	@apply list-none sm:flex sm:items-center sm:justify-between;
-}
-
-.how-steps .how-step {
-	@apply flex items-center my-3 w-full sm:my-0;
-}
-
-.how-step .how-step-icon {
-	@apply text-3xl text-gray-100 xl:text-4xl;
-}
-
-.how-step .how-step-title {
-	@apply ml-3 text-sm text-gray-100 xl:text-base;
-}
-
-/* How Steps Stop */
-
 /* How does it work Start */
 
 .how-does-it-work-container {
@@ -1303,7 +1279,7 @@ footer {
 	@apply text-green-600;
 }
 .how-you-do-it-item.item-2 .how-you-do-it-item-icon {
-	@apply text-primary-500;
+	@apply text-red-500;
 }
 
 .how-you-do-it-container .how-you-do-it-item-icon {
@@ -1405,44 +1381,6 @@ footer {
 
 .tutorial-wrapper {
 	@apply lg:max-w-5xl lg:mx-auto;
-}
-
-.search-box-container {
-	/* background: url('../images/top_search-back.png'); */
-	@apply bg-gray-100 bg-cover bg-center my-4 rounded;
-}
-
-.search-box-overlay {
-	background-color: rgba(0, 0, 0, 0.1);
-	@apply rounded;
-}
-
-.search-form {
-	@apply h-full p-1 rounded-sm sm:p-4 md:p-6;
-}
-
-.search-form .input-container {
-	@apply bg-gray-100 flex h-8 items-center rounded pl-2 sm:h-12 sm:pr-2 sm:py-2 md:h-16 md:px-4;
-}
-
-.search-form .input-container input {
-	@apply bg-transparent border-none h-full outline-none p-0 rounded-l-sm text-xs text-gray-800 w-full placeholder:text-gray-600 sm:text-sm lg:text-base;
-}
-
-.search-form .input-container button {
-	@apply bg-primary-500 border-none capitalize h-full px-4 rounded text-gray-200 text-xs sm:text-sm sm:max-h-10 sm:px-8 lg:text-base;
-}
-
-.tutorial-categories {
-	@apply flex flex-wrap gap-4 items-center list-none my-2 py-3 lg:gap-5;
-}
-
-.tutorial-category a {
-	@apply bg-white border border-gray-400 border-opacity-50 border-solid flex items-center p-4 no-underline text-gray-600 text-sm rounded-sm shadow-md uppercase hover:border-primary-200 hover:scale-105 hover:duration-300 hover:transform md:tracking-wide md:text-base;
-}
-
-.tutorial-category a .category-title {
-	@apply inline-block ml-3;
 }
 
 .tutorial-articles {
