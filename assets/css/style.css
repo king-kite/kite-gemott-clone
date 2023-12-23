@@ -4420,8 +4420,8 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 
 .testimonial::before,
 .testimonial::after {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-		Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: absolute;
   z-index: 20;
   display: flex;
@@ -5345,7 +5345,13 @@ footer {
 }
 
 .stx-ott {
-  background-image: linear-gradient(128deg, #17494d 0, #17494d 50%, #f51322 50%, #f51322 100%);
+  background-image: linear-gradient(
+    128deg,
+    #17494d 0,
+    #17494d 50%,
+    #f51322 50%,
+    #f51322 100%
+  );
   grid-column: span 1 / span 1;
   display: flex;
   height: 100%;
@@ -6576,11 +6582,17 @@ footer {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.troubleshooting-guide.show .troubleshooting-guide-header .action-icons .action-icon.open {
+.troubleshooting-guide.show
+  .troubleshooting-guide-header
+  .action-icons
+  .action-icon.open {
   display: none;
 }
 
-.troubleshooting-guide.show .troubleshooting-guide-header .action-icons .action-icon.close {
+.troubleshooting-guide.show
+  .troubleshooting-guide-header
+  .action-icons
+  .action-icon.close {
   display: inline;
 }
 
@@ -7329,8 +7341,10 @@ footer {
 /* Login Page Start */
 
 .login-wrapper {
-  min-height: 100vh;
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
@@ -7346,8 +7360,22 @@ footer {
   .login-wrapper {
     --tw-bg-opacity: 1;
     background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .login-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -7364,9 +7392,6 @@ footer {
 
 @media (min-width: 1024px) {
   .login-container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 50%;
   }
 }
@@ -7636,7 +7661,6 @@ footer {
   background-image: url('../images/banner3.5.jpg');
   display: none;
   height: 100%;
-  min-height: 100vh;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   background-size: cover;
@@ -7645,9 +7669,6 @@ footer {
 
 @media (min-width: 1024px) {
   .login-image-container {
-    position: fixed;
-    top: 0px;
-    right: 0px;
     display: block;
     width: 50%;
   }
