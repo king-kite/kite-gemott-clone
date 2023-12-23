@@ -1,756 +1,865 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite ReddTribe Clone | Terms Of Service</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kite ReddTribe Clone | Terms Of Service</title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul id="client-area-list" class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item"><a href="index.html">home</a></li>
-								<li class="menu-list-item"><a href="subscriptions.html">subscriptions</a></li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul id="client-area-list" class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">home</a></li>
+                <li class="menu-list-item">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Terms of Service Hero Section Start -->
-			<section class="content-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="content-hero-data">
-							<h1 class="content-hero-title">Terms of Service</h1>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Terms of Service Hero Section Stop -->
+    <main>
+      <!-- Terms of Service Hero Section Start -->
+      <section class="content-hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="content-hero-data">
+              <h1 class="content-hero-title">Terms of Service</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Terms of Service Hero Section Stop -->
 
-			<!-- Terms Of Service Content Section Start -->
-			<section class="content-wrapper">
-				<div class="wrapper">
-					<!-- Terms Of Service Start -->
-					<div class="content-container">
-						<h3 class="content-title">Terms of Service</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							We Provide IPTV Subscriptions and IPTV Reseller Panels only REDDTRIBE.COM is not
-							responsible for the Video/Audio content and does not guarantee nor claim any rights to
-							the content. REDDTRIBE.COM is Just a reseller for many providers Channels & VOD in any
-							package are subject to update, change, or removal at any time without prior notice
-							REDDTRIBE.COM&rsquo;s responsibility is limited to activating the subscription for the
-							agreed-on period, as proof a screenshot showing the expiration date will be sent to
-							the client registered email. 1 subscription = 1 connection, you can&rsquo;t use more
-							than one device per subscription any attempt to use more than 1 device at the same
-							time exposes your subscription to get permanently terminated The client is responsible
-							for sending his device information to include device type, model, the app used, and
-							his MAC if applicable If we didn&rsquo;t receive device information within the order
-							notes, we will send m3u format and will not and can&rsquo;t be changed our providers
-							perform maintenance to their servers from time to time, this could happen anytime and
-							time frame is not estimated buffering, freezing, and not working content is normal in
-							any IPTV in the world, therefore you may find these issues The client is responsible
-							for getting to know how IPTV works and the nature of it any IPTV Package could be
-							replaced with any other in case of the unavailability IPTV Subscription credentials
-							are usually sent to the client registered email within 1 business day after receiving
-							clear payment. <br />
-							For IPTV Resellers,
-							<b>
-								REDDTRIBE.COM is only responsible for activating and sending the IPTV Reseller Panel
-								information and to include the agreed-on credit points. We don&rsquo;t and will not
-								provide any assistance for any of the IPTV Reseller panel issues.
-							</b>
-						</p>
-					</div>
-					<!-- Terms Of Service Stop -->
+      <!-- Terms Of Service Content Section Start -->
+      <section class="content-wrapper">
+        <div class="wrapper">
+          <!-- Terms Of Service Start -->
+          <div class="content-container">
+            <h3 class="content-title">Terms of Service</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              We Provide IPTV Subscriptions and IPTV Reseller Panels only
+              REDDTRIBE.COM is not responsible for the Video/Audio content and
+              does not guarantee nor claim any rights to the content.
+              REDDTRIBE.COM is Just a reseller for many providers Channels & VOD
+              in any package are subject to update, change, or removal at any
+              time without prior notice REDDTRIBE.COM&rsquo;s responsibility is
+              limited to activating the subscription for the agreed-on period,
+              as proof a screenshot showing the expiration date will be sent to
+              the client registered email. 1 subscription = 1 connection, you
+              can&rsquo;t use more than one device per subscription any attempt
+              to use more than 1 device at the same time exposes your
+              subscription to get permanently terminated The client is
+              responsible for sending his device information to include device
+              type, model, the app used, and his MAC if applicable If we
+              didn&rsquo;t receive device information within the order notes, we
+              will send m3u format and will not and can&rsquo;t be changed our
+              providers perform maintenance to their servers from time to time,
+              this could happen anytime and time frame is not estimated
+              buffering, freezing, and not working content is normal in any IPTV
+              in the world, therefore you may find these issues The client is
+              responsible for getting to know how IPTV works and the nature of
+              it any IPTV Package could be replaced with any other in case of
+              the unavailability IPTV Subscription credentials are usually sent
+              to the client registered email within 1 business day after
+              receiving clear payment. <br />
+              For IPTV Resellers,
+              <b>
+                REDDTRIBE.COM is only responsible for activating and sending the
+                IPTV Reseller Panel information and to include the agreed-on
+                credit points. We don&rsquo;t and will not provide any
+                assistance for any of the IPTV Reseller panel issues.
+              </b>
+            </p>
+          </div>
+          <!-- Terms Of Service Stop -->
 
-					<!-- Subscriptions Policy start -->
-					<div class="content-container">
-						<h3 class="content-title">Subscriptions Policy</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							REDDTRIBE.COM guarantees that all the TV subscriptions codes purchased from our
-							website will be activated for the agreed-on period, for any issue that comes to the
-							servers, stopping or not working content we don&rsquo;t have any control over. contact
-							us and we will do our best to fix the problems. REDDTRIBE.COM is not responsible for
-							any subscriptions purchased from the wrong type of IPTV receiver box.
-						</p>
-					</div>
-					<!-- Subscriptions Policy Stop -->
+          <!-- Subscriptions Policy start -->
+          <div class="content-container">
+            <h3 class="content-title">Subscriptions Policy</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              REDDTRIBE.COM guarantees that all the TV subscriptions codes
+              purchased from our website will be activated for the agreed-on
+              period, for any issue that comes to the servers, stopping or not
+              working content we don&rsquo;t have any control over. contact us
+              and we will do our best to fix the problems. REDDTRIBE.COM is not
+              responsible for any subscriptions purchased from the wrong type of
+              IPTV receiver box.
+            </p>
+          </div>
+          <!-- Subscriptions Policy Stop -->
 
-					<!-- CONTENTS & OTHER SERVICE PACKAGES Start -->
-					<div class="content-container">
-						<h3 class="content-title">Contents &amp; Other Service Packages</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							The provision for any packages may vary, and we may add or remove any service without
-							prior notice.
-							<br />
-							<b>REDDTRIBE.COM</b> is a service transporter only. Hence, a service can be changed
-							(added/removed) according to the laws of broadcasting a service transporter only, so
-							service can be changed (Add / Remove) channels according to the laws of broadcasting.
-						</p>
-					</div>
-					<!-- CONTENTS & OTHER SERVICE PACKAGES Stop -->
+          <!-- CONTENTS & OTHER SERVICE PACKAGES Start -->
+          <div class="content-container">
+            <h3 class="content-title">Contents &amp; Other Service Packages</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              The provision for any packages may vary, and we may add or remove
+              any service without prior notice.
+              <br />
+              <b>REDDTRIBE.COM</b> is a service transporter only. Hence, a
+              service can be changed (added/removed) according to the laws of
+              broadcasting a service transporter only, so service can be changed
+              (Add / Remove) channels according to the laws of broadcasting.
+            </p>
+          </div>
+          <!-- CONTENTS & OTHER SERVICE PACKAGES Stop -->
 
-					<!-- Insurance Start -->
-					<div class="content-container">
-						<h3 class="content-title">Insurance</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							<b>REDDTRIBE.COM</b> is not providing any insurance for any service.
-						</p>
-					</div>
-					<!-- Insurance Stop -->
+          <!-- Insurance Start -->
+          <div class="content-container">
+            <h3 class="content-title">Insurance</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              <b>REDDTRIBE.COM</b> is not providing any insurance for any
+              service.
+            </p>
+          </div>
+          <!-- Insurance Stop -->
 
-					<!-- Payment Start -->
-					<div class="content-container">
-						<h3 class="content-title">Payment</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Your payment is handled by Paypal, Bitcoin and VoguePay payment gateways which are
-							ones of the most secure ways to pay online. to pay using your Credit or Debit card
-							your card must be 3D Authenticated to get approved by our payment gateways processor
-							if transaction failed, contact your bank and ask them to allow the transaction and
-							enable 3D Authentication. <br />
-							For any inquiry about billing or support, please contact us by phone or email
-							<b>Telegram: https://t.me/stxott Email: support@REDDTRIBE.COM</b> <br />
-							<b
-								>By accessing or using the service, you agree to be bounded by these entire
-								terms/conditions. If you do not agree with any part, then, you do not have the
-								permission to access any part of our service.</b
-							>
-						</p>
-					</div>
-					<!-- Payment Stop -->
+          <!-- Payment Start -->
+          <div class="content-container">
+            <h3 class="content-title">Payment</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Your payment is handled by Paypal, Bitcoin and VoguePay payment
+              gateways which are ones of the most secure ways to pay online. to
+              pay using your Credit or Debit card your card must be 3D
+              Authenticated to get approved by our payment gateways processor if
+              transaction failed, contact your bank and ask them to allow the
+              transaction and enable 3D Authentication. <br />
+              For any inquiry about billing or support, please contact us by
+              phone or email
+              <b>Telegram: https://t.me/stxott Email: support@REDDTRIBE.COM</b>
+              <br />
+              <b
+                >By accessing or using the service, you agree to be bounded by
+                these entire terms/conditions. If you do not agree with any
+                part, then, you do not have the permission to access any part of
+                our service.</b
+              >
+            </p>
+          </div>
+          <!-- Payment Stop -->
 
-					<!-- Communications Start -->
-					<div class="content-container">
-						<h3 class="content-title">Communications</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							If you wish to purchase any of our products or services, you may be asked to supply
-							specific information relevant to your order which can include, but without limitation
-							to, your credit card number, the expiration date of the credit card, your billing
-							address, and shipping information.
-						</p>
-					</div>
-					<!-- Communications Stop -->
+          <!-- Communications Start -->
+          <div class="content-container">
+            <h3 class="content-title">Communications</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              If you wish to purchase any of our products or services, you may
+              be asked to supply specific information relevant to your order
+              which can include, but without limitation to, your credit card
+              number, the expiration date of the credit card, your billing
+              address, and shipping information.
+            </p>
+          </div>
+          <!-- Communications Stop -->
 
-					<!-- You represent and warrant that: Start -->
-					<div class="content-container">
-						<h3 class="content-title">You represent and warrant that:</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							(i) you have the legal right to use any credit card(s) or another payment method(s) in
-							connection with any purchase; and that <br />
-							(ii) the information you supply to us is accurate, correct and complete. <br />
-							The service may employ the use of third-party services to facilitate payment and the
-							completion of purchases. By submitting your information, you grant us the right to
-							provide the information to these third parties subject to our
-							<a href="privacy.html">privacy policy</a>. <br />
-							We reserve the right to refuse or cancel your order at any time for reasons including,
-							but not limited to, product or service availability, errors in the description or
-							price of the product or service, and error in your order or other reasons. <br />
-							We reserve the right to refuse or cancel your order if fraud or an unauthorized or
-							illegal transaction is suspected.
-						</p>
-					</div>
-					<!-- You represent and warrant that: Stop -->
+          <!-- You represent and warrant that: Start -->
+          <div class="content-container">
+            <h3 class="content-title">You represent and warrant that:</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              (i) you have the legal right to use any credit card(s) or another
+              payment method(s) in connection with any purchase; and that <br />
+              (ii) the information you supply to us is accurate, correct and
+              complete. <br />
+              The service may employ the use of third-party services to
+              facilitate payment and the completion of purchases. By submitting
+              your information, you grant us the right to provide the
+              information to these third parties subject to our
+              <a href="privacy.html">privacy policy</a>. <br />
+              We reserve the right to refuse or cancel your order at any time
+              for reasons including, but not limited to, product or service
+              availability, errors in the description or price of the product or
+              service, and error in your order or other reasons. <br />
+              We reserve the right to refuse or cancel your order if fraud or an
+              unauthorized or illegal transaction is suspected.
+            </p>
+          </div>
+          <!-- You represent and warrant that: Stop -->
 
-					<!-- AVAILABILITY, ERRORS, AND INACCURACIES Start -->
-					<div class="content-container">
-						<h3 class="content-title">Availability, Errors and Inaccuracies</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							We are continually updating the offerings on products and services. We may experience
-							delays in updating information on a product/service and in advertising on other
-							websites. Therefore, some of the information found on a product/service may contain
-							errors or inaccuracies and may not be complete or current. Products or services may be
-							mispriced, described inaccurately, or unavailable.
-							<br />
-							<br />
-							We, therefore, reserve the right to change or update information and to correct
-							errors, inaccuracies, or omissions at any time without prior notice.
-						</p>
-					</div>
-					<!-- AVAILABILITY, ERRORS, AND INACCURACIES Stop -->
+          <!-- AVAILABILITY, ERRORS, AND INACCURACIES Start -->
+          <div class="content-container">
+            <h3 class="content-title">Availability, Errors and Inaccuracies</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              We are continually updating the offerings on products and
+              services. We may experience delays in updating information on a
+              product/service and in advertising on other websites. Therefore,
+              some of the information found on a product/service may contain
+              errors or inaccuracies and may not be complete or current.
+              Products or services may be mispriced, described inaccurately, or
+              unavailable.
+              <br />
+              <br />
+              We, therefore, reserve the right to change or update information
+              and to correct errors, inaccuracies, or omissions at any time
+              without prior notice.
+            </p>
+          </div>
+          <!-- AVAILABILITY, ERRORS, AND INACCURACIES Stop -->
 
-					<!-- CONTESTS, SWEEPSTAKES, AND PROMOTIONS Start -->
-					<div class="content-container">
-						<h3 class="content-title">Contests, Sweepstakes and Promotions</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Any contests, sweepstakes or promotions (collectively called promotions) made
-							available through the service may be governed by the rules that are separate from
-							these terms & conditions. If you participate in any of the promotions, please, review
-							the applicable rules as well as our <a href="privacy.html">privacy policy</a>. If the
-							rules for a promotion conflict with these terms and conditions, then, the promotion
-							rules will apply.
-						</p>
-					</div>
-					<!-- CONTESTS, SWEEPSTAKES, AND PROMOTIONS Stop -->
+          <!-- CONTESTS, SWEEPSTAKES, AND PROMOTIONS Start -->
+          <div class="content-container">
+            <h3 class="content-title">Contests, Sweepstakes and Promotions</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Any contests, sweepstakes or promotions (collectively called
+              promotions) made available through the service may be governed by
+              the rules that are separate from these terms & conditions. If you
+              participate in any of the promotions, please, review the
+              applicable rules as well as our
+              <a href="privacy.html">privacy policy</a>. If the rules for a
+              promotion conflict with these terms and conditions, then, the
+              promotion rules will apply.
+            </p>
+          </div>
+          <!-- CONTESTS, SWEEPSTAKES, AND PROMOTIONS Stop -->
 
-					<!-- Content Start -->
-					<div class="content-container">
-						<h3 class="content-title">Content</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Our service allows you to post, link, store, share and make available certain
-							information, texts, graphics, videos, or other materials (contents). You are
-							responsible for the contents that you post on or through the service, including its
-							legality, reliability, and appropriateness.
-						</p>
-					</div>
-					<!-- Content Stop -->
+          <!-- Content Start -->
+          <div class="content-container">
+            <h3 class="content-title">Content</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Our service allows you to post, link, store, share and make
+              available certain information, texts, graphics, videos, or other
+              materials (contents). You are responsible for the contents that
+              you post on or through the service, including its legality,
+              reliability, and appropriateness.
+            </p>
+          </div>
+          <!-- Content Stop -->
 
-					<!-- Opt-Out Start -->
-					<div class="content-container">
-						<h3 class="content-title">
-							By posting any content on or through the Service, you represent and warrant that
-						</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							(i) the content&rsquo;s ownership is yours, and you have the right to use it and the
-							power to grant us the rights and license as provided in these terms and conditions;
-							<br />
-							<br />
-							(ii) that the posting of your content on or through the service does not violate the
-							privacy rights, publicity rights, copyrights, contract rights or any other rights of
-							any person or entity. We reserve the right to terminate the account of anyone found to
-							be infringing on a copyright.
-							<br />
-							<br />
-							You retain all of the rights to any content you submit, post or display on or through
-							the service and you are responsible for protecting those rights. We take no
-							responsibility and assume no liability for contents you or any third-party posts on or
-							through the service. However, by posting contents using the service, you grant us the
-							right and license to use, modify, publicly perform, publicly display, reproduce, and
-							distribute such content on and through the service. You agree that this license
-							includes the right for us to make your content available to other users of the
-							service, who may also use your Content subject to these Terms.
-						</p>
-					</div>
-					<!-- Opt-Out Stop -->
+          <!-- Opt-Out Start -->
+          <div class="content-container">
+            <h3 class="content-title">
+              By posting any content on or through the Service, you represent
+              and warrant that
+            </h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              (i) the content&rsquo;s ownership is yours, and you have the right
+              to use it and the power to grant us the rights and license as
+              provided in these terms and conditions;
+              <br />
+              <br />
+              (ii) that the posting of your content on or through the service
+              does not violate the privacy rights, publicity rights, copyrights,
+              contract rights or any other rights of any person or entity. We
+              reserve the right to terminate the account of anyone found to be
+              infringing on a copyright.
+              <br />
+              <br />
+              You retain all of the rights to any content you submit, post or
+              display on or through the service and you are responsible for
+              protecting those rights. We take no responsibility and assume no
+              liability for contents you or any third-party posts on or through
+              the service. However, by posting contents using the service, you
+              grant us the right and license to use, modify, publicly perform,
+              publicly display, reproduce, and distribute such content on and
+              through the service. You agree that this license includes the
+              right for us to make your content available to other users of the
+              service, who may also use your Content subject to these Terms.
+            </p>
+          </div>
+          <!-- Opt-Out Stop -->
 
-					<!-- Accounts Start -->
-					<div class="content-container">
-						<h3 class="content-title">Accounts</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							When you create an account with us, you guarantee that you are above the age of 18 and
-							that the information you provide us is accurate, complete, and current at all times.
-							Inaccurate, incomplete, or obsolete information may result in the immediate
-							termination of your account on the Service.
-							<br />
-							<br />
-							You are responsible for maintaining the confidentiality of your account and password,
-							including but not limited to the restriction of access to your computer as well as
-							account. You agree to accept responsibility for any activities or actions that occur
-							under your account or password, whether your password is with our service or a
-							third-party service. You must notify us immediately upon becoming aware of any breach
-							of security or unauthorized use of your account.
-							<br />
-							<br />
-							You may not use as a username the name of another person or entity or that is not
-							lawfully available for use, a name or trademark that is subject to any rights of
-							another person or entity other than you, without appropriate authorization. You may
-							not use as a username, any name that is offensive, vulgar or obscene.
-							<br />
-							<br />
-							We reserve the right to refuse service, terminate accounts, remove or edit content, or
-							cancel orders at our sole discretion.
-						</p>
-					</div>
-					<!-- Accounts Stop -->
+          <!-- Accounts Start -->
+          <div class="content-container">
+            <h3 class="content-title">Accounts</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              When you create an account with us, you guarantee that you are
+              above the age of 18 and that the information you provide us is
+              accurate, complete, and current at all times. Inaccurate,
+              incomplete, or obsolete information may result in the immediate
+              termination of your account on the Service.
+              <br />
+              <br />
+              You are responsible for maintaining the confidentiality of your
+              account and password, including but not limited to the restriction
+              of access to your computer as well as account. You agree to accept
+              responsibility for any activities or actions that occur under your
+              account or password, whether your password is with our service or
+              a third-party service. You must notify us immediately upon
+              becoming aware of any breach of security or unauthorized use of
+              your account.
+              <br />
+              <br />
+              You may not use as a username the name of another person or entity
+              or that is not lawfully available for use, a name or trademark
+              that is subject to any rights of another person or entity other
+              than you, without appropriate authorization. You may not use as a
+              username, any name that is offensive, vulgar or obscene.
+              <br />
+              <br />
+              We reserve the right to refuse service, terminate accounts, remove
+              or edit content, or cancel orders at our sole discretion.
+            </p>
+          </div>
+          <!-- Accounts Stop -->
 
-					<!-- Copyright Policy Start -->
-					<div class="content-container">
-						<h3 class="content-title">Copyright Policy</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							We respect the intellectual property rights of others. It is our policy to respond to
-							any claim that content posted on the service infringes on the copyright or other
-							intellectual property rights of any person or entity.
-							<br />
-							<br />
-							If you are a copyright owner or authorized personnel on behalf of one, and you believe
-							that the copyrighted work has been copied in a way that constitutes copyright
-							infringement, please, submit your claim via an email to support@REDDTRIBE.com. In the
-							email, use the subject line: “Copyright Infringement” and include in your claim a
-							detailed description of the alleged Infringement as detailed below, under “DMCA Notice
-							and Procedure for Copyright Infringement Claims.”
-							<br />
-							<br />
-							You may be held accountable for damages (including costs and attorneys&rsquo; fees)
-							for misrepresentation or bad-faith claims on the infringement of any content found on
-							and through the service on your copyright.
-						</p>
-					</div>
-					<!-- Copyright Policy Stop -->
+          <!-- Copyright Policy Start -->
+          <div class="content-container">
+            <h3 class="content-title">Copyright Policy</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              We respect the intellectual property rights of others. It is our
+              policy to respond to any claim that content posted on the service
+              infringes on the copyright or other intellectual property rights
+              of any person or entity.
+              <br />
+              <br />
+              If you are a copyright owner or authorized personnel on behalf of
+              one, and you believe that the copyrighted work has been copied in
+              a way that constitutes copyright infringement, please, submit your
+              claim via an email to support@REDDTRIBE.com. In the email, use the
+              subject line: “Copyright Infringement” and include in your claim a
+              detailed description of the alleged Infringement as detailed
+              below, under “DMCA Notice and Procedure for Copyright Infringement
+              Claims.”
+              <br />
+              <br />
+              You may be held accountable for damages (including costs and
+              attorneys&rsquo; fees) for misrepresentation or bad-faith claims
+              on the infringement of any content found on and through the
+              service on your copyright.
+            </p>
+          </div>
+          <!-- Copyright Policy Stop -->
 
-					<!-- Assignment Start -->
-					<div class="content-container">
-						<h3 class="content-title">
-							DMCA Notice and Procedure For Copyright Infringement Claims
-						</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							You may submit a notification according to the Digital Millennium Copyright Act (DMCA)
-							by providing our Copyright Agent with the following information in writing (see 17
-							U.S.C 512(c)(3) for further detail):
-							<br />
-							<br />
-							an electronic or physical signature of the person authorized to act on behalf of the
-							owner of the copyright&rsquo;s interest;
-							<br />
-							<br />
-							a description of the copyrighted work that you claim has been infringed, including the
-							URL (i.e., web page address) of the location where the copyrighted work exists or a
-							copy of the copyrighted work;
-							<br />
-							<br />
-							identification of the URL or other specific location on the service where the material
-							that you claim is infringing is located;
-							<br />
-							<br />
-							your address, telephone number, and email address;
-							<br />
-							<br />
-							a statement by you that you have a good faith belief that the disputed use is not
-							authorized by the copyright owner, its agent, or the law;
-							<br />
-							<br />
-							a statement by you, made under penalty of perjury, that the above information in your
-							notice is accurate and that you are the copyright owner or authorized to act on the
-							copyright owner&rsquo;s behalf.
-							<br />
-							<br />
-							You can contact our Copyright Agent via email at support@REDDTRIBE.com
-						</p>
-					</div>
-					<!-- Assignment Stop -->
+          <!-- Assignment Start -->
+          <div class="content-container">
+            <h3 class="content-title">
+              DMCA Notice and Procedure For Copyright Infringement Claims
+            </h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              You may submit a notification according to the Digital Millennium
+              Copyright Act (DMCA) by providing our Copyright Agent with the
+              following information in writing (see 17 U.S.C 512(c)(3) for
+              further detail):
+              <br />
+              <br />
+              an electronic or physical signature of the person authorized to
+              act on behalf of the owner of the copyright&rsquo;s interest;
+              <br />
+              <br />
+              a description of the copyrighted work that you claim has been
+              infringed, including the URL (i.e., web page address) of the
+              location where the copyrighted work exists or a copy of the
+              copyrighted work;
+              <br />
+              <br />
+              identification of the URL or other specific location on the
+              service where the material that you claim is infringing is
+              located;
+              <br />
+              <br />
+              your address, telephone number, and email address;
+              <br />
+              <br />
+              a statement by you that you have a good faith belief that the
+              disputed use is not authorized by the copyright owner, its agent,
+              or the law;
+              <br />
+              <br />
+              a statement by you, made under penalty of perjury, that the above
+              information in your notice is accurate and that you are the
+              copyright owner or authorized to act on the copyright
+              owner&rsquo;s behalf.
+              <br />
+              <br />
+              You can contact our Copyright Agent via email at
+              support@REDDTRIBE.com
+            </p>
+          </div>
+          <!-- Assignment Stop -->
 
-					<!-- Intellectual Property Start -->
-					<div class="content-container">
-						<h3 class="content-title">Intellectual Property</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							The service and its original contents (excluding the ones provided by users),
-							features, and functionality are and will remain the exclusive property of
-							<b>REDDTRIBE.COM</b>, and its licensors. The service is protected by copyright,
-							trademark, and other laws of both the United States and foreign countries. Our
-							trademarks and trade dress may not be used in connection with any product or service
-							without the prior written consent of <b>REDDTRIBE.COM</b>.
-						</p>
-					</div>
-					<!-- Intellectual Property Stop -->
+          <!-- Intellectual Property Start -->
+          <div class="content-container">
+            <h3 class="content-title">Intellectual Property</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              The service and its original contents (excluding the ones provided
+              by users), features, and functionality are and will remain the
+              exclusive property of
+              <b>REDDTRIBE.COM</b>, and its licensors. The service is protected
+              by copyright, trademark, and other laws of both the United States
+              and foreign countries. Our trademarks and trade dress may not be
+              used in connection with any product or service without the prior
+              written consent of <b>REDDTRIBE.COM</b>.
+            </p>
+          </div>
+          <!-- Intellectual Property Stop -->
 
-					<!-- Links to Other Web Sites Start -->
-					<div class="content-container">
-						<h3 class="content-title">Links to Other Web Sites</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Our service may contain links to third party websites or services that are not owned
-							or controlled by the third party.
-							<b
-								><strong
-									>REDDTRIBE.COM has no control over third-party websites or services. It also
-									assumes no responsibility for the contents, privacy policies, or practices of any
-									third-party website or services. We do not warrant the offerings of any of these
-									entities/individuals or their websites.</strong
-								></b
-							>
-						</p>
-					</div>
-					<!-- Links to Other Web Sites Stop -->
+          <!-- Links to Other Web Sites Start -->
+          <div class="content-container">
+            <h3 class="content-title">Links to Other Web Sites</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Our service may contain links to third party websites or services
+              that are not owned or controlled by the third party.
+              <b
+                ><strong
+                  >REDDTRIBE.COM has no control over third-party websites or
+                  services. It also assumes no responsibility for the contents,
+                  privacy policies, or practices of any third-party website or
+                  services. We do not warrant the offerings of any of these
+                  entities/individuals or their websites.</strong
+                ></b
+              >
+            </p>
+          </div>
+          <!-- Links to Other Web Sites Stop -->
 
-					<!-- Termination Start -->
-					<div class="content-container">
-						<h3 class="content-title">Termination</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							We may terminate or suspend your account and bar its access to the service
-							immediately, without prior notice or liability, under our sole discretion, for any
-							reason whatsoever and without limitation, including but not limited to, a breach of
-							the terms and conditions.
-							<br />
-							<br />
-							If you wish to terminate your account, you may discontinue using the service.
-							<br />
-							<br />
-							All the provisions of the terms/conditions which by their nature should survive
-							termination shall survive termination, including, without limitation, ownership
-							provisions, warranty disclaimers, indemnity, and limitations of liability.
-						</p>
-					</div>
-					<!-- Termination Stop -->
+          <!-- Termination Start -->
+          <div class="content-container">
+            <h3 class="content-title">Termination</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              We may terminate or suspend your account and bar its access to the
+              service immediately, without prior notice or liability, under our
+              sole discretion, for any reason whatsoever and without limitation,
+              including but not limited to, a breach of the terms and
+              conditions.
+              <br />
+              <br />
+              If you wish to terminate your account, you may discontinue using
+              the service.
+              <br />
+              <br />
+              All the provisions of the terms/conditions which by their nature
+              should survive termination shall survive termination, including,
+              without limitation, ownership provisions, warranty disclaimers,
+              indemnity, and limitations of liability.
+            </p>
+          </div>
+          <!-- Termination Stop -->
 
-					<!-- INDEMNIFICATION Start -->
-					<div class="content-container">
-						<h3 class="content-title">Indemnification</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							You agree to defend, indemnify and hold harmless <b>REDDTRIBE.COM</b> and its licensee
-							and licensors, and their employees, contractors, agents, officers, and directors, from
-							and against any claims, damages, obligations, losses, liabilities, costs or debt, and
-							expenses (including but not limited to attorney&rsquo;s fees), resulting from or
-							arising out of: <br />
-							<br />
-							a) your use and access of the Service, by you or any person using your account and
-							password;
-							<br />
-							<br />
-							b) a breach of these terms, or
-							<br />
-							<br />
-							c) content posted on the service.
-						</p>
-					</div>
-					<!-- INDEMNIFICATION Stop -->
+          <!-- INDEMNIFICATION Start -->
+          <div class="content-container">
+            <h3 class="content-title">Indemnification</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              You agree to defend, indemnify and hold harmless
+              <b>REDDTRIBE.COM</b> and its licensee and licensors, and their
+              employees, contractors, agents, officers, and directors, from and
+              against any claims, damages, obligations, losses, liabilities,
+              costs or debt, and expenses (including but not limited to
+              attorney&rsquo;s fees), resulting from or arising out of: <br />
+              <br />
+              a) your use and access of the Service, by you or any person using
+              your account and password;
+              <br />
+              <br />
+              b) a breach of these terms, or
+              <br />
+              <br />
+              c) content posted on the service.
+            </p>
+          </div>
+          <!-- INDEMNIFICATION Stop -->
 
-					<!-- Disclaimer Start -->
-					<div class="content-container">
-						<h3 class="content-title">Disclaimer</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Your use of the service is at your sole risk. The service is provided on an “AS IS”
-							and “AS AVAILABLE” basis. The service is provided without warranties of any kind,
-							whether express or implied, including, but not limited to, implied warranties of
-							merchantability, fitness for a particular purpose, non-infringement or course of
-							performance.
-						</p>
-					</div>
-					<!-- Disclaimer Stop -->
+          <!-- Disclaimer Start -->
+          <div class="content-container">
+            <h3 class="content-title">Disclaimer</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Your use of the service is at your sole risk. The service is
+              provided on an “AS IS” and “AS AVAILABLE” basis. The service is
+              provided without warranties of any kind, whether express or
+              implied, including, but not limited to, implied warranties of
+              merchantability, fitness for a particular purpose,
+              non-infringement or course of performance.
+            </p>
+          </div>
+          <!-- Disclaimer Stop -->
 
-					<!-- Exclusions Start -->
-					<div class="content-container">
-						<h3 class="content-title">Exclusions</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							Some jurisdictions do not allow the exclusion of certain warranties or the exclusion
-							or limitation of liability for consequential or incidental damages. Therefore, the
-							restrictions above may not apply to you.
-						</p>
-					</div>
-					<!-- Exclusions Stop -->
+          <!-- Exclusions Start -->
+          <div class="content-container">
+            <h3 class="content-title">Exclusions</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              Some jurisdictions do not allow the exclusion of certain
+              warranties or the exclusion or limitation of liability for
+              consequential or incidental damages. Therefore, the restrictions
+              above may not apply to you.
+            </p>
+          </div>
+          <!-- Exclusions Stop -->
 
-					<!-- Governing Law Start -->
-					<div class="content-container">
-						<h3 class="content-title">Governing Law</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<p class="content-description">
-							These terms/conditions shall be governed and construed under the laws of Virginia,
-							United States, without regard to its conflict of law provisions.
-							<br />
-							<br />
-							Our failure to enforce any right or provision of these terms/conditions will not be
-							considered a waiver of those rights. If any provision of these terms/conditions is
-							held to be invalid or unenforceable by a court, the remaining provisions of these
-							terms/conditions will remain in effect. They will constitute the entire agreement
-							between us regarding our service, and supersede and replace any prior agreements we
-							might have had between us regarding the service.
-						</p>
-					</div>
-					<!-- Governing Law Stop -->
-				</div>
-			</section>
-			<!-- Privacy Policy Content Section Stop -->
-		</main>
+          <!-- Governing Law Start -->
+          <div class="content-container">
+            <h3 class="content-title">Governing Law</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <p class="content-description">
+              These terms/conditions shall be governed and construed under the
+              laws of Virginia, United States, without regard to its conflict of
+              law provisions.
+              <br />
+              <br />
+              Our failure to enforce any right or provision of these
+              terms/conditions will not be considered a waiver of those rights.
+              If any provision of these terms/conditions is held to be invalid
+              or unenforceable by a court, the remaining provisions of these
+              terms/conditions will remain in effect. They will constitute the
+              entire agreement between us regarding our service, and supersede
+              and replace any prior agreements we might have had between us
+              regarding the service.
+            </p>
+          </div>
+          <!-- Governing Law Stop -->
+        </div>
+      </section>
+      <!-- Privacy Policy Content Section Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<script src="assets/js/script.js"></script>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,890 +1,1264 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite ReddTribe Clone | Subscriptions</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kite ReddTribe Clone | Subscriptions</title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul id="client-area-list" class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item"><a href="index.html">home</a></li>
-								<li class="menu-list-item active">
-									<a href="subscriptions.html">subscriptions</a>
-								</li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul id="client-area-list" class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">home</a></li>
+                <li class="menu-list-item active">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Hero Section Start -->
-			<section class="subscription-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="subscription-hero-content">
-							<div class="title-container">
-								<div class="stx-ott">
-									<h1>STX</h1>
-									<h5>OTT</h5>
-								</div>
-								<div class="title">
-									<h3>best iptv service from only &dollar;10.99/month</h3>
-								</div>
-							</div>
+    <main>
+      <!-- Hero Section Start -->
+      <section class="subscription-hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="subscription-hero-content">
+              <div class="title-container">
+                <div class="stx-ott">
+                  <h1>STX</h1>
+                  <h5>OTT</h5>
+                </div>
+                <div class="title">
+                  <h3>best iptv service from only &dollar;10.99/month</h3>
+                </div>
+              </div>
 
-							<h5 class="subtitle">Trusted by Hundered of Clients for Global IPTV Service</h5>
-							<div class="under-line"></div>
-							<ul class="iptv-services">
-								<li class="iptv-service">
-									<span class="iptv-service-icon"><i class="fas fa-check"></i></span>
-									<span class="iptv-service-title">No Buffer</span>
-								</li>
-								<li class="iptv-service">
-									<span class="iptv-service-icon"><i class="fas fa-check"></i></span>
-									<span class="iptv-service-title">Over 30K VOD</span>
-								</li>
-								<li class="iptv-service">
-									<span class="iptv-service-icon"><i class="fas fa-check"></i></span>
-									<span class="iptv-service-title">Over 10K Premium channels</span>
-								</li>
-								<li class="iptv-service">
-									<span class="iptv-service-icon"><i class="fas fa-check"></i></span>
-									<span class="iptv-service-title">Anti-Freeze Technology</span>
-								</li>
-							</ul>
-							<div class="subscription-cta-container">
-								<a href="configure-product.html" class="subscription-cta"> order now </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
+              <h5 class="subtitle">
+                Trusted by Hundered of Clients for Global IPTV Service
+              </h5>
+              <div class="under-line"></div>
+              <ul class="iptv-services">
+                <li class="iptv-service">
+                  <span class="iptv-service-icon"
+                    ><i class="fas fa-check"></i
+                  ></span>
+                  <span class="iptv-service-title">No Buffer</span>
+                </li>
+                <li class="iptv-service">
+                  <span class="iptv-service-icon"
+                    ><i class="fas fa-check"></i
+                  ></span>
+                  <span class="iptv-service-title">Over 30K VOD</span>
+                </li>
+                <li class="iptv-service">
+                  <span class="iptv-service-icon"
+                    ><i class="fas fa-check"></i
+                  ></span>
+                  <span class="iptv-service-title"
+                    >Over 10K Premium channels</span
+                  >
+                </li>
+                <li class="iptv-service">
+                  <span class="iptv-service-icon"
+                    ><i class="fas fa-check"></i
+                  ></span>
+                  <span class="iptv-service-title">Anti-Freeze Technology</span>
+                </li>
+              </ul>
+              <div class="subscription-cta-container">
+                <a href="configure-product.html" class="subscription-cta">
+                  order now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Stop -->
 
-			<!-- Pricing Section Start -->
-			<section class="pricing-container">
-				<div class="wrapper">
-					<h2 class="container-title">Ready To Seize Our Limited-Time IPTV Offers</h2>
-					<h3 class="container-subtitle">
-						We offer flexible subscription plans tailored to meet your viewing preferences.
-					</h3>
-					<p class="container-description">
-						Gain entry to a world of beloved TV shows, Movies, Sports and Live Events, all in
-						stunning High Definition and Experience the future of entertainment!
-					</p>
-					<ul class="pricings">
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">3 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">15,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>1 CONNECTION</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">6 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">25,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>1 CONNECTION</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">12 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">40,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>1 CONNECTION</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">3 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">25,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">6 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">40,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">12 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">70,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- Pricing Section Stop -->
+      <!-- Pricing Section Start -->
+      <section class="pricing-container">
+        <div class="wrapper">
+          <h2 class="container-title">
+            Ready To Seize Our Limited-Time IPTV Offers
+          </h2>
+          <h3 class="container-subtitle">
+            We offer flexible subscription plans tailored to meet your viewing
+            preferences.
+          </h3>
+          <p class="container-description">
+            Gain entry to a world of beloved TV shows, Movies, Sports and Live
+            Events, all in stunning High Definition and Experience the future of
+            entertainment!
+          </p>
+          <ul class="pricings">
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">3 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">15,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>1 CONNECTION</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">6 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">25,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>1 CONNECTION</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">12 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">40,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>1 CONNECTION</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">3 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">25,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">6 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">40,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">12 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">70,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"><b>2 CONNECTIONS</b></span>
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Pricing Section Stop -->
 
-			<!-- Get Started Start -->
-			<section class="get-started-container">
-				<div class="wrapper get-started-content">
-					<h4 class="get-started-title">
-						Cancel at any time and pay only for the period you have used and get the rest refunded.
-						<br />
-						<strong>100% statisfaction guaranteed</strong>!
-					</h4>
-					<a href="#" class="get-started-cta">Get Trial Now</a>
-				</div>
-			</section>
-			<!-- Get Started Stop -->
+      <!-- Get Started Start -->
+      <section class="get-started-container">
+        <div class="wrapper get-started-content">
+          <h4 class="get-started-title">
+            Cancel at any time and pay only for the period you have used and get
+            the rest refunded.
+            <br />
+            <strong>100% statisfaction guaranteed</strong>!
+          </h4>
+          <a href="#" class="get-started-cta">Get Trial Now</a>
+        </div>
+      </section>
+      <!-- Get Started Stop -->
 
-			<!-- Features Section Start -->
-			<section class="features-container">
-				<div class="wrapper">
-					<h2 class="container-title">Why Choose Us?</h2>
-					<p class="container-description">
-						A Seamless Platform That Brings You The Latest In Live Sports, Movies, Series And More,
-						All In One Place.
-					</p>
-					<ul class="features">
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/1.png" alt="Live Sports Coverage" />
-							</div>
-							<h5 class="feature-title">Live Sports Coverage</h5>
-							<p class="feature-description">
-								Catch all the action with our extensive sports channel lineup. From live matches to
-								exclusive sports events, from sports extravaganzas to cultural celebrations, we
-								ensure you experience the excitement in real-time, right from the comfory of your
-								screen.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/2.png" alt="Premium Channels Library" />
-							</div>
-							<h5 class="feature-title">Premium Channels Library</h5>
-							<p class="feature-description">
-								Access to an extensive library of live TV channels, including sports, news,
-								entertainment and more. Additionally, enjy a vast collection of on-demand movies,
-								series and special events in High Quality HD/FHD/4K.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/3.png" alt="Updated VOD(Video On Demand)" />
-							</div>
-							<h5 class="feature-title">Updated VOD <br />(Video On Demand)</h5>
-							<p class="feature-description">
-								Our updated Video On Demand library offers a vast selection of movies, series and
-								special programs. Discover a diverse range of content that&apos;s refreshed
-								regularly, ensuring you alway have access to the latest and greatest in
-								entertainment.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/4.png" alt="Multi-Device Compatibility" />
-							</div>
-							<h5 class="feature-title">Multi-Device Compatibility</h5>
-							<p class="feature-description">
-								Watch your favorite shows anytime, anywhere on a wide range of devices. Whether
-								it&apos;s your smart TV, smartphone, tablet or laptop our IPTV ensures seamless
-								compatiblity.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/5.png" alt="Easy Installation" />
-							</div>
-							<h5 class="feature-title">Easy Installation</h5>
-							<p class="feature-description">
-								Our user-friendly installation process ensures you&apos;re up and running in no
-								time. Follow our step-by-step guide and you&apos;ll be immersed in premium content
-								within minutes. Have questions? Our dedicated support team is always ready to assist
-								you.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/6.png" alt="99% Uptime" />
-							</div>
-							<h5 class="feature-title">99.9% Uptime</h5>
-							<p class="feature-description">
-								With a staggering 99.9% uptime, you can trust that your entertainment won&apos;t be
-								interrupted. Sit back, relax and enjoy uninterrupted access to your favorite
-								channels, movies and events. With ReddTRIBE HD, you&apos;re in good hands.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- Features Section Stop -->
-		</main>
+      <!-- Features Section Start -->
+      <section class="features-container">
+        <div class="wrapper">
+          <h2 class="container-title">Why Choose Us?</h2>
+          <p class="container-description">
+            A Seamless Platform That Brings You The Latest In Live Sports,
+            Movies, Series And More, All In One Place.
+          </p>
+          <ul class="features">
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/1.png"
+                  alt="Live Sports Coverage"
+                />
+              </div>
+              <h5 class="feature-title">Live Sports Coverage</h5>
+              <p class="feature-description">
+                Catch all the action with our extensive sports channel lineup.
+                From live matches to exclusive sports events, from sports
+                extravaganzas to cultural celebrations, we ensure you experience
+                the excitement in real-time, right from the comfory of your
+                screen.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/2.png"
+                  alt="Premium Channels Library"
+                />
+              </div>
+              <h5 class="feature-title">Premium Channels Library</h5>
+              <p class="feature-description">
+                Access to an extensive library of live TV channels, including
+                sports, news, entertainment and more. Additionally, enjy a vast
+                collection of on-demand movies, series and special events in
+                High Quality HD/FHD/4K.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/3.png"
+                  alt="Updated VOD(Video On Demand)"
+                />
+              </div>
+              <h5 class="feature-title">Updated VOD <br />(Video On Demand)</h5>
+              <p class="feature-description">
+                Our updated Video On Demand library offers a vast selection of
+                movies, series and special programs. Discover a diverse range of
+                content that&apos;s refreshed regularly, ensuring you alway have
+                access to the latest and greatest in entertainment.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/4.png"
+                  alt="Multi-Device Compatibility"
+                />
+              </div>
+              <h5 class="feature-title">Multi-Device Compatibility</h5>
+              <p class="feature-description">
+                Watch your favorite shows anytime, anywhere on a wide range of
+                devices. Whether it&apos;s your smart TV, smartphone, tablet or
+                laptop our IPTV ensures seamless compatiblity.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/5.png" alt="Easy Installation" />
+              </div>
+              <h5 class="feature-title">Easy Installation</h5>
+              <p class="feature-description">
+                Our user-friendly installation process ensures you&apos;re up
+                and running in no time. Follow our step-by-step guide and
+                you&apos;ll be immersed in premium content within minutes. Have
+                questions? Our dedicated support team is always ready to assist
+                you.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/6.png" alt="99% Uptime" />
+              </div>
+              <h5 class="feature-title">99.9% Uptime</h5>
+              <p class="feature-description">
+                With a staggering 99.9% uptime, you can trust that your
+                entertainment won&apos;t be interrupted. Sit back, relax and
+                enjoy uninterrupted access to your favorite channels, movies and
+                events. With ReddTRIBE HD, you&apos;re in good hands.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Features Section Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<script src="assets/js/script.js"></script>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

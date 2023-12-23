@@ -65,9 +65,18 @@ header .topbar {
   @apply bg-black border-0 border-t border-gray-400 border-opacity-50 border-solid flex items-center justify-center p-4 md:border-b md:border-t-0 lg:justify-between lg:py-5 xl:py-6;
 }
 
-header .topbar .logo {
+/* header .topbar .logo {
   @apply font-black text-primary-600 text-2xl uppercase lg:text-3xl xl:text-4xl;
   @apply hidden lg:block;
+} */
+
+header .topbar .topbar-logo {
+  @apply lg:h-[110px] lg:w-[150px];
+  @apply hidden lg:block;
+}
+
+header .topbar .topbar-logo img {
+  @apply h-full w-full;
 }
 
 header .topbar-content {
@@ -158,11 +167,15 @@ header .topbar-content .client-area-list-item a:hover span.icon {
   @apply flex justify-center lg:items-center lg:justify-end;
 }
 
-.navbar-content .logo {
+.navbar-content .navbar-logo {
+  @apply h-[70px] w-[100px] md:h-[90px] md:w-[120px];
   @apply lg:hidden;
 }
 
-.navbar .logo,
+.navbar-content .navbar-logo img {
+  @apply h-full w-full;
+}
+
 .login-container .logo,
 .review-form-container .logo {
   @apply font-black text-primary-600 text-2xl uppercase lg:text-xl xl:text-3xl;

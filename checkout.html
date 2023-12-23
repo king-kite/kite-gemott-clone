@@ -1,509 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite ReddTribe Clone | Checkout</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kite ReddTribe Clone | Checkout</title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul id="client-area-list" class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item"><a href="index.html">home</a></li>
-								<li class="menu-list-item"><a href="subscriptions.html">subscriptions</a></li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul id="client-area-list" class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">home</a></li>
+                <li class="menu-list-item">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Hero Section Start -->
-			<section class="content-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="content-hero-data">
-							<h1 class="content-hero-title">Checkout</h1>
-							<p class="content-hero-description">
-								Please enter your billing information to checkout.
-							</p>
-							<ul class="breadcrumbs">
-								<li class="breadcrumb"><a href="index.html">Home</a></li>
-								<li class="breadcrumb"><a href="cart.html">Cart</a></li>
-								<li class="breadcrumb active"><a href="checkout.html">Checkout</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
+    <main>
+      <!-- Hero Section Start -->
+      <section class="content-hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="content-hero-data">
+              <h1 class="content-hero-title">Checkout</h1>
+              <p class="content-hero-description">
+                Please enter your billing information to checkout.
+              </p>
+              <ul class="breadcrumbs">
+                <li class="breadcrumb"><a href="index.html">Home</a></li>
+                <li class="breadcrumb"><a href="cart.html">Cart</a></li>
+                <li class="breadcrumb active">
+                  <a href="checkout.html">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Stop -->
 
-			<!-- Checkout Start -->
-			<section class="content-wrapper">
-				<div class="wrapper">
-					<div class="content-container">
-						<h3 class="content-title">Checkout</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<div class="checkout-grid-container">
-							<!-- Checkout Start -->
-							<div class="checkout-container">
-								<form action="#" class="checkout-form">
-									<h3 class="content-title">Billing Address</h3>
+      <!-- Checkout Start -->
+      <section class="content-wrapper">
+        <div class="wrapper">
+          <div class="content-container">
+            <h3 class="content-title">Checkout</h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <div class="checkout-grid-container">
+              <!-- Checkout Start -->
+              <div class="checkout-container">
+                <form action="#" class="checkout-form">
+                  <h3 class="content-title">Billing Address</h3>
 
-									<!-- Billing Address Start -->
-									<div class="checkout-form-section">
-										<!-- Company -->
-										<div class="review-field-container">
-											<label for="company" class="review-field-label">
-												Company Name (Optional)
-											</label>
-											<div class="review-input-container">
-												<input placeholder="Company Name" name="company" id="company" />
-											</div>
-										</div>
+                  <!-- Billing Address Start -->
+                  <div class="checkout-form-section">
+                    <!-- Company -->
+                    <div class="review-field-container">
+                      <label for="company" class="review-field-label">
+                        Company Name (Optional)
+                      </label>
+                      <div class="review-input-container">
+                        <input
+                          placeholder="Company Name"
+                          name="company"
+                          id="company"
+                        />
+                      </div>
+                    </div>
 
-										<!-- Street Address -->
-										<div class="review-field-container">
-											<label for="street_address" class="review-field-label">
-												Street Address
-											</label>
-											<div class="review-input-container">
-												<input
-													placeholder="Street Address"
-													required
-													name="street_address"
-													id="street_address"
-												/>
-											</div>
-										</div>
+                    <!-- Street Address -->
+                    <div class="review-field-container">
+                      <label for="street_address" class="review-field-label">
+                        Street Address
+                      </label>
+                      <div class="review-input-container">
+                        <input
+                          placeholder="Street Address"
+                          required
+                          name="street_address"
+                          id="street_address"
+                        />
+                      </div>
+                    </div>
 
-										<!-- Street Address 2 -->
-										<div class="review-field-container">
-											<label for="street_address_2" class="review-field-label">
-												Street Address 2
-											</label>
-											<div class="review-input-container">
-												<input
-													placeholder="Street Address 2"
-													name="street_address_2"
-													id="street_address_2"
-												/>
-											</div>
-										</div>
+                    <!-- Street Address 2 -->
+                    <div class="review-field-container">
+                      <label for="street_address_2" class="review-field-label">
+                        Street Address 2
+                      </label>
+                      <div class="review-input-container">
+                        <input
+                          placeholder="Street Address 2"
+                          name="street_address_2"
+                          id="street_address_2"
+                        />
+                      </div>
+                    </div>
 
-										<!-- City-->
-										<div class="review-field-container">
-											<label for="city" class="review-field-label"> City </label>
-											<div class="review-input-container">
-												<input placeholder="City" name="city" id="city" />
-											</div>
-										</div>
+                    <!-- City-->
+                    <div class="review-field-container">
+                      <label for="city" class="review-field-label">
+                        City
+                      </label>
+                      <div class="review-input-container">
+                        <input placeholder="City" name="city" id="city" />
+                      </div>
+                    </div>
 
-										<!-- State -->
-										<div class="review-field-container">
-											<label for="state" class="review-field-label">State</label>
-											<div class="review-select-container">
-												<select id="state" required name="state" class="review-select">
-													<option value="1">First State</option>
-													<option value="2">Second State</option>
-													<option value="3">Third State</option>
-													<option value="4">Fourth State</option>
-													<option value="5">Fifth State</option>
-												</select>
-											</div>
-										</div>
+                    <!-- State -->
+                    <div class="review-field-container">
+                      <label for="state" class="review-field-label"
+                        >State</label
+                      >
+                      <div class="review-select-container">
+                        <select
+                          id="state"
+                          required
+                          name="state"
+                          class="review-select"
+                        >
+                          <option value="1">First State</option>
+                          <option value="2">Second State</option>
+                          <option value="3">Third State</option>
+                          <option value="4">Fourth State</option>
+                          <option value="5">Fifth State</option>
+                        </select>
+                      </div>
+                    </div>
 
-										<!-- Country -->
-										<div class="review-field-container">
-											<label for="country" class="review-field-label">Country</label>
-											<div class="review-select-container">
-												<select id="country" required name="country" class="review-select">
-													<option value="1">First Country</option>
-													<option value="2">Second Country</option>
-													<option value="3">Third Country</option>
-													<option value="4">Fourth Country</option>
-													<option value="5">Fifth Country</option>
-												</select>
-											</div>
-										</div>
+                    <!-- Country -->
+                    <div class="review-field-container">
+                      <label for="country" class="review-field-label"
+                        >Country</label
+                      >
+                      <div class="review-select-container">
+                        <select
+                          id="country"
+                          required
+                          name="country"
+                          class="review-select"
+                        >
+                          <option value="1">First Country</option>
+                          <option value="2">Second Country</option>
+                          <option value="3">Third Country</option>
+                          <option value="4">Fourth Country</option>
+                          <option value="5">Fifth Country</option>
+                        </select>
+                      </div>
+                    </div>
 
-										<!-- Postcode-->
-										<div class="review-field-container">
-											<label for="postcode" class="review-field-label"> Postcode </label>
-											<div class="review-input-container">
-												<input placeholder="Postcode" name="postcode" id="postcode" />
-											</div>
-										</div>
-									</div>
-									<!-- Billing Address Stop -->
+                    <!-- Postcode-->
+                    <div class="review-field-container">
+                      <label for="postcode" class="review-field-label">
+                        Postcode
+                      </label>
+                      <div class="review-input-container">
+                        <input
+                          placeholder="Postcode"
+                          name="postcode"
+                          id="postcode"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Billing Address Stop -->
 
-									<!-- Payment Details Section Start -->
-									<h3 class="content-title">Payment Details</h3>
-									<p class="content-description">Please choose your preferred method of payment.</p>
-									<div class="payment-choices">
-										<div class="payment-choice">
-											<label for="stripe">
-												<input
-													type="radio"
-													name="payment_choice"
-													required
-													id="stripe"
-												/>&nbsp;Stripe
-											</label>
-										</div>
+                  <!-- Payment Details Section Start -->
+                  <h3 class="content-title">Payment Details</h3>
+                  <p class="content-description">
+                    Please choose your preferred method of payment.
+                  </p>
+                  <div class="payment-choices">
+                    <div class="payment-choice">
+                      <label for="stripe">
+                        <input
+                          type="radio"
+                          name="payment_choice"
+                          required
+                          id="stripe"
+                        />&nbsp;Stripe
+                      </label>
+                    </div>
 
-										<div class="payment-choice">
-											<label for="paypal">
-												<input
-													type="radio"
-													name="payment_choice"
-													required
-													id="paypal"
-												/>&nbsp;Paypal
-											</label>
-										</div>
+                    <div class="payment-choice">
+                      <label for="paypal">
+                        <input
+                          type="radio"
+                          name="payment_choice"
+                          required
+                          id="paypal"
+                        />&nbsp;Paypal
+                      </label>
+                    </div>
 
-										<div class="payment-choice">
-											<label for="credit_card">
-												<input
-													type="radio"
-													name="payment_choice"
-													required
-													id="credit_card"
-												/>&nbsp;Credit Card
-											</label>
-										</div>
-									</div>
-									<!-- Payment Details Section Stop -->
+                    <div class="payment-choice">
+                      <label for="credit_card">
+                        <input
+                          type="radio"
+                          name="payment_choice"
+                          required
+                          id="credit_card"
+                        />&nbsp;Credit Card
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Payment Details Section Stop -->
 
-									<!-- Additional Notes Start -->
-									<h3 class="content-title">Additional Notes</h3>
-									<p class="content-description">
-										You can enter any additional notes or information you want included with your
-										order here.
-									</p>
-									<div class="additional-information">
-										<div class="review-field-container">
-											<div class="review-input-container">
-												<textarea
-													required
-													placeholder="Type in additional notes here..."
-													name="notes"
-													id="notes"
-													rows="4"
-												></textarea>
-											</div>
-										</div>
-									</div>
-									<!-- Additional Notes Stop -->
+                  <!-- Additional Notes Start -->
+                  <h3 class="content-title">Additional Notes</h3>
+                  <p class="content-description">
+                    You can enter any additional notes or information you want
+                    included with your order here.
+                  </p>
+                  <div class="additional-information">
+                    <div class="review-field-container">
+                      <div class="review-input-container">
+                        <textarea
+                          required
+                          placeholder="Type in additional notes here..."
+                          name="notes"
+                          id="notes"
+                          rows="4"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Additional Notes Stop -->
 
-									<!-- Terms of Service Start -->
-									<div class="terms-of-service-container">
-										<div class="review-field-container">
-											<label class="content-description" for="terms_of_service">
-												<input
-													required
-													type="checkbox"
-													name="terms_of_service"
-													id="terms_of_service"
-												/>
-												<b
-													>&nbsp;I have read and agree to the
-													<span>
-														<a href="terms-of-service.html">Terms of Service</a>
-													</span>
-												</b>
-											</label>
-										</div>
-									</div>
-									<!-- Terms of Service Stop -->
+                  <!-- Terms of Service Start -->
+                  <div class="terms-of-service-container">
+                    <div class="review-field-container">
+                      <label class="content-description" for="terms_of_service">
+                        <input
+                          required
+                          type="checkbox"
+                          name="terms_of_service"
+                          id="terms_of_service"
+                        />
+                        <b
+                          >&nbsp;I have read and agree to the
+                          <span>
+                            <a href="terms-of-service.html">Terms of Service</a>
+                          </span>
+                        </b>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Terms of Service Stop -->
 
-									<!-- Button -->
-									<div class="review-button">
-										<button type="submit">
-											Complete Order&nbsp;<span><i class="fas fa-check-circle"></i></span>
-										</button>
-									</div>
-								</form>
-							</div>
-							<!-- Checkout Stop -->
+                  <!-- Button -->
+                  <div class="review-button">
+                    <button type="submit">
+                      Complete Order&nbsp;<span
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Checkout Stop -->
 
-							<!-- Order Summary Start -->
-							<div class="order-summary-container">
-								<h3 class="order-summary-title">Order Summary</h3>
+              <!-- Order Summary Start -->
+              <div class="order-summary-container">
+                <h3 class="order-summary-title">Order Summary</h3>
 
-								<ul class="order-summary-items">
-									<li class="order-summary-item">
-										<p class="order-summary-item-title">12 Months Account</p>
-										<span class="order-summary-item-price">
-											&dollar;<b><big>100.00&nbsp;</big></b
-											>USD
-										</span>
-									</li>
-									<li class="order-summary-item">
-										<p class="order-summary-item-title">12 Months Account</p>
-										<span class="order-summary-item-price">
-											&dollar;<b><big>100.00&nbsp;</big></b
-											>USD
-										</span>
-									</li>
-									<li class="order-summary-item">
-										<p class="order-summary-item-title">12 Months Account</p>
-										<span class="order-summary-item-price">
-											&dollar;<b><big>100.00&nbsp;</big></b
-											>USD
-										</span>
-									</li>
-								</ul>
+                <ul class="order-summary-items">
+                  <li class="order-summary-item">
+                    <p class="order-summary-item-title">12 Months Account</p>
+                    <span class="order-summary-item-price">
+                      &dollar;<b><big>100.00&nbsp;</big></b
+                      >USD
+                    </span>
+                  </li>
+                  <li class="order-summary-item">
+                    <p class="order-summary-item-title">12 Months Account</p>
+                    <span class="order-summary-item-price">
+                      &dollar;<b><big>100.00&nbsp;</big></b
+                      >USD
+                    </span>
+                  </li>
+                  <li class="order-summary-item">
+                    <p class="order-summary-item-title">12 Months Account</p>
+                    <span class="order-summary-item-price">
+                      &dollar;<b><big>100.00&nbsp;</big></b
+                      >USD
+                    </span>
+                  </li>
+                </ul>
 
-								<div class="order-summary-total">
-									<h1 class="order-summary-total-price">
-										<span>Total</span>
-										<span>
-											&dollar;<b><big>300.00</big></b
-											>&nbsp;USD
-										</span>
-									</h1>
-								</div>
-							</div>
-							<!-- Order Summary Stop -->
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Checkout Stop -->
-		</main>
+                <div class="order-summary-total">
+                  <h1 class="order-summary-total-price">
+                    <span>Total</span>
+                    <span>
+                      &dollar;<b><big>300.00</big></b
+                      >&nbsp;USD
+                    </span>
+                  </h1>
+                </div>
+              </div>
+              <!-- Order Summary Stop -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Checkout Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<script src="assets/js/script.js"></script>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

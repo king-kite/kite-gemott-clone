@@ -1,389 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite ReddTribe Clone | Setting up IPTV on Android Using IPTV Smarters App</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kite ReddTribe Clone | Setting up IPTV on Android Using IPTV Smarters App
+    </title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul id="client-area-list" class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item"><a href="index.html">home</a></li>
-								<li class="menu-list-item"><a href="subscriptions.html">subscriptions</a></li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item active"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul id="client-area-list" class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">home</a></li>
+                <li class="menu-list-item">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item active">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Hero Section Start -->
-			<section class="content-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="content-hero-data">
-							<h1 class="content-hero-title">Tutorial - Installation Guide</h1>
-							<ul class="breadcrumbs">
-								<li class="breadcrumb"><a href="index.html">Home</a></li>
-								<li class="breadcrumb"><a href="knowledgebase.html">Knowledgebase</a></li>
-								<li class="breadcrumb active">
-									<a href="knowledgebase-detail-2.html"
-										>Setting up IPTV on Android Using IPTV Smarters App</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
+    <main>
+      <!-- Hero Section Start -->
+      <section class="content-hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="content-hero-data">
+              <h1 class="content-hero-title">Tutorial - Installation Guide</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumb"><a href="index.html">Home</a></li>
+                <li class="breadcrumb">
+                  <a href="knowledgebase.html">Knowledgebase</a>
+                </li>
+                <li class="breadcrumb active">
+                  <a href="knowledgebase-detail-2.html"
+                    >Setting up IPTV on Android Using IPTV Smarters App</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Stop -->
 
-			<!-- Knowledge Base / Tutorials Section Start -->
-			<section class="content-wrapper">
-				<div class="wrapper tutorial-wrapper">
-					<div class="content-container">
-						<h3 class="content-title">Setting up IPTV on Android Using IPTV Smarters App</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<div class="tutorial-article-content">
-							<p class="tutorial-article-content-description">
-								IPTV Smarters is an Android application based on Xtream Codes that allows your
-								valued customers to enjoy Live TV, VOD, Series, and TV Catchup on their Android
-								devices such as mobile phones, Android boxes, Fire TV Stick, and more
-							</p>
-							<h3 class="tutorial-article-content-title">Features of IPTV Smarters:</h3>
-							<ul class="tutorial-article-content-list">
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Live, Movies, Series & TV Catchup Streaming
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									EPG Support
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Integrated Parental Control for each category
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Powerful built-in player
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Support for Playing with External Players
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Attractive & User-Friendly Layout
-								</li>
-								<li class="tutorial-article-content-list-item tutorial-article-content-description">
-									Dynamic Language Switching Support
-								</li>
-							</ul>
-							<p class="tutorial-article-content-description">
-								Please note that you will need to input your <b>Username</b>, <b>Password</b> and
-								<b>Server URL</b> provided by your IPTV service provider.
-							</p>
+      <!-- Knowledge Base / Tutorials Section Start -->
+      <section class="content-wrapper">
+        <div class="wrapper tutorial-wrapper">
+          <div class="content-container">
+            <h3 class="content-title">
+              Setting up IPTV on Android Using IPTV Smarters App
+            </h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <div class="tutorial-article-content">
+              <p class="tutorial-article-content-description">
+                IPTV Smarters is an Android application based on Xtream Codes
+                that allows your valued customers to enjoy Live TV, VOD, Series,
+                and TV Catchup on their Android devices such as mobile phones,
+                Android boxes, Fire TV Stick, and more
+              </p>
+              <h3 class="tutorial-article-content-title">
+                Features of IPTV Smarters:
+              </h3>
+              <ul class="tutorial-article-content-list">
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Live, Movies, Series & TV Catchup Streaming
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  EPG Support
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Integrated Parental Control for each category
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Powerful built-in player
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Support for Playing with External Players
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Attractive & User-Friendly Layout
+                </li>
+                <li
+                  class="tutorial-article-content-list-item tutorial-article-content-description"
+                >
+                  Dynamic Language Switching Support
+                </li>
+              </ul>
+              <p class="tutorial-article-content-description">
+                Please note that you will need to input your <b>Username</b>,
+                <b>Password</b> and <b>Server URL</b> provided by your IPTV
+                service provider.
+              </p>
 
-							<!-- Step 1 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 1</b>: Download and Install Downloader App <br />
-								- Dismiss prompts until you see the URL text box on the right side. Make sure the
-								<b>"Home"</b> option in the left menu is selected. <br />
-								- Enter the following path for SMATERS PRO APP and click <b>"GO"</b>.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 1" />
-							</div>
+              <!-- Step 1 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 1</b>: Download and Install Downloader App <br />
+                - Dismiss prompts until you see the URL text box on the right
+                side. Make sure the
+                <b>"Home"</b> option in the left menu is selected. <br />
+                - Enter the following path for SMATERS PRO APP and click
+                <b>"GO"</b>.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 1" />
+              </div>
 
-							<!-- Step 2 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 2</b>: Installing IPTV Smarters. <br />
-								- Wait for a minute or two until the player is downloaded onto your device. <br />
-								- Click <b>"Install"</b> when the download is complete. <br />
-								- Wait for the installation to finish. <br />
-								- Once installed, you'll receive an <b>"App installed"</b> notification. <br />
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 2" />
-							</div>
+              <!-- Step 2 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 2</b>: Installing IPTV Smarters. <br />
+                - Wait for a minute or two until the player is downloaded onto
+                your device. <br />
+                - Click <b>"Install"</b> when the download is complete. <br />
+                - Wait for the installation to finish. <br />
+                - Once installed, you'll receive an
+                <b>"App installed"</b> notification. <br />
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 2" />
+              </div>
 
-							<!-- Step 3 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 3</b>: Cleaning Up. <br />
-								You can choose to click <b>"OPEN"</b> and start using the IBO Player or select
-								<b>"DONE"</b> to delete the APK file and save storage space on your device.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 3" />
-							</div>
+              <!-- Step 3 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 3</b>: Cleaning Up. <br />
+                You can choose to click <b>"OPEN"</b> and start using the IBO
+                Player or select <b>"DONE"</b> to delete the APK file and save
+                storage space on your device.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 3" />
+              </div>
 
-							<!-- Step 4 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 4</b>: Adding IPTV Channels. <br />
-								- Open the app and select <b>"LOGIN WITH XTREAM CODES API"</b>. <br />
-								- In the first box, choose any name you prefer. In the second and third boxes, enter
-								your M3U line's <b>"Username"</b> and <b>"Password"</b>, as well as the
-								<b>server URL</b> provided via email or found in your client area under services.
-								<br />
-								- Click <b>"ADD USER"</b> to proceed.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 4" />
-							</div>
+              <!-- Step 4 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 4</b>: Adding IPTV Channels. <br />
+                - Open the app and select <b>"LOGIN WITH XTREAM CODES API"</b>.
+                <br />
+                - In the first box, choose any name you prefer. In the second
+                and third boxes, enter your M3U line's <b>"Username"</b> and
+                <b>"Password"</b>, as well as the <b>server URL</b> provided via
+                email or found in your client area under services.
+                <br />
+                - Click <b>"ADD USER"</b> to proceed.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 4" />
+              </div>
 
-							<!-- Step 5 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 5</b>: Accessing Live TV Channels. <br />
-								- Click on the <b>"Live TV"</b> icon. <br />
-								- Select the channel group you want to watch.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 5" />
-							</div>
+              <!-- Step 5 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 5</b>: Accessing Live TV Channels. <br />
+                - Click on the <b>"Live TV"</b> icon. <br />
+                - Select the channel group you want to watch.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 5" />
+              </div>
 
-							<!-- Step 6 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 6</b>: Watching a Channel. <br />
-								Click on the channel name and then double-click on the small screen to go full
-								screen. <br />
-								You're now all set up with IPTV Smarters on your Android device! Enjoy your content.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 6" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Knowledge Base / Tutorials Section Stop -->
-		</main>
+              <!-- Step 6 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 6</b>: Watching a Channel. <br />
+                Click on the channel name and then double-click on the small
+                screen to go full screen. <br />
+                You're now all set up with IPTV Smarters on your Android device!
+                Enjoy your content.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 6" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Knowledge Base / Tutorials Section Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<script src="assets/js/script.js"></script>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

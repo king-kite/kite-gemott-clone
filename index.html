@@ -1,1324 +1,1724 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kite ReddTribe Clone | Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kite ReddTribe Clone | Home</title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Slider CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-			rel="stylesheet"
-		/>
+    <!-- Slider CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<!-- Common Modal (For Sign up) Start -->
-		<section data-modal-content-wrapper-id="1" class="modal-content-wrapper">
-			<div class="modal-content-close">
-				<span data-modal-content-wrapper-id="1" class="modal-content-button"
-					><i class="fas fa-times"></i
-				></span>
-			</div>
-			<div class="modal-login-container">
-				<div class="auth-container">
-					<h1 class="logo">REDDTRIBE</h1>
-					<h1 class="login-header">Create an account.</h1>
-					<div class="socials-sign-in-container">
-						<div class="socials-sign-ins">
-							<div class="social-sign-in facebook">
-								<span><i class="fab fa-facebook"></i></span>
-							</div>
-							<div class="social-sign-in twitter">
-								<span><i class="fab fa-twitter"></i></span>
-							</div>
-							<div class="social-sign-in github">
-								<span><i class="fab fa-github"></i></span>
-							</div>
-						</div>
-					</div>
-					<div class="sign-in-or-section">
-						<hr />
-						<span>Or continue with</span>
-						<hr />
-					</div>
-					<form action="#" class="login-form registration">
-						<div class="login-field-container span-2">
-							<label for="email" class="login-field-label">Email Address</label>
-							<div class="login-input-container">
-								<input placeholder="Email Address" type="email" name="email" id="email" />
-							</div>
-						</div>
-						<div class="login-field-container">
-							<label for="full_name" class="login-field-label">Full Name</label>
-							<div class="login-input-container">
-								<input placeholder="Full Name" type="text" name="full_name" id="full_name" />
-							</div>
-						</div>
-						<div class="login-field-container">
-							<label for="phone-number" class="login-field-label">Phone number</label>
-							<div class="relative login-input-container">
-								<div class="login-select-container">
-									<select id="country" name="country" class="login-select">
-										<option>+1</option>
-										<option>+233</option>
-										<option>+234</option>
-									</select>
-								</div>
-								<input
-									type="tel"
-									name="phone-number"
-									id="phone-number"
-									autocomplete="tel"
-									class="login-phone-input"
-								/>
-							</div>
-						</div>
-						<div class="login-field-container">
-							<label for="password" class="login-field-label">Password</label>
-							<div class="login-input-container">
-								<input placeholder="Password" type="password" name="password" id="password" />
-							</div>
-						</div>
-						<div class="login-field-container">
-							<label for="password2" class="login-field-label">Confirm Password</label>
-							<div class="login-input-container">
-								<input
-									placeholder="Confirm Password"
-									type="password"
-									name="password2"
-									id="password2"
-								/>
-							</div>
-						</div>
-						<div class="login-button span-2">
-							<button type="submit">Continue</button>
-						</div>
-					</form>
-					<p class="sign-up-description">
-						Already have an account? <a href="login.html">Sign In</a>
-					</p>
-				</div>
-			</div>
-		</section>
-		<!-- Common Modal (For Sign up) Stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Common Modal (For Sign up) Start -->
+    <section data-modal-content-wrapper-id="1" class="modal-content-wrapper">
+      <div class="modal-content-close">
+        <span data-modal-content-wrapper-id="1" class="modal-content-button"
+          ><i class="fas fa-times"></i
+        ></span>
+      </div>
+      <div class="modal-login-container">
+        <div class="auth-container">
+          <h1 class="logo">REDDTRIBE</h1>
+          <h1 class="login-header">Create an account.</h1>
+          <div class="socials-sign-in-container">
+            <div class="socials-sign-ins">
+              <div class="social-sign-in facebook">
+                <span><i class="fab fa-facebook"></i></span>
+              </div>
+              <div class="social-sign-in twitter">
+                <span><i class="fab fa-twitter"></i></span>
+              </div>
+              <div class="social-sign-in github">
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="sign-in-or-section">
+            <hr />
+            <span>Or continue with</span>
+            <hr />
+          </div>
+          <form action="#" class="login-form registration">
+            <div class="login-field-container span-2">
+              <label for="email" class="login-field-label">Email Address</label>
+              <div class="login-input-container">
+                <input
+                  placeholder="Email Address"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="login-field-container">
+              <label for="full_name" class="login-field-label">Full Name</label>
+              <div class="login-input-container">
+                <input
+                  placeholder="Full Name"
+                  type="text"
+                  name="full_name"
+                  id="full_name"
+                />
+              </div>
+            </div>
+            <div class="login-field-container">
+              <label for="phone-number" class="login-field-label"
+                >Phone number</label
+              >
+              <div class="relative login-input-container">
+                <div class="login-select-container">
+                  <select id="country" name="country" class="login-select">
+                    <option>+1</option>
+                    <option>+233</option>
+                    <option>+234</option>
+                  </select>
+                </div>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  autocomplete="tel"
+                  class="login-phone-input"
+                />
+              </div>
+            </div>
+            <div class="login-field-container">
+              <label for="password" class="login-field-label">Password</label>
+              <div class="login-input-container">
+                <input
+                  placeholder="Password"
+                  type="password"
+                  name="password"
+                  id="password"
+                />
+              </div>
+            </div>
+            <div class="login-field-container">
+              <label for="password2" class="login-field-label"
+                >Confirm Password</label
+              >
+              <div class="login-input-container">
+                <input
+                  placeholder="Confirm Password"
+                  type="password"
+                  name="password2"
+                  id="password2"
+                />
+              </div>
+            </div>
+            <div class="login-button span-2">
+              <button type="submit">Continue</button>
+            </div>
+          </form>
+          <p class="sign-up-description">
+            Already have an account? <a href="login.html">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Common Modal (For Sign up) Stop -->
 
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item active"><a href="index.html">home</a></li>
-								<li class="menu-list-item"><a href="subscriptions.html">subscriptions</a></li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item active">
+                  <a href="index.html">home</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Hero Section Start -->
-			<section class="hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="hero-content">
-							<h1 class="hero-title">MORE THAN 10,000 LIVE TV CHANNELS FROM ALL OVER THE WORLD</h1>
-							<p class="hero-description">
-								OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE TELEVISION STATIONS.
-								GET ACCESS TO WATCH.
-							</p>
-							<a href="#" class="hero-cta"> SUBSCRIBE NOW! </a>
-							<ul class="benefits">
-								<li class="benefit">
-									<h1 class="benefit-title">
-										<i class="fas fa-check-circle"></i>
-									</h1>
-									<p class="benefit-description">FHD & HD Clear</p>
-								</li>
-								<li class="benefit">
-									<h1 class="benefit-title">
-										<i class="fas fa-check-circle"></i>
-									</h1>
-									<p class="benefit-description">20,000+ Movies</p>
-								</li>
-								<li class="benefit">
-									<h1 class="benefit-title">
-										<i class="fas fa-check-circle"></i>
-									</h1>
-									<p class="benefit-description">No Buffering</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
+    <main>
+      <!-- Hero Section Start -->
+      <section class="hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                MORE THAN 10,000 LIVE TV CHANNELS FROM ALL OVER THE WORLD
+              </h1>
+              <p class="hero-description">
+                OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE
+                TELEVISION STATIONS. GET ACCESS TO WATCH.
+              </p>
+              <a href="#" class="hero-cta"> SUBSCRIBE NOW! </a>
+              <ul class="benefits">
+                <li class="benefit">
+                  <h1 class="benefit-title">
+                    <i class="fas fa-check-circle"></i>
+                  </h1>
+                  <p class="benefit-description">FHD & HD Clear</p>
+                </li>
+                <li class="benefit">
+                  <h1 class="benefit-title">
+                    <i class="fas fa-check-circle"></i>
+                  </h1>
+                  <p class="benefit-description">20,000+ Movies</p>
+                </li>
+                <li class="benefit">
+                  <h1 class="benefit-title">
+                    <i class="fas fa-check-circle"></i>
+                  </h1>
+                  <p class="benefit-description">No Buffering</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Stop -->
 
-			<!-- Features Section Start -->
-			<section class="features-container">
-				<div class="wrapper">
-					<h2 class="container-title">Why Choose Us?</h2>
-					<p class="container-description">
-						A Seamless Platform That Brings You The Latest In Live Sports, Movies, Series And More,
-						All In One Place.
-					</p>
-					<ul class="features">
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/1.png" alt="Live Sports Coverage" />
-							</div>
-							<h5 class="feature-title">Live Sports Coverage</h5>
-							<p class="feature-description">
-								Catch all the action with our extensive sports channel lineup. From live matches to
-								exclusive sports events, from sports extravaganzas to cultural celebrations, we
-								ensure you experience the excitement in real-time, right from the comfory of your
-								screen.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/2.png" alt="Premium Channels Library" />
-							</div>
-							<h5 class="feature-title">Premium Channels Library</h5>
-							<p class="feature-description">
-								Access to an extensive library of live TV channels, including sports, news,
-								entertainment and more. Additionally, enjy a vast collection of on-demand movies,
-								series and special events in High Quality HD/FHD/4K.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/3.png" alt="Updated VOD(Video On Demand)" />
-							</div>
-							<h5 class="feature-title">Updated VOD</h5>
-							<p class="feature-description">
-								Our updated Video On Demand library offers a vast selection of movies, series and
-								special programs. Discover a diverse range of content that&apos;s refreshed
-								regularly, ensuring you alway have access to the latest and greatest in
-								entertainment.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/4.png" alt="Multi-Device Compatibility" />
-							</div>
-							<h5 class="feature-title">Multi-Device Compatibility</h5>
-							<p class="feature-description">
-								Watch your favorite shows anytime, anywhere on a wide range of devices. Whether
-								it&apos;s your smart TV, smartphone, tablet or laptop our IPTV ensures seamless
-								compatiblity.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/5.png" alt="Easy Installation" />
-							</div>
-							<h5 class="feature-title">Easy Installation</h5>
-							<p class="feature-description">
-								Our user-friendly installation process ensures you&apos;re up and running in no
-								time. Follow our step-by-step guide and you&apos;ll be immersed in premium content
-								within minutes. Have questions? Our dedicated support team is always ready to assist
-								you.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/6.png" alt="99% Uptime" />
-							</div>
-							<h5 class="feature-title">99.9% Uptime</h5>
-							<p class="feature-description">
-								With a staggering 99.9% uptime, you can trust that your entertainment won&apos;t be
-								interrupted. Sit back, relax and enjoy uninterrupted access to your favorite
-								channels, movies and events. With ReddTRIBE HD, you&apos;re in good hands.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- Features Section Stop -->
+      <!-- Features Section Start -->
+      <section class="features-container">
+        <div class="wrapper">
+          <h2 class="container-title">Why Choose Us?</h2>
+          <p class="container-description">
+            A Seamless Platform That Brings You The Latest In Live Sports,
+            Movies, Series And More, All In One Place.
+          </p>
+          <ul class="features">
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/1.png"
+                  alt="Live Sports Coverage"
+                />
+              </div>
+              <h5 class="feature-title">Live Sports Coverage</h5>
+              <p class="feature-description">
+                Catch all the action with our extensive sports channel lineup.
+                From live matches to exclusive sports events, from sports
+                extravaganzas to cultural celebrations, we ensure you experience
+                the excitement in real-time, right from the comfory of your
+                screen.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/2.png"
+                  alt="Premium Channels Library"
+                />
+              </div>
+              <h5 class="feature-title">Premium Channels Library</h5>
+              <p class="feature-description">
+                Access to an extensive library of live TV channels, including
+                sports, news, entertainment and more. Additionally, enjy a vast
+                collection of on-demand movies, series and special events in
+                High Quality HD/FHD/4K.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/3.png"
+                  alt="Updated VOD(Video On Demand)"
+                />
+              </div>
+              <h5 class="feature-title">Updated VOD</h5>
+              <p class="feature-description">
+                Our updated Video On Demand library offers a vast selection of
+                movies, series and special programs. Discover a diverse range of
+                content that&apos;s refreshed regularly, ensuring you alway have
+                access to the latest and greatest in entertainment.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img
+                  src="assets/images/icons/4.png"
+                  alt="Multi-Device Compatibility"
+                />
+              </div>
+              <h5 class="feature-title">Multi-Device Compatibility</h5>
+              <p class="feature-description">
+                Watch your favorite shows anytime, anywhere on a wide range of
+                devices. Whether it&apos;s your smart TV, smartphone, tablet or
+                laptop our IPTV ensures seamless compatiblity.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/5.png" alt="Easy Installation" />
+              </div>
+              <h5 class="feature-title">Easy Installation</h5>
+              <p class="feature-description">
+                Our user-friendly installation process ensures you&apos;re up
+                and running in no time. Follow our step-by-step guide and
+                you&apos;ll be immersed in premium content within minutes. Have
+                questions? Our dedicated support team is always ready to assist
+                you.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/6.png" alt="99% Uptime" />
+              </div>
+              <h5 class="feature-title">99.9% Uptime</h5>
+              <p class="feature-description">
+                With a staggering 99.9% uptime, you can trust that your
+                entertainment won&apos;t be interrupted. Sit back, relax and
+                enjoy uninterrupted access to your favorite channels, movies and
+                events. With ReddTRIBE HD, you&apos;re in good hands.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Features Section Stop -->
 
-			<!-- Pricing Section Start -->
-			<section class="pricing-container">
-				<div class="wrapper">
-					<h2 class="container-title">Ready To Seize Our Limited-Time IPTV Offers</h2>
-					<h3 class="container-subtitle">
-						We offer flexible subscription plans tailored to meet your viewing preferences.
-					</h3>
-					<p class="container-description">
-						Gain entry to a world of beloved TV shows, Movies, Sports and Live Events, all in
-						stunning High Definition and Experience the future of entertainment!
-					</p>
-					<ul class="pricings">
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">3 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">15,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">6 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">25,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-						<li class="pricing sliding-box-borders">
-							<div class="pricing-wrapper">
-								<h2 class="pricing-title">12 months</h2>
-								<p class="pricing-description">
-									Thanks to our cutting-edge antifreeze technology, we guarantee uninterrupted
-									weekend entertainment, ensuring your viewing experience remains seamless.
-								</p>
-								<h2 class="pricing-price">40,000 <small>N</small></h2>
-								<div class="hr-line"></div>
-								<ul class="pricing-list">
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">+<b>10000</b> Live Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"
-											>+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
-										>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title"><b>20000</b>~ TV-Series (VOD)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">4K, UHD, FHD, HD, SD Channels</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">AntiFreeze Technology</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast Zapping & 99.99% Uptime</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Electronic TV Program Guide (EPG)</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Compatible Almost on All Devices</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">24/7 Live Chat Support</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">2 Days Full Money Back Guarantee</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Fast, Stable & Reliable</span>
-									</li>
-									<li class="pricing-list-item">
-										<span class="pricing-item-icon"><i class="fas fa-check-circle"></i></span>
-										<span class="pricing-item-title">Cancel At Any Time</span>
-									</li>
-								</ul>
-								<div class="pricing-footer">
-									<h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
-									<p class="pricing-footer-description">
-										We accept Paystack, PayPal and also support the native transfer of
-										Cryptocurrencies providing you with even more flexibility.
-									</p>
-									<span
-										data-modal-content-wrapper-id="1"
-										class="pricing-footer-cta modal-content-button"
-									>
-										order now
-									</span>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- Pricing Section Stop -->
+      <!-- Pricing Section Start -->
+      <section class="pricing-container">
+        <div class="wrapper">
+          <h2 class="container-title">
+            Ready To Seize Our Limited-Time IPTV Offers
+          </h2>
+          <h3 class="container-subtitle">
+            We offer flexible subscription plans tailored to meet your viewing
+            preferences.
+          </h3>
+          <p class="container-description">
+            Gain entry to a world of beloved TV shows, Movies, Sports and Live
+            Events, all in stunning High Definition and Experience the future of
+            entertainment!
+          </p>
+          <ul class="pricings">
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">3 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">15,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">6 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">25,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="pricing sliding-box-borders">
+              <div class="pricing-wrapper">
+                <h2 class="pricing-title">12 months</h2>
+                <p class="pricing-description">
+                  Thanks to our cutting-edge antifreeze technology, we guarantee
+                  uninterrupted weekend entertainment, ensuring your viewing
+                  experience remains seamless.
+                </p>
+                <h2 class="pricing-price">40,000 <small>N</small></h2>
+                <div class="hr-line"></div>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>10000</b> Live Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >+<b>40000</b>&nbsp;Movies (VOD) & TV Shows</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      ><b>20000</b>~ TV-Series (VOD)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >4K, UHD, FHD, HD, SD Channels</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >AntiFreeze Technology</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast Zapping & 99.99% Uptime</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Electronic TV Program Guide (EPG)</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Compatible Almost on All Devices</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >24/7 Live Chat Support</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >2 Days Full Money Back Guarantee</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title"
+                      >Fast, Stable & Reliable</span
+                    >
+                  </li>
+                  <li class="pricing-list-item">
+                    <span class="pricing-item-icon"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="pricing-item-title">Cancel At Any Time</span>
+                  </li>
+                </ul>
+                <div class="pricing-footer">
+                  <h4 class="pricing-footer-title">Risk-free IPTV Service.</h4>
+                  <p class="pricing-footer-description">
+                    We accept Paystack, PayPal and also support the native
+                    transfer of Cryptocurrencies providing you with even more
+                    flexibility.
+                  </p>
+                  <span
+                    data-modal-content-wrapper-id="1"
+                    class="pricing-footer-cta modal-content-button"
+                  >
+                    order now
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Pricing Section Stop -->
 
-			<!-- Multi Room Start -->
-			<section class="get-started-container">
-				<div class="wrapper get-started-content">
-					<h4 class="get-started-title">
-						<big>
-							<strong>Multi Room Up to 5 connections per account Available</strong>
-						</big>
-						<br />
-						Need A customized Package to match your own needs? Contact us now via live chat
-					</h4>
-				</div>
-			</section>
-			<!-- Multi Room Stop -->
+      <!-- Multi Room Start -->
+      <section class="get-started-container">
+        <div class="wrapper get-started-content">
+          <h4 class="get-started-title">
+            <big>
+              <strong
+                >Multi Room Up to 5 connections per account Available</strong
+              >
+            </big>
+            <br />
+            Need A customized Package to match your own needs? Contact us now
+            via live chat
+          </h4>
+        </div>
+      </section>
+      <!-- Multi Room Stop -->
 
-			<!-- About our Services Start -->
-			<section class="about-our-service-container">
-				<div class="wrapper">
-					<div class="about-our-service-wrapper">
-						<div class="about-our-service">
-							<h3 class="about-our-service-heading">ABOUT OUR SERVICE</h3>
-							<h1 class="about-our-service-title">Step into <i>ReddTRIBE HD</i></h1>
-							<p class="about-our-service-description">
-								<i>ReddTRIBE HD</i> IPTV offers a revolutionary way to experience television with
-								premium, high-definition content, providing you with the latest trends and stories
-								in the world of Internet Protocol Television. Immerse yourself in a world of
-								unparalleled viewing experiences with us
-							</p>
-							<a href="subscriptions.html" class="about-our-service-cta">SUBSCRIBE</a>
+      <!-- About our Services Start -->
+      <section class="about-our-service-container">
+        <div class="wrapper">
+          <div class="about-our-service-wrapper">
+            <div class="about-our-service">
+              <h3 class="about-our-service-heading">ABOUT OUR SERVICE</h3>
+              <h1 class="about-our-service-title">
+                Step into <i>ReddTRIBE HD</i>
+              </h1>
+              <p class="about-our-service-description">
+                <i>ReddTRIBE HD</i> IPTV offers a revolutionary way to
+                experience television with premium, high-definition content,
+                providing you with the latest trends and stories in the world of
+                Internet Protocol Television. Immerse yourself in a world of
+                unparalleled viewing experiences with us
+              </p>
+              <a href="subscriptions.html" class="about-our-service-cta"
+                >SUBSCRIBE</a
+              >
 
-							<br />
-							<br />
+              <br />
+              <br />
 
-							<h1 class="about-our-service-title">
-								<small>Why Choose Us</small>
-							</h1>
-							<ul class="about-our-service-list">
-								<li class="about-our-service-list-item">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<span class="title"
-										>Our IPTV Service is available Round-the-Clock without interruptions</span
-									>
-								</li>
-								<li class="about-our-service-list-item">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<span class="title"
-										>Enjoy broadcasts from anywhere with just a 3G, 4G or Fiber broadband
-										connection.</span
-									>
-								</li>
-								<li class="about-our-service-list-item">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<span class="title"
-										>Reliable Cloud Servers to provide seamless streaming of diverse programs and
-										content</span
-									>
-								</li>
-								<li class="about-our-service-list-item">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<span class="title"
-										>Say goodbye to the burden of additional cable bills; our services encompass all
-										your viewing needs.</span
-									>
-								</li>
-							</ul>
-						</div>
+              <h1 class="about-our-service-title">
+                <small>Why Choose Us</small>
+              </h1>
+              <ul class="about-our-service-list">
+                <li class="about-our-service-list-item">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <span class="title"
+                    >Our IPTV Service is available Round-the-Clock without
+                    interruptions</span
+                  >
+                </li>
+                <li class="about-our-service-list-item">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <span class="title"
+                    >Enjoy broadcasts from anywhere with just a 3G, 4G or Fiber
+                    broadband connection.</span
+                  >
+                </li>
+                <li class="about-our-service-list-item">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <span class="title"
+                    >Reliable Cloud Servers to provide seamless streaming of
+                    diverse programs and content</span
+                  >
+                </li>
+                <li class="about-our-service-list-item">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <span class="title"
+                    >Say goodbye to the burden of additional cable bills; our
+                    services encompass all your viewing needs.</span
+                  >
+                </li>
+              </ul>
+            </div>
 
-						<ul class="about-our-service-items">
-							<li class="about-our-service-item">
-								<span class="about-our-service-item-icon"><i class="fas fa-tv"></i></span>
-								<h3 class="about-our-service-item-title">Global Channel Selection</h3>
-								<p class="about-our-service-item-description">
-									Our Subscription offers an extensive array of television channels from across the
-									globe
-								</p>
-							</li>
-							<li class="about-our-service-item">
-								<span class="about-our-service-item-icon"><i class="fas fa-video"></i></span>
-								<h3 class="about-our-service-item-title">Comprehensive Content</h3>
-								<p class="about-our-service-item-description">
-									Access sports, news, TV shows, movies, and adult channels without additional costs
-									or bills.
-								</p>
-							</li>
-							<li class="about-our-service-item">
-								<span class="about-our-service-item-icon"><i class="fas fa-camera"></i></span>
-								<h3 class="about-our-service-item-title">Full HD/4K Excellence</h3>
-								<p class="about-our-service-item-description">
-									Experience top-tier picture quality with access to HD, FHD, and 4K content.
-								</p>
-							</li>
-							<li class="about-our-service-item">
-								<span class="about-our-service-item-icon"><i class="fas fa-laptop"></i></span>
-								<h3 class="about-our-service-item-title">Personalized Channel Requests</h3>
-								<p class="about-our-service-item-description">
-									We welcome your requests to add your favorite channels and video-on-demand (VOD)
-									content.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- About our Services Stop -->
+            <ul class="about-our-service-items">
+              <li class="about-our-service-item">
+                <span class="about-our-service-item-icon"
+                  ><i class="fas fa-tv"></i
+                ></span>
+                <h3 class="about-our-service-item-title">
+                  Global Channel Selection
+                </h3>
+                <p class="about-our-service-item-description">
+                  Our Subscription offers an extensive array of television
+                  channels from across the globe
+                </p>
+              </li>
+              <li class="about-our-service-item">
+                <span class="about-our-service-item-icon"
+                  ><i class="fas fa-video"></i
+                ></span>
+                <h3 class="about-our-service-item-title">
+                  Comprehensive Content
+                </h3>
+                <p class="about-our-service-item-description">
+                  Access sports, news, TV shows, movies, and adult channels
+                  without additional costs or bills.
+                </p>
+              </li>
+              <li class="about-our-service-item">
+                <span class="about-our-service-item-icon"
+                  ><i class="fas fa-camera"></i
+                ></span>
+                <h3 class="about-our-service-item-title">
+                  Full HD/4K Excellence
+                </h3>
+                <p class="about-our-service-item-description">
+                  Experience top-tier picture quality with access to HD, FHD,
+                  and 4K content.
+                </p>
+              </li>
+              <li class="about-our-service-item">
+                <span class="about-our-service-item-icon"
+                  ><i class="fas fa-laptop"></i
+                ></span>
+                <h3 class="about-our-service-item-title">
+                  Personalized Channel Requests
+                </h3>
+                <p class="about-our-service-item-description">
+                  We welcome your requests to add your favorite channels and
+                  video-on-demand (VOD) content.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- About our Services Stop -->
 
-			<!-- Services Section Start -->
-			<section class="features-container">
-				<div class="wrapper">
-					<ul class="features">
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/7.png" alt="EPG" />
-							</div>
-							<h5 class="feature-title">Regular EPG Updates</h5>
-							<p class="feature-description">
-								Our Electronic Program Guide (EPG) is refreshed every 72 hours, ensuring you stay
-								up-to-date with program schedules.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/8.png" alt="Server" />
-							</div>
-							<h5 class="feature-title">Ongoing Server Updates</h5>
-							<p class="feature-description">
-								We continually update our servers to introduce new channels and VODs, expanding your
-								viewing options.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/9.png" alt="Custom Channel" />
-							</div>
-							<h5 class="feature-title">Custom Content Requests</h5>
-							<p class="feature-description">
-								You can request the addition of custom channels and VODs to cater to your specific
-								preferences.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/10.png" alt="Get A Refund" />
-							</div>
-							<h5 class="feature-title">Satisfaction Guaranteed</h5>
-							<p class="feature-description">
-								If our server performance doesn't meet your expectations, you're eligible for a
-								refund within 48 hours.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/11.png" alt="Custom Channel" />
-							</div>
-							<h5 class="feature-title">Responsive Customer Service</h5>
-							<p class="feature-description">
-								Count on our prompt and reliable customer support team for quick issue resolution.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-image">
-								<img src="assets/images/icons/12.png" alt="Highest Quality" />
-							</div>
-							<h5 class="feature-title">Quality Experience</h5>
-							<p class="feature-description">
-								Immerse yourself in the highest quality available in the market, ensuring a superior
-								viewing experience.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- Services Section Stop -->
+      <!-- Services Section Start -->
+      <section class="features-container">
+        <div class="wrapper">
+          <ul class="features">
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/7.png" alt="EPG" />
+              </div>
+              <h5 class="feature-title">Regular EPG Updates</h5>
+              <p class="feature-description">
+                Our Electronic Program Guide (EPG) is refreshed every 72 hours,
+                ensuring you stay up-to-date with program schedules.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/8.png" alt="Server" />
+              </div>
+              <h5 class="feature-title">Ongoing Server Updates</h5>
+              <p class="feature-description">
+                We continually update our servers to introduce new channels and
+                VODs, expanding your viewing options.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/9.png" alt="Custom Channel" />
+              </div>
+              <h5 class="feature-title">Custom Content Requests</h5>
+              <p class="feature-description">
+                You can request the addition of custom channels and VODs to
+                cater to your specific preferences.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/10.png" alt="Get A Refund" />
+              </div>
+              <h5 class="feature-title">Satisfaction Guaranteed</h5>
+              <p class="feature-description">
+                If our server performance doesn't meet your expectations, you're
+                eligible for a refund within 48 hours.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/11.png" alt="Custom Channel" />
+              </div>
+              <h5 class="feature-title">Responsive Customer Service</h5>
+              <p class="feature-description">
+                Count on our prompt and reliable customer support team for quick
+                issue resolution.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-image">
+                <img src="assets/images/icons/12.png" alt="Highest Quality" />
+              </div>
+              <h5 class="feature-title">Quality Experience</h5>
+              <p class="feature-description">
+                Immerse yourself in the highest quality available in the market,
+                ensuring a superior viewing experience.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Services Section Stop -->
 
-			<!-- Thousands of WorldWide Channels Start -->
-			<section class="become-seller-container">
-				<div class="wrapper become-seller-content">
-					<div class="become-seller-image">
-						<img src="assets/images/banner-ch.jpg" alt="Become a Seller" />
-					</div>
-					<div class="become-seller-data">
-						<h2 class="container-title">
-							MORE THAN 10,000 LIVE TV CHANNELS FROM ALL OVER THE WORLD
-						</h2>
-						<p class="container-description">
-							OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE TELEVISION STATIONS. GET
-							ACCESS TO WATCH.
-						</p>
-						<div class="become-seller-cta">
-							<a href="cart.html">
-								subscribe now &nbsp; <small><i class="fas fa-arrow-right"></i></small
-							></a>
-						</div>
-						<ul class="seller-benefits">
-							<li class="seller-benefit">
-								<h1 class="seller-benefit-title">
-									<i class="fas fa-check-circle"></i>
-								</h1>
-								<p class="seller-benefit-description">FHD & HD Clear</p>
-							</li>
-							<li class="seller-benefit">
-								<h1 class="seller-benefit-title">
-									<i class="fas fa-check-circle"></i>
-								</h1>
-								<p class="seller-benefit-description">20,000+ Movies</p>
-							</li>
-							<li class="seller-benefit">
-								<h1 class="seller-benefit-title">
-									<i class="fas fa-check-circle"></i>
-								</h1>
-								<p class="seller-benefit-description">No Buffering</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Thousands of WorldWide Channels a Seller Stop -->
+      <!-- Thousands of WorldWide Channels Start -->
+      <section class="become-seller-container">
+        <div class="wrapper become-seller-content">
+          <div class="become-seller-image">
+            <img src="assets/images/banner-ch.jpg" alt="Become a Seller" />
+          </div>
+          <div class="become-seller-data">
+            <h2 class="container-title">
+              MORE THAN 10,000 LIVE TV CHANNELS FROM ALL OVER THE WORLD
+            </h2>
+            <p class="container-description">
+              OUR SUPER IPTV SERVICE IS MORE THAN JUST A COLLECTION OF LIVE
+              TELEVISION STATIONS. GET ACCESS TO WATCH.
+            </p>
+            <div class="become-seller-cta">
+              <a href="cart.html">
+                subscribe now &nbsp;
+                <small><i class="fas fa-arrow-right"></i></small
+              ></a>
+            </div>
+            <ul class="seller-benefits">
+              <li class="seller-benefit">
+                <h1 class="seller-benefit-title">
+                  <i class="fas fa-check-circle"></i>
+                </h1>
+                <p class="seller-benefit-description">FHD & HD Clear</p>
+              </li>
+              <li class="seller-benefit">
+                <h1 class="seller-benefit-title">
+                  <i class="fas fa-check-circle"></i>
+                </h1>
+                <p class="seller-benefit-description">20,000+ Movies</p>
+              </li>
+              <li class="seller-benefit">
+                <h1 class="seller-benefit-title">
+                  <i class="fas fa-check-circle"></i>
+                </h1>
+                <p class="seller-benefit-description">No Buffering</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Thousands of WorldWide Channels a Seller Stop -->
 
-			<!-- Availability Section Start -->
-			<section class="features-container">
-				<div class="wrapper">
-					<div class="availability-wrapper">
-						<div class="availability-steps-container">
-							<ul class="availability-steps">
-								<li class="availability-step">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<div class="availability-step-content">
-										<h4 class="availability-step-content-title">Simultaneous Multi-Device Usage</h4>
-										<p class="availability-step-content-description">
-											Stream on multiple devices with one plan, simultaneously, for ultimate
-											convenience and flexibility.
-										</p>
-									</div>
-								</li>
-								<li class="availability-step">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<div class="availability-step-content">
-										<h4 class="availability-step-content-title">External Player Compatibility</h4>
-										<p class="availability-step-content-description">
-											Seamlessly integrate with external IPTV players, enhancing your viewing
-											experience with your preferred application.
-										</p>
-									</div>
-								</li>
-								<li class="availability-step">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<div class="availability-step-content">
-										<h4 class="availability-step-content-title">No VPN Required</h4>
-										<p class="availability-step-content-description">
-											Enjoy uninterrupted streaming without the need for a VPN, ensuring hassle-free
-											access to your favorite content.
-										</p>
-									</div>
-								</li>
-								<li class="availability-step">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<div class="availability-step-content">
-										<h4 class="availability-step-content-title">Diverse Content Categories</h4>
-										<p class="availability-step-content-description">
-											Experience high-definition channels from the US, Canada, UK, Africa and more.
-											From Sports, Entertainment, News, Kids, ReddTribe covers all genres for a
-											well-rounded entertainment.
-										</p>
-									</div>
-								</li>
-								<li class="availability-step">
-									<span class="icon"><i class="fas fa-check-circle"></i></span>
-									<div class="availability-step-content">
-										<h4 class="availability-step-content-title">Wide Device Compatibility</h4>
-										<p class="availability-step-content-description">
-											Compatible with iOS, Android, FireStick, Mac, Windows and Smart TVs, ensuring
-											accessibility across various platforms.
-										</p>
-									</div>
-								</li>
-							</ul>
-							<div class="availability-steps-image">
-								<img class="h-full w-full" src="assets/images/family.png" alt="Availability" />
-							</div>
-						</div>
-						<ul class="availables">
-							<li class="available">
-								<img src="assets/images/slides/slide2.jpg" alt="iOS / SMART TV" />
-							</li>
-							<li class="available">
-								<img src="assets/images/slides/slide3.jpg" alt="Windows / LG Smart" />
-							</li>
-							<li class="available">
-								<img src="assets/images/slides/slide4.jpg" alt="FireTV / Chrome" />
-							</li>
-							<li class="available">
-								<img src="assets/images/slides/slide5.jpg" alt="Android / MAGBox" />
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Availability Section Stop -->
+      <!-- Availability Section Start -->
+      <section class="features-container">
+        <div class="wrapper">
+          <div class="availability-wrapper">
+            <div class="availability-steps-container">
+              <ul class="availability-steps">
+                <li class="availability-step">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="availability-step-content">
+                    <h4 class="availability-step-content-title">
+                      Simultaneous Multi-Device Usage
+                    </h4>
+                    <p class="availability-step-content-description">
+                      Stream on multiple devices with one plan, simultaneously,
+                      for ultimate convenience and flexibility.
+                    </p>
+                  </div>
+                </li>
+                <li class="availability-step">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="availability-step-content">
+                    <h4 class="availability-step-content-title">
+                      External Player Compatibility
+                    </h4>
+                    <p class="availability-step-content-description">
+                      Seamlessly integrate with external IPTV players, enhancing
+                      your viewing experience with your preferred application.
+                    </p>
+                  </div>
+                </li>
+                <li class="availability-step">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="availability-step-content">
+                    <h4 class="availability-step-content-title">
+                      No VPN Required
+                    </h4>
+                    <p class="availability-step-content-description">
+                      Enjoy uninterrupted streaming without the need for a VPN,
+                      ensuring hassle-free access to your favorite content.
+                    </p>
+                  </div>
+                </li>
+                <li class="availability-step">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="availability-step-content">
+                    <h4 class="availability-step-content-title">
+                      Diverse Content Categories
+                    </h4>
+                    <p class="availability-step-content-description">
+                      Experience high-definition channels from the US, Canada,
+                      UK, Africa and more. From Sports, Entertainment, News,
+                      Kids, ReddTribe covers all genres for a well-rounded
+                      entertainment.
+                    </p>
+                  </div>
+                </li>
+                <li class="availability-step">
+                  <span class="icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="availability-step-content">
+                    <h4 class="availability-step-content-title">
+                      Wide Device Compatibility
+                    </h4>
+                    <p class="availability-step-content-description">
+                      Compatible with iOS, Android, FireStick, Mac, Windows and
+                      Smart TVs, ensuring accessibility across various
+                      platforms.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="availability-steps-image">
+                <img
+                  class="h-full w-full"
+                  src="assets/images/family.png"
+                  alt="Availability"
+                />
+              </div>
+            </div>
+            <ul class="availables">
+              <li class="available">
+                <img
+                  src="assets/images/slides/slide2.jpg"
+                  alt="iOS / SMART TV"
+                />
+              </li>
+              <li class="available">
+                <img
+                  src="assets/images/slides/slide3.jpg"
+                  alt="Windows / LG Smart"
+                />
+              </li>
+              <li class="available">
+                <img
+                  src="assets/images/slides/slide4.jpg"
+                  alt="FireTV / Chrome"
+                />
+              </li>
+              <li class="available">
+                <img
+                  src="assets/images/slides/slide5.jpg"
+                  alt="Android / MAGBox"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Availability Section Stop -->
 
-			<!-- Services Section Start -->
-			<section class="features-container">
-				<div class="wrapper">
-					<h2 class="container-title">How does it work?</h2>
-					<p class="container-description">&nbsp;</p>
-					<ul class="features">
-						<li class="feature sliding-box-borders">
-							<div class="feature-icon">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<h5 class="feature-title">1 - Take action and place your order today</h5>
-							<p class="feature-description">
-								Select your desired subscription period (12 months, 3 months, 6 months or 1 month)
-								and proceed to place your order.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-icon">
-								<i class="fas fa-user"></i>
-							</div>
-							<h5 class="feature-title">2 - Get your account</h5>
-							<p class="feature-description">
-								The account setup process may take between 30 minutes to 6 hours. Kindly check both
-								your inbox and span folder for furhter instructions. If you wish to expedite the
-								prcess, please reach our to us for assistance.
-							</p>
-						</li>
-						<li class="feature sliding-box-borders">
-							<div class="feature-icon">
-								<i class="fas fa-tv"></i>
-							</div>
-							<h5 class="feature-title">3 - Enjoy your IPTV Service!</h5>
-							<p class="feature-description">
-								Experience the full range of channels, films and series. Enjoy them now!
-							</p>
-						</li>
-					</ul>
-					<div class="become-seller-cta">
-						<a href="cart.html">
-							subscribe now &nbsp; <small><i class="fas fa-arrow-right"></i></small
-						></a>
-					</div>
-				</div>
-			</section>
-			<!-- Services Section Stop -->
+      <!-- Services Section Start -->
+      <section class="features-container">
+        <div class="wrapper">
+          <h2 class="container-title">How does it work?</h2>
+          <p class="container-description">&nbsp;</p>
+          <ul class="features">
+            <li class="feature sliding-box-borders">
+              <div class="feature-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h5 class="feature-title">
+                1 - Take action and place your order today
+              </h5>
+              <p class="feature-description">
+                Select your desired subscription period (12 months, 3 months, 6
+                months or 1 month) and proceed to place your order.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <h5 class="feature-title">2 - Get your account</h5>
+              <p class="feature-description">
+                The account setup process may take between 30 minutes to 6
+                hours. Kindly check both your inbox and span folder for furhter
+                instructions. If you wish to expedite the prcess, please reach
+                our to us for assistance.
+              </p>
+            </li>
+            <li class="feature sliding-box-borders">
+              <div class="feature-icon">
+                <i class="fas fa-tv"></i>
+              </div>
+              <h5 class="feature-title">3 - Enjoy your IPTV Service!</h5>
+              <p class="feature-description">
+                Experience the full range of channels, films and series. Enjoy
+                them now!
+              </p>
+            </li>
+          </ul>
+          <div class="become-seller-cta">
+            <a href="cart.html">
+              subscribe now &nbsp;
+              <small><i class="fas fa-arrow-right"></i></small
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section Stop -->
 
-			<!-- Testimonials Start -->
-			<section class="testimonials-container">
-				<div class="wrapper">
-					<h2 class="container-title">Customer Feedback</h2>
-					<p class="container-description">
-						When you help others feel important, you help yourself feel important too.
-					</p>
-					<div class="testimonial-buttons">
-						<span id="testimonial-button-prev" class="testimonial-button">
-							<small><i class="fas fa-arrow-left"></i></small>&nbsp;&nbsp;PREV
-						</span>
-						<span id="testimonial-button-next" class="testimonial-button">
-							NEXT&nbsp;&nbsp;<small><i class="fas fa-arrow-right"></i></small>
-						</span>
-					</div>
-					<div class="splide" role="group">
-						<div class="splide__track">
-							<ul class="testimonials splide__list">
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											I&rsquo;ve been using ReddTribe HD for a few months now, and I&apos;m blown
-											away by the quality and variety of channels they offer. From live sports to
-											premium movies, this IPTV service has it all.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Dipo Wellinghton</h3>
-													<p class="testimonial-creator-job">Lekki</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											Reddtribe HD is a game-changer in the world of IPTV. I&apos;m particularly
-											impressed with their sports coverage, which allows me to catch all my favorite
-											games in high definition.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Seun Akinyemi</h3>
-													<p class="testimonial-creator-job">Benin</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											I highly recommend Reddtribe to anyone looking for a reliable and
-											feature-packed IPTV service!
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Ogolubato</h3>
-													<p class="testimonial-creator-job">Magodo</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											The streaming quality is consistently crystal clear, making it a joy to watch.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Ismael Dauda</h3>
-													<p class="testimonial-creator-job">Kaduna</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											Reddtribe has transformed my viewing experience, it&apos;s like having the
-											world&apos;s entertainment right at my fingertips. The user interface is
-											intuitive, and finding content is a breeze. You've got a winning combination.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Col. Adeniran</h3>
-													<p class="testimonial-creator-job">Ilorin</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											Using Reddtribe has been a revelation. The platform's intuitive interface
-											makes it easy.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Ikechukwu</h3>
-													<p class="testimonial-creator-job">Port Harcourt</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="testimonial splide__slide">
-									<div class="testimonial-wrapper sliding-box-borders">
-										<p class="testimonial-description">
-											What impresses me most is the ability to watch on multiple devices, allowing
-											me to watch my shows anytime, anywhere.
-										</p>
-										<div class="testimonial-profile">
-											<div class="testimonial-creator">
-												<div class="testimonial-creator-image">
-													<img src="assets/images/icons8-male-user-50.png" alt="creator" />
-												</div>
-												<div class="testimonial-creator-title">
-													<h3 class="testimonial-creator-name">Damilare Olukotun</h3>
-													<p class="testimonial-creator-job">Ibadan</p>
-												</div>
-											</div>
-											<div class="testimonial-ratings">
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-												<span class="testimonial-rating"><i class="fas fa-star"></i></span>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Testimonials Stop -->
+      <!-- Testimonials Start -->
+      <section class="testimonials-container">
+        <div class="wrapper">
+          <h2 class="container-title">Customer Feedback</h2>
+          <p class="container-description">
+            When you help others feel important, you help yourself feel
+            important too.
+          </p>
+          <div class="testimonial-buttons">
+            <span id="testimonial-button-prev" class="testimonial-button">
+              <small><i class="fas fa-arrow-left"></i></small>&nbsp;&nbsp;PREV
+            </span>
+            <span id="testimonial-button-next" class="testimonial-button">
+              NEXT&nbsp;&nbsp;<small><i class="fas fa-arrow-right"></i></small>
+            </span>
+          </div>
+          <div class="splide" role="group">
+            <div class="splide__track">
+              <ul class="testimonials splide__list">
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      I&rsquo;ve been using ReddTribe HD for a few months now,
+                      and I&apos;m blown away by the quality and variety of
+                      channels they offer. From live sports to premium movies,
+                      this IPTV service has it all.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">
+                            Dipo Wellinghton
+                          </h3>
+                          <p class="testimonial-creator-job">Lekki</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      Reddtribe HD is a game-changer in the world of IPTV.
+                      I&apos;m particularly impressed with their sports
+                      coverage, which allows me to catch all my favorite games
+                      in high definition.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">
+                            Seun Akinyemi
+                          </h3>
+                          <p class="testimonial-creator-job">Benin</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      I highly recommend Reddtribe to anyone looking for a
+                      reliable and feature-packed IPTV service!
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">Ogolubato</h3>
+                          <p class="testimonial-creator-job">Magodo</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      The streaming quality is consistently crystal clear,
+                      making it a joy to watch.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">Ismael Dauda</h3>
+                          <p class="testimonial-creator-job">Kaduna</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      Reddtribe has transformed my viewing experience, it&apos;s
+                      like having the world&apos;s entertainment right at my
+                      fingertips. The user interface is intuitive, and finding
+                      content is a breeze. You've got a winning combination.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">
+                            Col. Adeniran
+                          </h3>
+                          <p class="testimonial-creator-job">Ilorin</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      Using Reddtribe has been a revelation. The platform's
+                      intuitive interface makes it easy.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">Ikechukwu</h3>
+                          <p class="testimonial-creator-job">Port Harcourt</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonial splide__slide">
+                  <div class="testimonial-wrapper sliding-box-borders">
+                    <p class="testimonial-description">
+                      What impresses me most is the ability to watch on multiple
+                      devices, allowing me to watch my shows anytime, anywhere.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="testimonial-creator">
+                        <div class="testimonial-creator-image">
+                          <img
+                            src="assets/images/icons8-male-user-50.png"
+                            alt="creator"
+                          />
+                        </div>
+                        <div class="testimonial-creator-title">
+                          <h3 class="testimonial-creator-name">
+                            Damilare Olukotun
+                          </h3>
+                          <p class="testimonial-creator-job">Ibadan</p>
+                        </div>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                        <span class="testimonial-rating"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Stop -->
 
-			<!-- Support Ticket Start -->
-			<section class="support-ticket-container">
-				<div class="wrapper support-ticket-content">
-					<h1 class="support-title">
-						Have <span class="red-text">Questions</span> Or Need Assistance??
-					</h1>
-					<p class="support-description">
-						We&apos;re here to ensure you have the best IPTV experience. Feel free to contact us
-						NOW...
-					</p>
-					<div class="support-cta">
-						<a href="#">live chat</a>
-					</div>
-					<p class="support-description">
-						Thank you for choosing <i>Reddtribe HD</i> as your IPTV destination. <br />
-						Sit back, relax and let the entertainment begin!
-					</p>
-				</div>
-			</section>
-			<!-- Support Ticket Stop -->
-		</main>
+      <!-- Support Ticket Start -->
+      <section class="support-ticket-container">
+        <div class="wrapper support-ticket-content">
+          <h1 class="support-title">
+            Have <span class="red-text">Questions</span> Or Need Assistance??
+          </h1>
+          <p class="support-description">
+            We&apos;re here to ensure you have the best IPTV experience. Feel
+            free to contact us NOW...
+          </p>
+          <div class="support-cta">
+            <a href="#">live chat</a>
+          </div>
+          <p class="support-description">
+            Thank you for choosing <i>Reddtribe HD</i> as your IPTV destination.
+            <br />
+            Sit back, relax and let the entertainment begin!
+          </p>
+        </div>
+      </section>
+      <!-- Support Ticket Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<!-- Slider Js -->
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <!-- Slider Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
-		<script>
-			// Testimonial Slider
-			const splide = new Splide('.splide', {
-				arrows: null,
-				breakpoints: {
-					1023: {
-						perPage: 2,
-						gap: '.7rem',
-					},
-					767: {
-						perPage: 1,
-						gap: '.7rem',
-					},
-				},
-				gap: '1rem',
-				perPage: 3,
-				rewind: true,
-				type: 'loop',
-			});
-			splide.mount(window.splide.Extensions);
+    <script>
+      // Testimonial Slider
+      const splide = new Splide('.splide', {
+        arrows: null,
+        breakpoints: {
+          1023: {
+            perPage: 2,
+            gap: '.7rem',
+          },
+          767: {
+            perPage: 1,
+            gap: '.7rem',
+          },
+        },
+        gap: '1rem',
+        perPage: 3,
+        rewind: true,
+        type: 'loop',
+      });
+      splide.mount(window.splide.Extensions);
 
-			// Slider Buttons
-			const prevButton = document.querySelector('#testimonial-button-prev');
-			const nextButton = document.querySelector('#testimonial-button-next');
+      // Slider Buttons
+      const prevButton = document.querySelector('#testimonial-button-prev');
+      const nextButton = document.querySelector('#testimonial-button-next');
 
-			prevButton.addEventListener('click', function () {
-				splide.go('<');
-			});
+      prevButton.addEventListener('click', function () {
+        splide.go('<');
+      });
 
-			nextButton.addEventListener('click', function () {
-				splide.go('>');
-			});
-		</script>
+      nextButton.addEventListener('click', function () {
+        splide.go('>');
+      });
+    </script>
 
-		<!-- Main PDF -->
-		<script src="assets/js/script.js"></script>
-	</body>
+    <!-- Main PDF -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

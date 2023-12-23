@@ -1,390 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Kite ReddTribe Clone | How to Install IPTV on Your Amazon Fire TV Stick using IPTV Smarters
-			Player
-		</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kite ReddTribe Clone | How to Install IPTV on Your Amazon Fire TV Stick
+      using IPTV Smarters Player
+    </title>
 
-		<!-- Poppins (Google Fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Poppins (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-		<link href="assets/css/all.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-			<!-- Topbar start -->
-			<div class="topbar">
-				<h1 class="logo">REDDTRIBE</h1>
-				<div class="topbar-content">
-					<a href="cart.html" class="topbar-icon cart-icon">
-						<i class="fas fa-shopping-cart"></i>
-						<span class="topbar-icon-notification">99</span>
-					</a>
-					<a href="cart.html" class="topbar-link">
-						<span class="topbar-link-title">Cart</span>
-						<span class="topbar-link-badge">99</span>
-					</a>
-					<div id="client-area" class="client-area">
-						<button id="client-area-button" class="client-area-button" type="button">
-							<span>Client Area</span>
-							<span class="icon"><i class="fas fa-chevron-down"></i></span>
-						</button>
-						<ul class="client-area-list">
-							<li class="client-area-list-item">
-								<a href="login.html"
-									><span class="icon"><i class="fas fa-arrow-right"></i></span><span>Login</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="register.html"
-									><span class="icon"><i class="fas fa-user-plus"></i></span
-									><span>Register</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="forgot-password.html"
-									><span class="icon"><i class="fas fa-lock"></i></span
-									><span>Forgot Password</span></a
-								>
-							</li>
-							<li class="client-area-list-item">
-								<a href="renew.html"
-									><span class="icon"><i class="fas fa-infinity"></i></span
-									><span>Renew Subscription</span></a
-								>
-							</li>
-						</ul>
-					</div>
-					<span id="open-menu-button" class="topbar-icon open-menu-icon">
-						<i class="fas fa-bars"></i>
-					</span>
-				</div>
-			</div>
-			<!-- Topbar stop -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Topbar start -->
+      <div class="topbar">
+        <!-- <h1 class="logo">REDDTRIBE</h1> -->
+        <div class="topbar-logo">
+          <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+        </div>
+        <div class="topbar-content">
+          <a href="cart.html" class="topbar-icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="topbar-icon-notification">99</span>
+          </a>
+          <a href="cart.html" class="topbar-link">
+            <span class="topbar-link-title">Cart</span>
+            <span class="topbar-link-badge">99</span>
+          </a>
+          <div id="client-area" class="client-area">
+            <button
+              id="client-area-button"
+              class="client-area-button"
+              type="button"
+            >
+              <span>Client Area</span>
+              <span class="icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <ul class="client-area-list">
+              <li class="client-area-list-item">
+                <a href="login.html"
+                  ><span class="icon"><i class="fas fa-arrow-right"></i></span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="register.html"
+                  ><span class="icon"><i class="fas fa-user-plus"></i></span
+                  ><span>Register</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="forgot-password.html"
+                  ><span class="icon"><i class="fas fa-lock"></i></span
+                  ><span>Forgot Password</span></a
+                >
+              </li>
+              <li class="client-area-list-item">
+                <a href="renew.html"
+                  ><span class="icon"><i class="fas fa-infinity"></i></span
+                  ><span>Renew Subscription</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <span id="open-menu-button" class="topbar-icon open-menu-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Topbar stop -->
 
-			<!-- Navbar Start -->
-			<nav class="navbar">
-				<div class="navbar-content wrapper">
-					<h1 class="logo">REDDTRIBE</h1>
-					<div id="menu-container" class="menu-container">
-						<div id="menu" class="menu">
-							<div id="close-menu-button" class="close-menu-button">
-								<span class="close-title">close</span>
-								<span class="close-icon">
-									<i class="fas fa-times"></i>
-								</span>
-							</div>
-							<div id="client-area-nav" class="client-area-nav">
-								<span id="client-area-nav-button" class="client-area-nav-button" type="button">
-									<span>Client Area</span>
-									<span class="icon"><i class="fas fa-chevron-down"></i></span>
-								</span>
-								<ul id="client-area-list" class="client-area-list">
-									<li class="client-area-list-item">
-										<a href="login.html"
-											><span class="icon"><i class="fas fa-arrow-right"></i></span
-											><span>Login</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="register.html"
-											><span class="icon"><i class="fas fa-user-plus"></i></span
-											><span>Register</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="forgot-password.html"
-											><span class="icon"><i class="fas fa-lock"></i></span
-											><span>Forgot Password</span></a
-										>
-									</li>
-									<li class="client-area-list-item">
-										<a href="renew.html"
-											><span class="icon"><i class="fas fa-infinity"></i></span
-											><span>Renew Subscription</span></a
-										>
-									</li>
-								</ul>
-							</div>
-							<ul class="menu-list">
-								<li class="menu-list-item"><a href="index.html">home</a></li>
-								<li class="menu-list-item"><a href="subscriptions.html">subscriptions</a></li>
-								<li class="menu-list-item"><a href="channel-list.html">channel list</a></li>
-								<li class="menu-list-item active"><a href="knowledgebase.html">tutorial</a></li>
-								<li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
-								<li class="menu-list-item">
-									<a href="affiliate-program.html">affiliate program</a>
-								</li>
-								<li class="menu-list-item"><a href="refund.html">refund</a></li>
-								<li class="menu-list-item"><a href="renew.html">renew</a></li>
-								<li class="menu-list-item"><a href="reviews.html">reviews</a></li>
-								<li class="menu-list-item"><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar Stop -->
-		</header>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <div class="navbar-content wrapper">
+          <div class="navbar-logo">
+            <img src="assets/images/logo.jpg" alt="ReddTRIBE" />
+          </div>
+          <div id="menu-container" class="menu-container">
+            <div id="menu" class="menu">
+              <div id="close-menu-button" class="close-menu-button">
+                <span class="close-title">close</span>
+                <span class="close-icon">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+              <div id="client-area-nav" class="client-area-nav">
+                <span
+                  id="client-area-nav-button"
+                  class="client-area-nav-button"
+                  type="button"
+                >
+                  <span>Client Area</span>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <ul id="client-area-list" class="client-area-list">
+                  <li class="client-area-list-item">
+                    <a href="login.html"
+                      ><span class="icon"
+                        ><i class="fas fa-arrow-right"></i></span
+                      ><span>Login</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="register.html"
+                      ><span class="icon"><i class="fas fa-user-plus"></i></span
+                      ><span>Register</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="forgot-password.html"
+                      ><span class="icon"><i class="fas fa-lock"></i></span
+                      ><span>Forgot Password</span></a
+                    >
+                  </li>
+                  <li class="client-area-list-item">
+                    <a href="renew.html"
+                      ><span class="icon"><i class="fas fa-infinity"></i></span
+                      ><span>Renew Subscription</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">home</a></li>
+                <li class="menu-list-item">
+                  <a href="subscriptions.html">subscriptions</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="menu-list-item active">
+                  <a href="knowledgebase.html">tutorial</a>
+                </li>
+                <li class="menu-list-item"><a href="faqs.html">FAQ</a></li>
+                <li class="menu-list-item">
+                  <a href="affiliate-program.html">affiliate program</a>
+                </li>
+                <li class="menu-list-item"><a href="refund.html">refund</a></li>
+                <li class="menu-list-item"><a href="renew.html">renew</a></li>
+                <li class="menu-list-item">
+                  <a href="reviews.html">reviews</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Stop -->
+    </header>
 
-		<main>
-			<!-- Hero Section Start -->
-			<section class="content-hero-container">
-				<div class="wrapper-overlay">
-					<div class="wrapper">
-						<div class="content-hero-data">
-							<h1 class="content-hero-title">Tutorial - Installation Guide</h1>
-							<ul class="breadcrumbs">
-								<li class="breadcrumb"><a href="index.html">Home</a></li>
-								<li class="breadcrumb"><a href="knowledgebase.html">Knowledgebase</a></li>
-								<li class="breadcrumb active">
-									<a href="knowledgebase-detail-1.html"
-										>How to Install IPTV on Your Amazon Fire TV Stick using IPTV Smarters Player</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Hero Section Stop -->
+    <main>
+      <!-- Hero Section Start -->
+      <section class="content-hero-container">
+        <div class="wrapper-overlay">
+          <div class="wrapper">
+            <div class="content-hero-data">
+              <h1 class="content-hero-title">Tutorial - Installation Guide</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumb"><a href="index.html">Home</a></li>
+                <li class="breadcrumb">
+                  <a href="knowledgebase.html">Knowledgebase</a>
+                </li>
+                <li class="breadcrumb active">
+                  <a href="knowledgebase-detail-1.html"
+                    >How to Install IPTV on Your Amazon Fire TV Stick using IPTV
+                    Smarters Player</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Stop -->
 
-			<!-- Knowledge Base / Tutorials Section Start -->
-			<section class="content-wrapper">
-				<div class="wrapper tutorial-wrapper">
-					<div class="content-container">
-						<h3 class="content-title">
-							How to Install IPTV on Your Amazon Fire TV Stick using IPTV Smarters Player
-						</h3>
-						<div class="content-underline">
-							<div class="big-red"></div>
-							<div class="small-gray"></div>
-						</div>
-						<div class="tutorial-article-content">
-							<p class="tutorial-article-content-description">
-								IPTV (Internet Protocol Television) offers a world of streaming possibilities, and
-								with an Amazon Fire TV Stick, you can enjoy your favorite channels and content right
-								on your TV. In this step-by-step guide, we'll show you how to set up IPTV on your
-								Amazon Fire TV Stick using the IPTV Smarters Player app.
-							</p>
+      <!-- Knowledge Base / Tutorials Section Start -->
+      <section class="content-wrapper">
+        <div class="wrapper tutorial-wrapper">
+          <div class="content-container">
+            <h3 class="content-title">
+              How to Install IPTV on Your Amazon Fire TV Stick using IPTV
+              Smarters Player
+            </h3>
+            <div class="content-underline">
+              <div class="big-red"></div>
+              <div class="small-gray"></div>
+            </div>
+            <div class="tutorial-article-content">
+              <p class="tutorial-article-content-description">
+                IPTV (Internet Protocol Television) offers a world of streaming
+                possibilities, and with an Amazon Fire TV Stick, you can enjoy
+                your favorite channels and content right on your TV. In this
+                step-by-step guide, we'll show you how to set up IPTV on your
+                Amazon Fire TV Stick using the IPTV Smarters Player app.
+              </p>
 
-							<!-- Step 1 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 1</b>: Enable Apps from Unknown Sources. <br />
-								- From your Amazon Fire TV Stick's home screen, navigate to <b>"Settings."</b>
-								<br />
-								- Scroll right and select <b>"My Fire TV."</b> <br />
-								- Choose <b>"Developer Options."</b> <br />
-								- Turn on <b>"Apps from Unknown Sources."</b> This allows you to install apps not
-								available on the Amazon Appstore.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 1" />
-							</div>
+              <!-- Step 1 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 1</b>: Enable Apps from Unknown Sources. <br />
+                - From your Amazon Fire TV Stick's home screen, navigate to
+                <b>"Settings."</b>
+                <br />
+                - Scroll right and select <b>"My Fire TV."</b> <br />
+                - Choose <b>"Developer Options."</b> <br />
+                - Turn on <b>"Apps from Unknown Sources."</b> This allows you to
+                install apps not available on the Amazon Appstore.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 1" />
+              </div>
 
-							<!-- Step 2 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 2</b>: Install the Downloader App. <br />
-								Return to the home screen and use the search function to find and install the
-								<b>"Downloader"</b> app.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 2" />
-							</div>
+              <!-- Step 2 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 2</b>: Install the Downloader App. <br />
+                Return to the home screen and use the search function to find
+                and install the
+                <b>"Downloader"</b> app.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 2" />
+              </div>
 
-							<!-- Step 3 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 3</b>: Download and Install IPTV Smarters Player. <br />
-								- Open the <b>"Downloader"</b> app. In the URL field, enter the following link:
-								Download IPTV Smarters Player.<br />
-								- Click <b>"Go"</b> to start the download process. <br />
-								- Once the download is complete, click <b>"Install"</b> to install the IPTV Smarters
-								Player app.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 3" />
-							</div>
+              <!-- Step 3 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 3</b>: Download and Install IPTV Smarters Player. <br />
+                - Open the <b>"Downloader"</b> app. In the URL field, enter the
+                following link: Download IPTV Smarters Player.<br />
+                - Click <b>"Go"</b> to start the download process. <br />
+                - Once the download is complete, click <b>"Install"</b> to
+                install the IPTV Smarters Player app.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 3" />
+              </div>
 
-							<!-- Step 4 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 4</b>: Launch IPTV Smarters Player. <br />
-								After the installation is complete, click "Open" to launch the IPTV Smarters Player
-								app.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 4" />
-							</div>
+              <!-- Step 4 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 4</b>: Launch IPTV Smarters Player. <br />
+                After the installation is complete, click "Open" to launch the
+                IPTV Smarters Player app.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 4" />
+              </div>
 
-							<!-- Step 5 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 5</b>: Launch IPTV Smarters Player. <br />
-								Upon launching the app, you'll be prompted to enter your login details. <br />
-								Input your IPTV service provider's username and password or the M3U URL provided by
-								your service. <br />
-								Click <b>"Add User"</b> to save your credentials. <br />
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 5" />
-							</div>
+              <!-- Step 5 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 5</b>: Launch IPTV Smarters Player. <br />
+                Upon launching the app, you'll be prompted to enter your login
+                details. <br />
+                Input your IPTV service provider's username and password or the
+                M3U URL provided by your service. <br />
+                Click <b>"Add User"</b> to save your credentials. <br />
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 5" />
+              </div>
 
-							<!-- Step 6 -->
-							<p class="tutorial-article-content-description">
-								<b>Step 6</b>: Enjoy IPTV on Your Fire TV Stick. <br />
-								You're all set! You can now access your favorite channels, live TV, movies, series,
-								and more through IPTV Smarters Player on your Amazon Fire TV Stick.
-							</p>
-							<div class="tutorial-article-content-image">
-								<img src="assets/images/banner-ch.jpg" alt="Index 1" />
-							</div>
+              <!-- Step 6 -->
+              <p class="tutorial-article-content-description">
+                <b>Step 6</b>: Enjoy IPTV on Your Fire TV Stick. <br />
+                You're all set! You can now access your favorite channels, live
+                TV, movies, series, and more through IPTV Smarters Player on
+                your Amazon Fire TV Stick.
+              </p>
+              <div class="tutorial-article-content-image">
+                <img src="assets/images/banner-ch.jpg" alt="Index 1" />
+              </div>
 
-							<!-- Additional Tips -->
-							<br />
-							<p class="tutorial-article-content-description">
-								<b>Additional Tips</b>: <br />
-								Explore the app's settings to customize your viewing experience, such as adjusting
-								the video player settings and enabling subtitles. <br />
-								IPTV Smarters Player provides an easy-to-navigate interface, making it simple to
-								browse and watch your chosen content. <br />
-								Remember to keep your IPTV service provider's credentials handy for a seamless login
-								experience.
-							</p>
-							<br />
+              <!-- Additional Tips -->
+              <br />
+              <p class="tutorial-article-content-description">
+                <b>Additional Tips</b>: <br />
+                Explore the app's settings to customize your viewing experience,
+                such as adjusting the video player settings and enabling
+                subtitles. <br />
+                IPTV Smarters Player provides an easy-to-navigate interface,
+                making it simple to browse and watch your chosen content. <br />
+                Remember to keep your IPTV service provider's credentials handy
+                for a seamless login experience.
+              </p>
+              <br />
 
-							<!-- Final Thoughts -->
-							<p class="tutorial-article-content-description">
-								<b>Final Thoughts</b> <br />
-								With IPTV Smarters Player on your Amazon Fire TV Stick, you have a powerful IPTV
-								solution at your fingertips. Enjoy a wide range of content and a user-friendly
-								interface for an immersive viewing experience.
-							</p>
-							<br />
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Knowledge Base / Tutorials Section Stop -->
-		</main>
+              <!-- Final Thoughts -->
+              <p class="tutorial-article-content-description">
+                <b>Final Thoughts</b> <br />
+                With IPTV Smarters Player on your Amazon Fire TV Stick, you have
+                a powerful IPTV solution at your fingertips. Enjoy a wide range
+                of content and a user-friendly interface for an immersive
+                viewing experience.
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Knowledge Base / Tutorials Section Stop -->
+    </main>
 
-		<footer>
-			<div class="wrapper footer-container">
-				<ul class="footer-list">
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Support</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="troubleshoot.html">Troubleshooting Guide</a></li>
-								<li class="footer-link"><a href="performance-tips.html">Performance Tips</a></li>
-								<li class="footer-link"><a href="channel-list.html">channel list</a></li>
-								<li class="footer-link"><a href="#">IPTV Installation</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Home</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="login.html">My Account</a></li>
-								<li class="footer-link"><a href="cart.html">Cart</a></li>
-								<li class="footer-link"><a href="#">Firetvsticks</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Services</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="#">Price &amp; Plan</a></li>
-								<li class="footer-link"><a href="subscriptions.html">Subscriptions</a></li>
-								<li class="footer-link"><a href="renew.html">Renew</a></li>
-								<li class="footer-link"><a href="#">Referral</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Legal</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
-								<li class="footer-link"><a href="terms-of-service.html">Terms of Service</a></li>
-								<li class="footer-link"><a href="#">Refund and Returns</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="footer-item">
-						<div>
-							<h1 class="footer-item-title">Help &amp; Info</h1>
-							<ul class="footer-links">
-								<li class="footer-link"><a href="contact.html">Contact Us</a></li>
-								<li class="footer-link"><a href="#">About Us</a></li>
-								<li class="footer-link"><a href="faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+    <footer>
+      <div class="wrapper footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Support</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="troubleshoot.html">Troubleshooting Guide</a>
+                </li>
+                <li class="footer-link">
+                  <a href="performance-tips.html">Performance Tips</a>
+                </li>
+                <li class="footer-link">
+                  <a href="channel-list.html">channel list</a>
+                </li>
+                <li class="footer-link"><a href="#">IPTV Installation</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Home</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="login.html">My Account</a></li>
+                <li class="footer-link"><a href="cart.html">Cart</a></li>
+                <li class="footer-link"><a href="#">Firetvsticks</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Services</h1>
+              <ul class="footer-links">
+                <li class="footer-link"><a href="#">Price &amp; Plan</a></li>
+                <li class="footer-link">
+                  <a href="subscriptions.html">Subscriptions</a>
+                </li>
+                <li class="footer-link"><a href="renew.html">Renew</a></li>
+                <li class="footer-link"><a href="#">Referral</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Legal</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="footer-link">
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </li>
+                <li class="footer-link"><a href="#">Refund and Returns</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div>
+              <h1 class="footer-item-title">Help &amp; Info</h1>
+              <ul class="footer-links">
+                <li class="footer-link">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
 
-				<hr />
+        <hr />
 
-				<div class="footer-bottom">
-					<div class="footer-bottom-ctas">
-						<a href="subscriptions.html" class="footer-bottom-cta"> Order Now </a>
-						<a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
-					</div>
-					<div class="footer-bottom-sponsors">
-						<p class="footer-bottom-sponsor-description">
-							Enjoy fast IPTV streaming service at affordable prices. <br />
-							Get ReddTribe HD IPTV now.
-						</p>
-						<ul class="footer-bottom-sponsors-list">
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/dstv-stream_app_icon.svg" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/mydstv-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/showmax-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-							<li class="footer-bottom-sponsor">
-								<a href="#">
-									<div>
-										<img src="assets/images/supersport-footer-icon.webp" alt="link" />
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-ctas">
+            <a href="subscriptions.html" class="footer-bottom-cta">
+              Order Now
+            </a>
+            <a href="cart.html" class="footer-bottom-cta cta-2"> Cart </a>
+          </div>
+          <div class="footer-bottom-sponsors">
+            <p class="footer-bottom-sponsor-description">
+              Enjoy fast IPTV streaming service at affordable prices. <br />
+              Get ReddTribe HD IPTV now.
+            </p>
+            <ul class="footer-bottom-sponsors-list">
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/dstv-stream_app_icon.svg"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/mydstv-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/showmax-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="footer-bottom-sponsor">
+                <a href="#">
+                  <div>
+                    <img
+                      src="assets/images/supersport-footer-icon.webp"
+                      alt="link"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="footer-end">
-					<h1 class="logo">REDDTRIBE</h1>
-				</div>
-			</div>
-			<div class="footer-base">
-				&copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
-			</div>
-		</footer>
+        <div class="footer-end">
+          <h1 class="logo">REDDTRIBE</h1>
+        </div>
+      </div>
+      <div class="footer-base">
+        &copy; 2023 Kite REDDTRIBE. <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </footer>
 
-		<script src="assets/js/script.js"></script>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

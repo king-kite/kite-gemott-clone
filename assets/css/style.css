@@ -2217,37 +2217,31 @@ header .topbar {
   }
 }
 
-header .topbar .logo {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(0 168 38 / var(--tw-text-opacity));
-}
+/* header .topbar .logo {
+  @apply font-black text-primary-600 text-2xl uppercase lg:text-3xl xl:text-4xl;
+  @apply hidden lg:block;
+} */
 
 @media (min-width: 1024px) {
-  header .topbar .logo {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  header .topbar .topbar-logo {
+    height: 110px;
+    width: 150px;
   }
 }
 
-@media (min-width: 1280px) {
-  header .topbar .logo {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
-header .topbar .logo {
+header .topbar .topbar-logo {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  header .topbar .logo {
+  header .topbar .topbar-logo {
     display: block;
   }
+}
+
+header .topbar .topbar-logo img {
+  height: 100%;
+  width: 100%;
 }
 
 header .topbar-content {
@@ -2523,13 +2517,31 @@ header .topbar-content .client-area-list-item a:hover span.icon {
     align-items: center;
     justify-content: flex-end;
   }
+}
 
-  .navbar-content .logo {
+.navbar-content .navbar-logo {
+  height: 70px;
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .navbar-content .navbar-logo {
+    height: 90px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-content .navbar-logo {
     display: none;
   }
 }
 
-.navbar .logo,
+.navbar-content .navbar-logo img {
+  height: 100%;
+  width: 100%;
+}
+
 .login-container .logo,
 .review-form-container .logo {
   font-size: 1.5rem;
@@ -2541,8 +2553,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 @media (min-width: 1024px) {
-  .navbar .logo,
-.login-container .logo,
+  .login-container .logo,
 .review-form-container .logo {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -2550,8 +2561,7 @@ header .topbar-content .client-area-list-item a:hover span.icon {
 }
 
 @media (min-width: 1280px) {
-  .navbar .logo,
-.login-container .logo,
+  .login-container .logo,
 .review-form-container .logo {
     font-size: 1.875rem;
     line-height: 2.25rem;
